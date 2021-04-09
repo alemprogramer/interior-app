@@ -1,9 +1,10 @@
 import React, {Component} from 'react'
-import {MegaMenu} from "./MegaMenu";
+import MegaMenu from "./MegaMenu";
 
 export class LargeNavbar extends Component {
     render() {
-        const url = '/';
+        const url = process.env.PUBLIC_URL+'/';
+        const imgs = process.env.PUBLIC_URL +'/vendor/images/serv_icon.png';
         const dataList = {
             dataA: {
                 mainTitle: 'Virtual Staging',
@@ -11,19 +12,19 @@ export class LargeNavbar extends Component {
                     a: {
                         title: 'Virtual home staging01',
                         url: '/',
-                        img: 'localhost:3030/synextic_app/vendor/images/serv_icon.png',
+                        img: imgs,
                         details: 'Lorem ipsum dolor sit amet adipiscing elit. Sed a.'
                     },
                     b: {
                         title: 'Virtual home staging02',
                         url: '/',
-                        img: 'localhost:3030/synextic_app/vendor/images/serv_icon.png',
+                        img: imgs,
                         details: 'Lorem ipsum dolor sit amet, consectetu elit. Sed a.'
                     },
                     c: {
                         title: 'Virtual home staging03',
                         url: '/',
-                        img: 'localhost:3030/synextic_app/vendor/images/serv_icon.png',
+                        img: imgs,
                         details: 'Lorem ipsum dolor sit amet, consectetu adipiscing . Sed a.'
                     }
                 }
@@ -34,19 +35,19 @@ export class LargeNavbar extends Component {
                     a: {
                         title: 'Virtual home staging04',
                         url: '/',
-                        img: '/vendor/images/serv_icon.png',
+                        img: imgs,
                         details: 'Lorem ipsum dolor sit amet, consectetu adipiscing elit.  a.'
                     },
                     b: {
                         title: 'Virtual home staging05',
                         url: '/',
-                        img: '/vendor/images/serv_icon.png',
+                        img: imgs,
                         details: 'Lorem ipsum dolor sit amet, consectetu adipiscing elit. Sed .'
                     },
                     c: {
                         title: 'Virtual home staging06',
                         url: '/',
-                        img: '/vendor/images/serv_icon.png',
+                        img: imgs,
                         details: 'Lorem ipsum dolor sit amet, consectetu adipiscing elit. Sed .'
                     }
                 }
@@ -57,19 +58,19 @@ export class LargeNavbar extends Component {
                     a: {
                         title: 'Virtual home staging07',
                         url: '/',
-                        img: '/vendor/images/serv_icon.png',
+                        img: imgs,
                         details: 'Lorem ipsum dolor sit amet, consectetu adipiscing elit. Sed a.'
                     },
                     b: {
                         title: 'Virtual home staging08',
                         url: '/',
-                        img: '/vendor/images/serv_icon.png',
+                        img: imgs,
                         details: 'Lorem ipsum dolor sit amet, consectetu adipiscing elit. Sed a.'
                     },
                     c: {
                         title: 'Virtual home staging09',
                         url: '/',
-                        img: '/vendor/images/serv_icon.png',
+                        img: imgs,
                         details: 'Lorem ipsum dolor sit amet, consectetu adipiscing elit. Sed a.'
                     }
                 }

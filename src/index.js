@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import Footer from "./footer/Footer";
-import Home from "./home";
+import Home from "./home/home";
 import LargeNavbar from "./navbar/LargeNavbar";
 import SmallNavbar from "./navbar/SmallNavbar";
 

@@ -4,39 +4,40 @@ import Item from "./item";
 export class Difference extends Component {
     render() {
         let k = 0; //key value, please make it random and unique
+        const imgs = process.env.PUBLIC_URL +'/vendor/images/user.png';
         const item = {
             a: {
-                icon: '/vendor/images/user.png',
+                icon: imgs,
                 title: 'Professional Home Stagers',
                 text: 'We specialize in transfcascasorming photos of vacant properties into beautiful, virtua' +
                         'lly staged homes that sells faster and for top dollar.'
             },
             b: {
-                icon: '/vendor/images/user.png',
+                icon: imgs,
                 title: 'Professasascional Home Stagers',
                 text: 'We specialize in trascascansforming photos of vacant properties into beautiful, virtua' +
                         'lly staged homes that sells faster and for top dollar.'
             },
             c: {
-                icon: '/vendor/images/user.png',
+                icon: imgs,
                 title: 'Professional Hocasme Stagers',
                 text: 'We specialize in transforming photos of vacant properties into beautiful, virtua' +
                         'lly staged homes that sells faster and for top dollar.'
             },
             d: {
-                icon: '/vendor/images/user.png',
+                icon: imgs,
                 title: 'Professional Home Staascgers',
                 text: 'We specialize in transforming photos of vacant properties into beautiful, virtua' +
                         'lly staged homes that sells faster and for top dollar.'
             },
             e: {
-                icon: '/vendor/images/user.png',
+                icon: imgs,
                 title: 'Professional Home Stagers',
                 text: 'We specialize in transforming photos of vacant properties into beautiful, virtua' +
                         'lly staged homescbf that sells faster and for top dollar.'
             },
             f: {
-                icon: '/vendor/images/user.png',
+                icon: imgs,
                 title: 'Profesgfdsional Home Stagers',
                 text: 'We specialnfgnfgize in transforming photos of vacant properties into beautiful, virtua' +
                         'lly staged homes that sells faster and for top dollar.'
