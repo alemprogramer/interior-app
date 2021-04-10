@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import CommonHead from "../../headings/CommonHead";
+import CommonHead from "../../components/headings/CommonHead";
 
 export class PreviousWork extends Component {
     render() {

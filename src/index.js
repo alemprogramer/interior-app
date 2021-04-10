@@ -1,25 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import Footer from "./footer/Footer";
-import Home from "./home/home";
-import LargeNavbar from "./navbar/LargeNavbar";
-import SmallNavbar from "./navbar/SmallNavbar";
-
+import LargeNavbar from "./components/navbar/LargeNavbar";
+import SmallNavbar from "./components/navbar/SmallNavbar";
+import Footer from "./components/footer/Footer";
+ import Home from "./pages/home"; 
+/*import Service from "./pages/service";*/
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./vendor/css/all.min.css";
 import "./vendor/css/menu2.css";
 import "./vendor/css/style.css";
 
-
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
     <React.StrictMode>
     <LargeNavbar/>
-    <SmallNavbar/>
-    <Home/>
+    <SmallNavbar/> 
+    {/*
+    <Service/>
+      */}
+     <Home/>
     <App/>
     <Footer/>
 

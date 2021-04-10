@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import CommonHead from "../../headings/CommonHead";
-import MiniHead from "../../headings/MiniHead";
+import CommonHead from "../../../components/headings/CommonHead";
+import MiniHead from "../../../components/headings/MiniHead";
 
 export class Desk extends Component {
     render() {
