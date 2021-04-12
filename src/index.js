@@ -4,8 +4,8 @@ import App from './App';
 import LargeNavbar from "./components/navbar/LargeNavbar";
 import SmallNavbar from "./components/navbar/SmallNavbar";
 import Footer from "./components/footer/Footer";
- import Home from "./pages/home"; 
-/*import Service from "./pages/service";*/
+/* import Home from "./pages/home"; */
+import Service from "./pages/service";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./vendor/css/all.min.css";
@@ -19,9 +19,9 @@ ReactDOM.render(
     <LargeNavbar/>
     <SmallNavbar/> 
     {/*
-    <Service/>
-      */}
      <Home/>
+      */}
+    <Service/>
     <App/>
     <Footer/>
 

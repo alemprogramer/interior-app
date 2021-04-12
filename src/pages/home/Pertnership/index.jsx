@@ -3,9 +3,9 @@ import CommonHead from "../../../components/headings/CommonHead";
 
 export class Partner extends Component {
     render() {
-        let url = process.env.PUBLIC_URL;
+        const url = process.env.PUBLIC_URL;
         let k=0;
-        let image = `${url}/vendor/images/partner.jpg`;
+        const image = `${url}/vendor/images/partner.jpg`;
         const obj = {
             setA: {
                 img: image,

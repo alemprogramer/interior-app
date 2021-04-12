@@ -26,7 +26,7 @@ export class PreviousWork extends Component {
                                 <div className="content position-relative">
                                     <img src={obj[d].image} className="img-fluid" alt="previous.jpg"/>
                                     <div className="slogan position-absolute text-center text-capitalize">
-                                        <h6>{obj[d].image}</h6>
+                                        <h6>{obj[d].title}</h6>
                                     </div>
                                 </div>
                             </div>)}
@@ -34,7 +34,7 @@ export class PreviousWork extends Component {
                     <div className="row">
                         <div className="col-md-12">
                             <a
-                                href="portfolio.html"
+                                href={process.env.PUBLIC_URL}
                                 className="mini_btn d-inline-block text-capitalize text-center">
                                 <h5>view more
                                 </h5>

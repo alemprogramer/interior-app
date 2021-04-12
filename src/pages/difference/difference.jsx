@@ -7,7 +7,7 @@ export class Difference extends Component {
         let k = 0; //key value, please make it random and unique
         const { title, receive, need, rare} = this.props;
         return (
-            <section className="difference">
+            <section className={need ? "difference bto" :"difference"} >
                 <div className="container">
 
                     <CommonHead title={title}/>
