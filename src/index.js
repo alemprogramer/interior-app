@@ -4,8 +4,8 @@ import App from './App';
 import LargeNavbar from "./components/navbar/LargeNavbar";
 import SmallNavbar from "./components/navbar/SmallNavbar";
 import Footer from "./components/footer/Footer";
-/* import Home from "./pages/home"; */
-import Service from "./pages/service";
+/* import Home from "./pages/homePage"; */
+import Service from "./pages/servicePage";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./vendor/css/all.min.css";
