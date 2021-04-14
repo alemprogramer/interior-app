@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 
 export class CommonHead extends Component {
     render() {
-        const {title,slogan}=this.props;
+        const { title, slogan, icon}=this.props;
         return (
             <div className="row">
                 <div className="col-md-12 col-sm-12">
@@ -10,7 +10,9 @@ export class CommonHead extends Component {
                         <h3>
                             {title}
                         </h3>
-                        {slogan ? <h6>{slogan}</h6>:""}
+                        {slogan ? <h6>{slogan} {icon ? <span>
+                            <i className={`fas ${icon}`}></i>
+                        </span>:''} </h6>:""}
                     </div>
                 </div>
             </div>

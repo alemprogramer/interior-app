@@ -4,8 +4,12 @@ import App from './App';
 import LargeNavbar from "./components/navbar/LargeNavbar";
 import SmallNavbar from "./components/navbar/SmallNavbar";
 import Footer from "./components/footer/Footer";
-/* import Home from "./pages/homePage"; */
+/* import Home from "./pages/homePage"; 
 import Service from "./pages/servicePage";
+import Contact from "./pages/contact";
+import Refer from "./pages/referrer";
+*/
+import Reseller from "./pages/reseller/index";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./vendor/css/all.min.css";
@@ -19,9 +23,12 @@ ReactDOM.render(
     <LargeNavbar/>
     <SmallNavbar/> 
     {/*
-     <Home/>
-      */}
+    <Home/>
     <Service/>
+    <Contact/>
+      <Refer/>
+      */}
+    <Reseller/>
     <App/>
     <Footer/>
 

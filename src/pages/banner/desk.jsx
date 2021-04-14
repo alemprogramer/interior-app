@@ -2,20 +2,21 @@ import React, {Component} from 'react'
 
 export class Banner extends Component {
     render() {
-        const { title, text, price, link, image}=this.props;
+        const { title, miniTitle, text, price, link, image, linkText, buttonText}=this.props;
         return (
             <section className="banner d-none d-sm-block d-xl-block d-lg-block d-md-block">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-6 col-sm-6">
                             <div className="banner_content">
-                                <h1>{title}</h1>
+                                {miniTitle ? <h6>{miniTitle}</h6>: ''}
+                               { title ? <h1>{title}</h1>: ''}
                                 <p className="text_area">{text}</p>
-                                <div className="price_tag">
+                                {price? <div className="price_tag">
                                     <h3>$ {price}</h3>
                                     <p>per photo</p>
-                                </div>
-                                <a href={link} className="place_btn ">Place Order</a>
+                                </div>:''}
+                                {linkText ? <a href={link} className='mini_btn d-inline-block text-capitalize text-center'> <h5>{linkText}</h5><i class="fas fa-long-arrow-alt-right"></i> </a> : buttonText ? <a href={link} className="place_btn ">{buttonText}</a> : '' }
                             </div>
                         </div>
                         <div className="col-md-6 col-sm-6">
@@ -23,7 +24,7 @@ export class Banner extends Component {
                                 <img
                                     className="img-fluid"
                                     src={image}
-                                    alt="banner_banner_bg.jpg"/>
+                                    alt="banner.jpg"/>
                             </div>
                         </div>
                     </div>
