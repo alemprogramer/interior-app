@@ -1,11 +1,10 @@
 import React from 'react';
 import Banner from "./banner/bannerDesk";
 import BannerMobile from "./banner/bannerMobile";
-import Difference from "../difference/difference";
-import PreviousWork from "../previousWork";
+import Difference from "../../components/difference/difference";
+import PreviousWork from "../../components/previousWork/index";
 import DeskService from "./services";
-import HowDesk from "../HowItWork/Desk";
-import HowMobile from "../HowItWork/Mobile";
+import HowItWork from "../../components/HowItWork/index";
 import Pricing from "./Pricing/Index";
 import Agencies from "./Agencies";
 import Pertnership from "./Pertnership";
@@ -21,11 +20,10 @@ function Home() {
             <BannerMobile/>
             <Difference
                 title='What set us apart from other virtual staging companies'
-                rare={differ}/>
+                rare={array[3]}/>
             <PreviousWork/>
             <DeskService/>
-            <HowDesk title="How it works ?" work={array[3]}/>
-            <HowMobile title="How it works ?" work={array[3]}/>
+            <HowItWork title="How it works ?" work={array[4]}/>
             <Pricing/>
             <Agencies/>
             <Pertnership/>

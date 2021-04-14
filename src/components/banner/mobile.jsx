@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 
 export class Mobile extends Component {
     render() {
-        const { title, text, price, link, image } = this.props;
+        const { title, miniTitle, text, price, link, image, linkText, buttonText } = this.props;
         return (
             <section className="mobile_design d-md-none d-xl-none d-lg-none d-sm-none d-block">
                 <div className="container">
@@ -17,16 +17,14 @@ export class Mobile extends Component {
                         </div>
                         <div className="col-12">
                             <div className="banner_content">
-                                {/* <h1>Virtual Home <br /> Staging</h1> */}
-                                <h1>{title}</h1>
+                                {miniTitle ? <h6>{miniTitle}</h6> : ''}
+                                {title ? <h1>{title} </h1> : ''}
                                 <p className="text_area">{text}</p>
-                                <div className="price_tag">
+                                {price ? <div className="price_tag">
                                     <h3>$ {price}</h3>
                                     <p>per photo</p>
-                                </div>
-                                <div className="butn_part">
-                                    <a href={link} className="place_btn">Place Order</a>
-                                </div>
+                                </div> : ''}
+                                {linkText ? <a href={link} className='mini_btn d-inline-block text-capitalize text-center'> <h5>{linkText}</h5><i className="fas fa-long-arrow-alt-right"></i> </a> : buttonText ? <a href={link} className="place_btn ">{buttonText}</a> : ''}
                             </div>
                         </div>
                     </div>

@@ -1,7 +1,7 @@
 import React from 'react'
 import CommonHead from "../../components/headings/CommonHead";
 import Referd from "../../components/referComps/index";
-import Banner from "../banner/index";
+import Banner from "../../components/banner/index";
 
 function Refer() {
     const link = process.env.PUBLIC_URL;

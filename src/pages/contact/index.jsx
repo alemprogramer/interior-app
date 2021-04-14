@@ -1,5 +1,5 @@
 import React from 'react';
-import Banner from "../banner/index";
+import Banner from "../../components/banner/index";
 import Referd from "../../components/referComps";
 import CommonHead from "../../components/headings/CommonHead";
 

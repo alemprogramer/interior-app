@@ -10,13 +10,13 @@ export class Banner extends Component {
                         <div className="col-md-6 col-sm-6">
                             <div className="banner_content">
                                 {miniTitle ? <h6>{miniTitle}</h6>: ''}
-                               { title ? <h1>{title}</h1>: ''}
+                               { title ? <h1>{title} </h1>: ''}
                                 <p className="text_area">{text}</p>
                                 {price? <div className="price_tag">
                                     <h3>$ {price}</h3>
                                     <p>per photo</p>
                                 </div>:''}
-                                {linkText ? <a href={link} className='mini_btn d-inline-block text-capitalize text-center'> <h5>{linkText}</h5><i class="fas fa-long-arrow-alt-right"></i> </a> : buttonText ? <a href={link} className="place_btn ">{buttonText}</a> : '' }
+                                {linkText ? <a href={link} className='mini_btn d-inline-block text-capitalize text-center'> <h5>{linkText}</h5><i className="fas fa-long-arrow-alt-right"></i> </a> : buttonText ? <a href={link} className="place_btn ">{buttonText}</a> : '' }
                             </div>
                         </div>
                         <div className="col-md-6 col-sm-6">

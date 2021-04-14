@@ -1,9 +1,8 @@
 import React from 'react';
-import Banner from "../banner/index";
-import Difference from "../difference/difference";
-import PreviousWork from "../previousWork/index";
-import HowDesk from "../HowItWork/Desk";
-import HowMobile from "../HowItWork/Mobile";
+import Banner from "../../components/banner/index";
+import Difference from "../../components/difference/difference";
+import PreviousWork from "../../components/previousWork/index";
+import HowItWork from "../../components/HowItWork/index";
 
 import array from "../../components/Js";
 
@@ -14,8 +13,7 @@ function Services() {
             <Difference title="What we need" need={array[0]} />
             <Difference title="What will you receive" receive={array[1]} />
             <PreviousWork/>
-            <HowDesk title="FAQ's" frequents={array[2]} />
-            <HowMobile title="FAQ's" frequents={array[2]} />
+            <HowItWork title="FAQ's" frequents={array[2]} />
         </section>
     )
 }

@@ -120,5 +120,5 @@ const array = [
             text: `Upload photos (not the ones you can take on your phone)`,
             image: `${imgUrl}/how.jpg`
         }
-    }
+    },
 ];export default array
