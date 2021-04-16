@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 
 export class Banner extends Component {
     render() {
-        const { title, miniTitle, text, price, link, image, linkText, buttonText}=this.props;
+        const { blog, title, miniTitle, text, price, link, image, linkText, buttonText}=this.props;
         return (
             <section className="banner d-none d-sm-block d-xl-block d-lg-block d-md-block">
                 <div className="container">
@@ -11,6 +11,14 @@ export class Banner extends Component {
                             <div className="banner_content">
                                 {miniTitle ? <h6>{miniTitle}</h6>: ''}
                                { title ? <h1>{title} </h1>: ''}
+
+                                {blog ? <div className="blogger">
+                                    <div className="imgs float-left">
+                                        <img src={blog.avatar} alt="blogger.png" className="img-fluid"/>
+                                </div>
+                                        <h6>{blog.name}</h6>
+                                    </div> : ''}
+
                                 <p className="text_area">{text}</p>
                                 {price? <div className="price_tag">
                                     <h3>$ {price}</h3>

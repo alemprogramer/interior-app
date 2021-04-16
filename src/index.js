@@ -12,8 +12,10 @@ import Refer from "./pages/referrer";
 import Reseller from "./pages/reseller/index";
 import Affliate from "./pages/Affliate/index";
 import Faq from "./pages/Faq/index";
-*/
 import Portfolio from "./pages/portfolio/index";
+*/
+
+import Blog from "./pages/blog/index";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./vendor/css/all.min.css";
@@ -34,9 +36,10 @@ ReactDOM.render(
     <Reseller/>
     <Affliate/>
     <Faq/>
-      */}
-    <App/>
     <Portfolio/>
+      */}
+    <Blog/>
+    <App/>
     <Footer/>
 
 </React.StrictMode>, document.getElementById('root'));
