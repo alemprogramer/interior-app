@@ -1,102 +1,104 @@
-import React, {Component} from 'react';
+import React from 'react';
 import Banner from "../../components/banner/index";
 import Blogger from "./blog";
 
-class Blog extends Component {
-    render() {
-        let k = 0;
-        const link = process.env.PUBLIC_URL;
-        const person = {
+function Blog() {
+    let k = 0;
+    const link = process.env.PUBLIC_URL;
+    const person = {
+        avatar: `${link}/vendor/images/blogger.png`,
+        name: `Jhon Doe`
+    };
+    const blogs = {
+        setA: {
+            img: `${link}/vendor/images/partner.jpg`,
+            title: `Meet our People - Marketing Team Leader Paul Wazouski`,
             avatar: `${link}/vendor/images/blogger.png`,
-            name: `Jhon Doe`
-        };
-        const blogs = {
-            setA: {
-                img: `${link}/vendor/images/partner.jpg`,
-                title: `Meet our People - Marketing Team Leader Paul Wazouski`,
-                avatar: `${link}/vendor/images/blogger.png`,
-                writer: `Jhon Doe`,
-                text: `We specialize in transforming photos of vacant properties into beautiful, virtually staged homes that sells faster and for top dollar.`,
-                slug: `${link}`,
-                date: `24 September 2019`
-            },
-            setAB: {
-                img: `${link}/vendor/images/partner.jpg`,
-                title: `Meet our People - Marketing Team Leader Paul Wazouski`,
-                avatar: `${link}/vendor/images/blogger.png`,
-                writer: `Jhon Doe`,
-                text: `We specialize in transforming photos of vacant properties into beautiful, virtually staged homes that sells faster and for top dollar.`,
-                slug: `${link}`,
-                date: `24 September 2019`
-            },
-            setC: {
-                img: `${link}/vendor/images/partner.jpg`,
-                title: `Meet our People - Marketing Team Leader Paul Wazouski`,
-                avatar: `${link}/vendor/images/blogger.png`,
-                writer: `Jhon Doe`,
-                text: `We specialize in transforming photos of vacant properties into beautiful, virtually staged homes that sells faster and for top dollar.`,
-                slug: `${link}`,
-                date: `24 September 2019`
-            },
-            setD: {
-                img: `${link}/vendor/images/partner.jpg`,
-                title: `Meet our People - Marketing Team Leader Paul Wazouski`,
-                avatar: `${link}/vendor/images/blogger.png`,
-                writer: `Jhon Doe`,
-                text: `We specialize in transforming photos of vacant properties into beautiful, virtually staged homes that sells faster and for top dollar.`,
-                slug: `${link}`,
-                date: `24 September 2019`
-            },
-            setE: {
-                img: `${link}/vendor/images/partner.jpg`,
-                title: `Meet our People - Marketing Team Leader Paul Wazouski`,
-                avatar: `${link}/vendor/images/blogger.png`,
-                writer: `Jhon Doe`,
-                text: `We specialize in transforming photos of vacant properties into beautiful, virtually staged homes that sells faster and for top dollar.`,
-                slug: `${link}`,
-                date: `24 September 2019`
-            }
-        };
-        const category = {
-            cat1: `All`,
-            cat2: `Tech`,
-            cat3: `Design`,
-            cat4: `Agent Outreach`,
-            cat5: `Virtual Staging`,
-            cat6: `3D Modelling`
-        };
-        const short = {
-            set1: {
-                value: `All`,
-                text: `All`
-            },
-            set2: {
-                value: `Bathroom 2`,
-                text: `Bathroom 2`
-            },
-            set3: {
-                value: `Bathroom`,
-                text: `Bathroom`
-            },
-            set4: {
-                value: `Living Room`,
-                text: `Living Room`
-            },
-            set5: {
-                value: `Dinning room`,
-                text: `Dinning room`
-            },
-            set6: {
-                value: `Bedroom`,
-                text: `Bedroom`
-            },
-            set7: {
-                value: `Kitchen`,
-                text: `Kitchen`
-            }
-        };
-        return (
-            <section className="blog">
+            writer: `Jhon Doe`,
+            text: `We specialize in transforming photos of vacant properties into beautiful, virtually staged homes that sells faster and for top dollar.`,
+            slug: `${link}`,
+            date: `24 September 2019`
+        },
+        setAB: {
+            img: `${link}/vendor/images/partner.jpg`,
+            title: `Meet our People - Marketing Team Leader Paul Wazouski`,
+            avatar: `${link}/vendor/images/blogger.png`,
+            writer: `Jhon Doe`,
+            text: `We specialize in transforming photos of vacant properties into beautiful, virtually staged homes that sells faster and for top dollar.`,
+            slug: `${link}`,
+            date: `24 September 2019`
+        },
+        setC: {
+            img: `${link}/vendor/images/partner.jpg`,
+            title: `Meet our People - Marketing Team Leader Paul Wazouski`,
+            avatar: `${link}/vendor/images/blogger.png`,
+            writer: `Jhon Doe`,
+            text: `We specialize in transforming photos of vacant properties into beautiful, virtually staged homes that sells faster and for top dollar.`,
+            slug: `${link}`,
+            date: `24 September 2019`
+        },
+        setD: {
+            img: `${link}/vendor/images/partner.jpg`,
+            title: `Meet our People - Marketing Team Leader Paul Wazouski`,
+            avatar: `${link}/vendor/images/blogger.png`,
+            writer: `Jhon Doe`,
+            text: `We specialize in transforming photos of vacant properties into beautiful, virtually staged homes that sells faster and for top dollar.`,
+            slug: `${link}`,
+            date: `24 September 2019`
+        },
+        setE: {
+            img: `${link}/vendor/images/partner.jpg`,
+            title: `Meet our People - Marketing Team Leader Paul Wazouski`,
+            avatar: `${link}/vendor/images/blogger.png`,
+            writer: `Jhon Doe`,
+            text: `We specialize in transforming photos of vacant properties into beautiful, virtually staged homes that sells faster and for top dollar.`,
+            slug: `${link}`,
+            date: `24 September 2019`
+        }
+    };
+    const category = {
+        cat1: `All`,
+        cat2: `Tech`,
+        cat3: `Design`,
+        cat4: `Agent Outreach`,
+        cat5: `Virtual Staging`,
+        cat6: `3D Modelling`
+    };
+    const short = {
+        set1: {
+            value: `All`,
+            text: `All`
+        },
+        set2: {
+            value: `Bathroom 2`,
+            text: `Bathroom 2`
+        },
+        set3: {
+            value: `Bathroom`,
+            text: `Bathroom`
+        },
+        set4: {
+            value: `Living Room`,
+            text: `Living Room`
+        },
+        set5: {
+            value: `Dinning room`,
+            text: `Dinning room`
+        },
+        set6: {
+            value: `Bedroom`,
+            text: `Bedroom`
+        },
+        set7: {
+            value: `Kitchen`,
+            text: `Kitchen`
+        }
+    };
+    
+    
+    
+    return (
+           <section className="blog">
 
                 <Banner
                     title="Virtual Home Staging"
@@ -166,6 +168,9 @@ class Blog extends Component {
                             </div>
                             <div className="row">
                                 <div className="col-md-12 col-sm-4 col-12">
+
+                                        {/* Need Modification */}
+
                                     <div className="pagination_part">
                                         <nav aria-label="Page navigation example">
                                             <ul className="pagination justify-content-center">
@@ -200,7 +205,7 @@ class Blog extends Component {
                 </section>
             </section>
         )
-    }
 }
 
 export default Blog
+
