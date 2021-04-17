@@ -8,7 +8,7 @@ function Reseller() {
     const link = process.env.PUBLIC_URL;
 
     function context() {
-        return {__html: `<p>As a VSS reseller you'll be in excellent hands. We have a strategic process with an in-house design team that allows us to create high quality, ultra-realistic virtually staged photos quickly. <br/> <br/> This means that we can scale with your business, whether you're just starting out or need several thousand photos completed. We provide virtual staging fulfillment services for the majority of the virtual staging industry. <br/> <br/> With nearly a decade of research behind us, we've developed a design strategy that will provide your customers with the best virtually staged photos, a high quality furniture database, fast turn around times and most importantly photos that provide results.</p>`};
+        return {__html: "<p>As a VSS reseller you'll be in excellent hands. We have a strategic process with an in-house design team that allows us to create high quality, ultra-realistic virtually staged photos quickly. <br/> <br/> This means that we can scale with your business, whether you're just starting out or need several thousand photos completed. We provide virtual staging fulfillment services for the majority of the virtual staging industry. <br/> <br/> With nearly a decade of research behind us, we've developed a design strategy that will provide your customers with the best virtually staged photos, a high quality furniture database, fast turn around times and most importantly photos that provide results.</p>"};
     }
 
     return (
@@ -24,7 +24,7 @@ function Reseller() {
                 <div className="container">
                     <CommonHead
                         title={[
-                        `Why choose our reseller`, < br key = '150' />,
+                        `Why choose our reseller`, <br key= '150'/>,
                         ` program?`
                     ]}/>
                     <div className="row">

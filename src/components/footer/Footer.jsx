@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
+import { Link } from "react-router-dom";
 
 class Footer extends Component {
     render() {
-        const url = 'localhost:3000';
         return (
             <footer>
                 <div className="container">
@@ -24,19 +24,19 @@ class Footer extends Component {
                                         <div className="footer_icon">
                                             <ul>
                                                 <li>
-                                                    <a href={url} className="">
+                                                    <Link to='/' className="">
                                                         <i className="fab fa-facebook-f"></i>
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                                 <li>
-                                                    <a href={url} className="">
+                                                    <Link to='/' className="">
                                                         <i className="fab fa-linkedin-in"></i>
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                                 <li>
-                                                    <a href={url} className="">
+                                                    <Link to='/' className="">
                                                         <i className="fab fa-twitter"></i>
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                             </ul>
                                         </div>
@@ -50,22 +50,22 @@ class Footer extends Component {
                                         <div className="company_list">
                                             <ul>
                                                 <li>
-                                                    <a href={url}>about us</a>
+                                                    <Link to='/faq'>about us</Link>
                                                 </li>
                                                 <li>
-                                                    <a href="portfolio.html">our work</a>
+                                                    <Link to='/portfolio'>our work</Link>
                                                 </li>
                                                 <li>
-                                                    <a href="place-order.html">pricing</a>
+                                                    <Link to='/'>pricing</Link>
                                                 </li>
                                                 <li>
-                                                    <a href={url}>career</a>
+                                                    <Link to='/'>career</Link>
                                                 </li>
                                                 <li>
-                                                    <a href="blog.html">blogs</a>
+                                                    <Link to='/blog'>blogs</Link>
                                                 </li>
                                                 <li>
-                                                    <a href="faq.html">FAQ's</a>
+                                                    <Link to='/faq'>FAQ's</Link>
                                                 </li>
                                             </ul>
                                         </div>
@@ -79,13 +79,13 @@ class Footer extends Component {
                                         <div className="company_list">
                                             <ul>
                                                 <li>
-                                                    <a href="reseller.html">Reseller Program</a>
+                                                    <Link to='/reseller'>Reseller Program</Link>
                                                 </li>
                                                 <li>
-                                                    <a href="affliate.html">Afliate Program</a>
+                                                    <Link to='/affliate'>Afliate Program</Link>
                                                 </li>
                                                 <li>
-                                                    <a href="referral.html">Refer a Friend</a>
+                                                    <Link to='/refer'>Refer a Friend</Link>
                                                 </li>
                                             </ul>
                                         </div>
@@ -99,40 +99,40 @@ class Footer extends Component {
                                         <div className="company_list">
                                             <ul>
                                                 <li>
-                                                    <a href={url}>Virtual home staging</a>
+                                                    <Link to='/service'>Virtual home staging</Link>
                                                 </li>
                                                 <li>
-                                                    <a href={url}>Virtual furniture replacement</a>
+                                                    <Link to='/service'>Virtual furniture replacement</Link>
                                                 </li>
                                                 <li>
-                                                    <a href={url}>Virtual Remodelling</a>
+                                                    <Link to='/service'>Virtual Remodelling</Link>
                                                 </li>
                                                 <li>
-                                                    <a href={url}>3D floor plans</a>
+                                                    <Link to='/service'>3D floor plans</Link>
                                                 </li>
                                                 <li>
-                                                    <a href={url}>3D architectural rendering</a>
+                                                    <Link to='/service'>3D architectural rendering</Link>
                                                 </li>
                                                 <li>
-                                                    <a href={url}>Virtual home staging</a>
+                                                    <Link to='/service'>Virtual home staging</Link>
                                                 </li>
                                                 <li>
-                                                    <a href={url}>Virtual home staging</a>
+                                                    <Link to='/service'>Virtual home staging</Link>
                                                 </li>
                                                 <li>
-                                                    <a href={url}>Virtual furniture replacement</a>
+                                                    <Link to='/service'>Virtual furniture replacement</Link>
                                                 </li>
                                                 <li>
-                                                    <a href={url}>Virtual Remodelling</a>
+                                                    <Link to='/service'>Virtual Remodelling</Link>
                                                 </li>
                                                 <li>
-                                                    <a href={url}>3D floor plans</a>
+                                                    <Link to='/service'>3D floor plans</Link>
                                                 </li>
                                                 <li>
-                                                    <a href={url}>3D architectural rendering</a>
+                                                    <Link to='/service'>3D architectural rendering</Link>
                                                 </li>
                                                 <li className="pb68">
-                                                    <a href={url}>Virtual home staging</a>
+                                                    <Link to='/service'>Virtual home staging</Link>
                                                 </li>
                                             </ul>
                                         </div>
@@ -146,13 +146,13 @@ class Footer extends Component {
                                         <div className="company_list">
                                             <ul>
                                                 <li className="adress">
-                                                    <a href={url}>The Castel Unite 345, New York City, USA</a>
+                                                    <Link to='/'>The Castel Unite 345, New York City, USA</Link>
                                                 </li>
                                                 <li>Phone :
-                                                    <a href={url}>+91-8065999</a>
+                                                    <Link to='/'>+91-8065999</Link>
                                                 </li>
                                                 <li className="mt0">Email :
-                                                    <a href={url} className="text-lowercase">youbrand.com</a>
+                                                    <Link to='/' className="text-lowercase">youbrand.com</Link>
                                                 </li>
                                             </ul>
                                         </div>
@@ -174,10 +174,10 @@ class Footer extends Component {
                                         <div className="links float-md-right">
                                             <div className="row">
                                                 <div className="col-12 col-md-6 col-sm-6">
-                                                    <a href={url}>Terms of Service</a>
+                                                    <Link to='/'>Terms of Service</Link>
                                                 </div>
                                                 <div className="col-12 col-md-6 col-sm-6">
-                                                    <a href={url}>Privacy Policy</a>
+                                                    <Link to='/'>Privacy Policy</Link>
                                                 </div>
                                             </div>
                                         </div>

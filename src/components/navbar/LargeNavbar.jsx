@@ -1,9 +1,9 @@
 import React, {Component} from 'react'
 import MegaMenu from "./MegaMenu";
+import { Link } from "react-router-dom";
 
 export class LargeNavbar extends Component {
     render() {
-        const url = process.env.PUBLIC_URL+'/';
         const imgs = process.env.PUBLIC_URL +'/vendor/images/serv_icon.png';
         const dataList = {
             dataA: {
@@ -86,14 +86,14 @@ export class LargeNavbar extends Component {
                             <div className="row">
                                 <div className="col-lg-2 col-xl-2 col-sm-2 col-md-2 d-flex align-items-center">
                                     <div className="logo-area">
-                                        <a href={url}>Virtual Decor</a>
+                                        <Link to='/'>Virtual Decor</Link>
                                     </div>
                                 </div>
                                 <div className="col-lg-10 col-md-10 col-sm-10 col-xl-10 text-right">
                                     <div className="main-menu">
                                         <ul>
                                             <li>
-                                                <a href={url} className="nav-link">Services</a>
+                                               <Link to='/service' className="nav-link">Services</Link>
                                                 <div className="mega-menu">
                                                     {Object.keys(dataList).map(t =>< MegaMenu key = 
                                                     {dataList[t].mainTitle}
@@ -102,22 +102,22 @@ export class LargeNavbar extends Component {
                                                 </div>
                                             </li>
                                             <li>
-                                                <a href={url} className="nav-link">Portfolio</a>
+                                                <Link to='/portfolio' className="nav-link">Portfolio</Link>
                                             </li>
                                             <li>
-                                                <a href={url} className="nav-link">Blog</a>
+                                                <Link to='/blog' className="nav-link">Blog</Link>
                                             </li>
                                             <li>
-                                                <a href={url} className="nav-link">Help</a>
+                                                <Link to='/faq' className="nav-link">Help</Link>
                                             </li>
                                             <li>
-                                                <a href={url} className="nav-link">Contact</a>
+                                                <Link to='/contact' className="nav-link">Contact</Link>
                                             </li>
                                             <li>
-                                                <a href={url}>Sign in</a>
+                                                <Link to=''>Sign in</Link>
                                             </li>
                                             <li>
-                                                <a href={url} className="btn">Place Order</a>
+                                                <Link to='' className="btn">Place Order</Link>
                                             </li>
                                         </ul>
                                     </div>
