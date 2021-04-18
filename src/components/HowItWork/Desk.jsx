@@ -104,7 +104,7 @@ export class Desk extends Component {
                                         {Object
                                             .keys(obj)
                                             .map(s =>
-                                    <div className="slide_parts">
+                                    <div key={k++} className="slide_parts">
                                         <img
                                             src={obj[s].image}
                                             alt="how.jpg"
