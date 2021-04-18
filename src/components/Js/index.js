@@ -108,17 +108,17 @@ const array = [
         setB: {
             head: `Interior Design and Support`,
             text: `Upload photos (not the ones you can take on your phone)`,
-            image: `${imgUrl}/how.jpg`
+            image: `${imgUrl}/how_2.jpg`
         },
         setC: {
             head: `Virtual Home Staging`,
             text: `Upload photos ( please use professional high resolution photos, not the ones you can take on your phone)`,
-            image: `${imgUrl}/how.jpg`
+            image: `${imgUrl}/how_3.jpg`
         },
         setD: {
             head: `Interior Design`,
             text: `Upload photos (not the ones you can take on your phone)`,
-            image: `${imgUrl}/how.jpg`
+            image: `${imgUrl}/how_4.jpg`
         }
     },
 ];export default array

@@ -26,6 +26,8 @@ export class Desk extends Component {
         const NavSettings = {
             arrows: false,
             vertical: true,
+            autoplay: true,
+            autoplaySpeed: 2000,
             slidesToShow: count,
             focusOnSelect: true,
             verticalSwiping: true,
@@ -35,6 +37,9 @@ export class Desk extends Component {
 
         const MainSettings = {
             arrows: false,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            fade: true,
             slidesToShow: 1,
             asNavFor: this.state.nav1,
             ref: slider => (this.slider2 = slider)

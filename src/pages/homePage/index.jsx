@@ -1,6 +1,6 @@
-import React from 'react';
-import Banner from "./banner/bannerDesk";
-import BannerMobile from "./banner/bannerMobile";
+import React,{Suspense,lazy} from 'react';
+
+/* import BannerMobile from "./banner/bannerMobile"; */
 import Difference from "../../components/difference/difference";
 import PreviousWork from "../../components/previousWork/index";
 import DeskService from "./services";
@@ -13,12 +13,15 @@ import Pertnership from "./Pertnership";
 
 import array from "../../components/Js";
 
+const Banner=lazy(()=>import('./banner/bannerDesk'))
 function Home() {
 
     return (
         <section className="home_page">
+        <Suspense fallback={<p>Please Wait...</p>}>
             <Banner/>
-            <BannerMobile/>
+        </Suspense>
+            {/* <BannerMobile/> */}
             <Difference
                 title='What set us apart from other virtual staging companies'
                 rare={array[3]}/>

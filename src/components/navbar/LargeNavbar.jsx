@@ -1,10 +1,11 @@
-import React, {Component} from 'react'
-import MegaMenu from "./MegaMenu";
-import { Link } from "react-router-dom";
+import React, {Component, Suspense, lazy} from 'react'
+
+import {Link} from "react-router-dom";
+const MegaMenu = lazy(() => import ("./MegaMenu"));
 
 export class LargeNavbar extends Component {
     render() {
-        const imgs = process.env.PUBLIC_URL +'/vendor/images/serv_icon.png';
+        const imgs = process.env.PUBLIC_URL + '/vendor/images/serv_icon.png';
         const dataList = {
             dataA: {
                 mainTitle: 'Virtual Staging',
@@ -93,12 +94,21 @@ export class LargeNavbar extends Component {
                                     <div className="main-menu">
                                         <ul>
                                             <li>
-                                               <Link to='/service' className="nav-link">Services</Link>
+                                                <Link to='/service' className="nav-link">Services</Link>
                                                 <div className="mega-menu">
-                                                    {Object.keys(dataList).map(t =>< MegaMenu key = 
-                                                    {dataList[t].mainTitle}
-                                                        title = {dataList[t].mainTitle}
-                                                        data = {dataList[t].datas} />)}
+                                                    <Suspense fallback={< p > Please wait ...</p>}>
+                                                        {Object
+                                                            .keys(dataList)
+                                                            .map(t =>< MegaMenu key = {
+                                                                dataList[t].mainTitle
+                                                            }
+                                                            title = {
+                                                                dataList[t].mainTitle
+                                                            }
+                                                            data = {
+                                                                dataList[t].datas
+                                                            } />)}
+                                                    </Suspense>
                                                 </div>
                                             </li>
                                             <li>

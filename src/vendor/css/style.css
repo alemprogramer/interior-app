@@ -34617,3 +34617,7 @@ footer .container .row .reservation .links a {
   }
 }
 /*==================Responsive part end ===================================*/
+.slick-slide img {
+	display: block;
+	width: 100%;
+}

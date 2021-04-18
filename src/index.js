@@ -1,9 +1,9 @@
-import React from 'react';
+import React,{Suspense,lazy} from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import LargeNavbar from "./components/navbar/LargeNavbar";
 import SmallNavbar from "./components/navbar/SmallNavbar";
-import Footer from "./components/footer/Footer";
+
 /* import Animate from 'animate.css-react'; */
 
 import { BrowserRouter as Router } from "react-router-dom";
@@ -12,8 +12,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "./vendor/css/all.min.css";
 import "./vendor/css/menu2.css";
 import "./vendor/css/style.css";
-
 import reportWebVitals from './reportWebVitals';
+const Footer = lazy(()=> import('./components/footer/Footer'));
+
 
 ReactDOM.render(
     <React.StrictMode>
@@ -21,7 +22,9 @@ ReactDOM.render(
     <LargeNavbar/>
     <SmallNavbar/> 
     <App/>
+    <Suspense fallback={<p>Please wait...</p>} >
     <Footer/>
+    </Suspense>
     </Router>
 
 </React.StrictMode>, document.getElementById('root'));
