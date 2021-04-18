@@ -1030,6 +1030,9 @@ footer .container .row .reservation .links a {
 .home_page .hiw .nav_list {
   width: 100%;
 }
+.home_page .hiw .nav_list .slick-track {
+  height: auto !important;
+}
 .home_page .hiw .nav_list .nav_items {
   -webkit-transition: all linear 0.25s;
   -moz-transition: all linear 0.25s;

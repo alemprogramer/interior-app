@@ -1,7 +1,7 @@
 import React from 'react';
 import Banner from "../../components/banner/index";
 import CommonHead from "../../components/headings/CommonHead";
-import FrequentComp from "../../components/FrequentComp/index";
+import HowItWork from "../../components/HowItWork/index";
 import array from "../../components/Js/index";
 
 function Reseller() {
@@ -34,7 +34,7 @@ function Reseller() {
                     </div>
                 </div>
             </section>
-            <FrequentComp title="How to become a reseller?" object={array[2]} />
+            <HowItWork title="How to become a reseller?" frequents={array[2]} />
         </section>
     )
 }

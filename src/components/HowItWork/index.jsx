@@ -1,13 +1,13 @@
 import React from 'react'
-import HowDesk from "../HowItWork/Desk";
+import HowDesk from "./Desk";
 /* import HowMobile from "../HowItWork/Mobile"; */
 
 const HowItWork = (props)=> {
     
-        const { title, object}=props;
-        return (
-            <HowDesk title={title} obj={object} />
-        )
+    const { title, frequents, work } = props;
+    return (
+        <HowDesk title={title} frequents={frequents} work={work} />
+    )
 }
 
 export default HowItWork

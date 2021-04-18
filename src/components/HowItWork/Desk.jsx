@@ -1,52 +1,123 @@
 import React, {Component} from 'react';
-import CommonHead from "../../components/headings/CommonHead";
-import MiniHead from "../../components/headings/MiniHead";
+import CommonHead from "../headings/CommonHead";
+import MiniHead from "../headings/MiniHead";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
 
 export class Desk extends Component {
+    state = {
+        nav1: null,
+        nav2: null
+    }
+    componentDidMount() {
+        this.setState({ nav1: this.slider1, nav2: this.slider2 });
+    }
+
     render() {
         let k = 0;
-        const { title, obj} = this.props;
+        const { title, work, frequents } = this.props;
+        let obj = {
+            ...work,
+            ...frequents
+        };
+        let count = Object
+            .keys(obj)
+            .length;
+        const NavSettings = {
+            arrows: false,
+            vertical: true,
+            slidesToShow: count,
+            focusOnSelect: true,
+            verticalSwiping: true,
+            asNavFor: this.state.nav2,
+            ref: slider => (this.slider1 = slider)
+        }
+
+        const MainSettings = {
+            arrows: false,
+            slidesToShow: 1,
+            asNavFor: this.state.nav1,
+            ref: slider => (this.slider2 = slider)
+        }
 
         return (
             <section className='hiw d-lg-block d-xl-block d-md-block d-none d-sm-none'>
                 <div className="container">
-                    <CommonHead title={title}/>
+                    <CommonHead title={title} />
                     <div className="row">
-                        <div className="col-md-4">
+                        <div className={frequents
+                                ? "col-md-6"
+                                : "col-md-4"}>
                             <ul className="nav_list">
-                                {Object
-                                    .keys(obj)
-                                    .map(s =>
-                                    <li className = "nav_items" key={k++}>
-                                        <div className="content">
-                                            <MiniHead title={obj[s].head}/>
-                                            <div className="texts">
-                                                <p>{ obj[s].text }</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                )}
+                                <Slider {...NavSettings}>
+                                    {Object
+                                        .keys(obj)
+                                        .map(s => <li className="nav_items" key={
+                                            k++
+                                        } > <div className="content">
+
+                                                {work
+                                                    ? <MiniHead title={obj[s].head} />
+                                                    : ''}
+
+                                                <div className="texts">
+                                                    <p>{work
+                                                        ? obj[s].text
+                                                        : obj[s].head}</p>
+                                                </div>
+                                                {frequents
+                                                    ? <span>
+                                                        <i className="fas fa-angle-right"></i>
+                                                    </span>
+                                                    : ''}
+                                            </div> </li>)}
+                                </Slider>
                             </ul>
                         </div>
 
-                        <div className="col-md-8">
-                            <div className="image_slide">
-                                <div className="slide_parts">
+                        <div
+                            className={frequents
+                                ? "col-md-6"
+                                : "col-md-8"}>
+
+                            {frequents
+                                ? <div className="image_list">
+                                    <Slider {...MainSettings}>
                                     {Object
                                         .keys(obj)
-                                        .map(s =>
-                                            <img key={k++}
-                                                src={obj[s].image}
-                                                alt="how.jpg"
-                                                className="img-fluid"/>
-                                        )}
+                                        .map(s => <div key={k++} className="detail_slide">
+                                            <div className="head">
+                                                <h5>
+                                                    {obj[s].head}
+                                                </h5>
+                                            </div>
+                                            <div className="text">
+                                                <h6>
+                                                    {obj[s].text}
+                                                </h6>
+                                            </div>
+                                        </div>)}
+                                        </Slider>
                                 </div>
-                            </div>
+                                : <div className="image_slide">
+                                    <Slider {...MainSettings}>
+                                        {Object
+                                            .keys(obj)
+                                            .map(s =>
+                                    <div className="slide_parts">
+                                        <img
+                                            src={obj[s].image}
+                                            alt="how.jpg"
+                                            className="img-fluid" />
+                                    </div>
+                                    )}
+                                    </Slider>
+                                </div>}
                         </div>
                     </div>
                 </div>
             </section>
-        )
+            )
     }
 }
 

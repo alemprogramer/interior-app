@@ -5,6 +5,8 @@ import Difference from "../../components/difference/difference";
 import PreviousWork from "../../components/previousWork/index";
 import DeskService from "./services";
 import HowItWork from "../../components/HowItWork/index";
+
+/* import Desk from "./Desk"; */
 import Pricing from "./Pricing/Index";
 import Agencies from "./Agencies";
 import Pertnership from "./Pertnership";
@@ -22,7 +24,7 @@ function Home() {
                 rare={array[3]}/>
             <PreviousWork/>
             <DeskService/>
-            <HowItWork title="How it works ?" object={array[4]}/>
+            <HowItWork title="How it works ?" work={array[4]}/>
             <Pricing/>
             <Agencies/>
             <Pertnership/>

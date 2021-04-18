@@ -1,6 +1,6 @@
 import React from 'react';
 import Banner from "../../components/banner/index";
-import FrequentComp from "../../components/FrequentComp/index";
+import HowItWork from "../../components/HowItWork/index";
 import array from "../../components/Js/index";
 
 function Reseller() {
@@ -15,7 +15,7 @@ function Reseller() {
                 img={`${link}/vendor/images/banner_banner_bg.jpg`}
                 url={link}
                 urlIcon='fa-long-arrow-alt-right' />
-            <FrequentComp title="FAQ's" object={array[2]} />
+            <HowItWork title="FAQ's" frequents={array[2]} />
         </section>
     )
 }

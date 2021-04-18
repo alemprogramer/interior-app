@@ -1,7 +1,7 @@
 import React from 'react';
 import Banner from "../../components/banner/index";
 import CommonHead from "../../components/headings/CommonHead";
-import FrequentComp from "../../components/FrequentComp/index";
+import HowItWork from "../../components/HowItWork/index";
 import array from "../../components/Js/index";
 
 function Faq() {
@@ -49,7 +49,7 @@ function Faq() {
                         </div>
         </section>
 
-            <FrequentComp title="FAQ's" object={array[2]} />
+            <HowItWork title="FAQ's" frequents={array[2]} />
         </section>
     )
 }
