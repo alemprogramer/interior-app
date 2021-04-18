@@ -905,28 +905,29 @@ footer .container .row .reservation .links a {
   line-height: 2.75rem;
 }
 .home_page .services .icon_right {
-  right: 4%;
+  right: -24%;
   z-index: 9;
 }
 .home_page .services .icon_right span {
   right: 5px;
 }
-.home_page .services .icon_right span:hover {
+.home_page .services .slide_icon span:hover {
   -webkit-box-shadow: 5px 5px 1.25rem -0.5rem rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 5px 5px 1.25rem -0.5rem rgba(0, 0, 0, 0.75);
   box-shadow: 5px 5px 1.25rem -0.5rem rgba(0, 0, 0, 0.75);
 }
 .home_page .services .icon_left {
-  left: 4%;
+  left: -24%;
   z-index: 9;
 }
 .home_page .services .icon_left span {
   left: 5px;
 }
-.home_page .services .icon_left span:hover {
-  -webkit-box-shadow: -5px 5px 1.25rem -0.5rem rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -5px 5px 1.25rem -0.5rem rgba(0, 0, 0, 0.75);
-  box-shadow: -5px 5px 1.25rem -0.5rem rgba(0, 0, 0, 0.75);
+.home_page .services .slide_icon.disabled span:hover {
+  cursor: not-allowed;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
 .home_page .services .content {
   background: #ffffff;

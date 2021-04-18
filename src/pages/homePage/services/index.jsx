@@ -1,6 +1,7 @@
 import React from 'react';
 import CommonHead from "../../../components/headings/CommonHead";
 
+
 function DeskService() {
     const url = process.env.PUBLIC_URL;
     const img = url + 'vendor/images/service.png';
@@ -9,23 +10,20 @@ function DeskService() {
         setA: {
             image: img,
             title: 'Virtual Home Staging',
-            text: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, provident!',
-            link: url
+            text: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, provident!`,
+            link: '/service'
         },
         setB: {
             image: img,
             title: 'Virtual Interior Design',
-            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ut a officiis' +
-                    ' nulla eos ea.',
-            link: url
+            text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ut a officiis nulla eos ea.`,
+            link: '/service'
         },
         setC: {
             image: img,
             title: 'Virtual Staging',
-            text: 'Lorem ipsum dolor sit, amet, consectetur adipisicing elit. Rem, nostrum, minima?' +
-                    ' Eveniet dolor corrupti beatae et quasi excepturi vitae. Voluptas perspiciatis e' +
-                    'x soluta accusantium harum.',
-            link: url
+            text: `Lorem ipsum dolor sit, amet, consectetur adipisicing elit. Rem, nostrum, minima? Eveniet dolor corrupti beatae et quasi excepturi vitae. Voluptas perspiciatis e x soluta accusantium harum.`,
+            link: '/service'
         }
     }
     return (
@@ -44,6 +42,7 @@ function DeskService() {
             <div className="container">
                 <CommonHead title='Our Services'/>
                 <div className="row">
+
                     {Object
                         .keys(obj)
                         .map(m => <div key={k++} className="col-xl-4">
@@ -70,6 +69,7 @@ function DeskService() {
                             </div>
                         </div>)}
                 </div>
+           
             </div>
         </section>
     )

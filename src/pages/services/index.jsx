@@ -2,7 +2,7 @@ import React from 'react';
 import Banner from "../../components/banner/index";
 import Difference from "../../components/difference/difference";
 import PreviousWork from "../../components/previousWork/index";
-import HowItWork from "../../components/HowItWork/index";
+import FrequentComp from "../../components/FrequentComp/index";
 
 import array from "../../components/Js";
 
@@ -13,7 +13,7 @@ function Services() {
             <Difference title="What we need" need={array[0]} />
             <Difference title="What will you receive" receive={array[1]} />
             <PreviousWork/>
-            <HowItWork title="FAQ's" frequents={array[2]} />
+            <FrequentComp title="FAQ's" object={array[2]} />
         </section>
     )
 }

@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {BrowserRouter as Router, Link, Route} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 export class MegaMenu extends Component {
     render() {
@@ -8,8 +8,7 @@ export class MegaMenu extends Component {
         return (
             <div className="menu-item border-left-0 text-left">
                 <h5>{title}</h5>
-                <Router>
-                    <Route>
+               
                         <ul>
                             {Object
                                 .keys(data)
@@ -25,8 +24,6 @@ export class MegaMenu extends Component {
                                     </Link>
                                 </li>)}
                         </ul>
-                    </Route>
-                </Router>
             </div>
 
         )

@@ -18,7 +18,7 @@ export class Banner extends Component {
                         <a href="place-order.html" className="btn">Place Order</a>
                     </div>
                 </div>
-                <Carousel className="carousel slide position-absolute">
+                <Carousel interval={1500} className="carousel slide position-absolute">
                     <Carousel.Item>
                         <div className="banner_bg"><img
                             className="img-fluid"

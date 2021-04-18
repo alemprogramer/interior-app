@@ -11,19 +11,19 @@ export class LargeNavbar extends Component {
                 datas: {
                     a: {
                         title: 'Virtual home staging01',
-                        url: '/',
+                        url: '/service',
                         img: imgs,
                         details: 'Lorem ipsum dolor sit amet adipiscing elit. Sed a.'
                     },
                     b: {
                         title: 'Virtual home staging02',
-                        url: '/',
+                        url: '/service',
                         img: imgs,
                         details: 'Lorem ipsum dolor sit amet, consectetu elit. Sed a.'
                     },
                     c: {
                         title: 'Virtual home staging03',
-                        url: '/',
+                        url: '/service',
                         img: imgs,
                         details: 'Lorem ipsum dolor sit amet, consectetu adipiscing . Sed a.'
                     }
@@ -34,19 +34,19 @@ export class LargeNavbar extends Component {
                 datas: {
                     a: {
                         title: 'Virtual home staging04',
-                        url: '/',
+                        url: '/service',
                         img: imgs,
                         details: 'Lorem ipsum dolor sit amet, consectetu adipiscing elit.  a.'
                     },
                     b: {
                         title: 'Virtual home staging05',
-                        url: '/',
+                        url: '/service',
                         img: imgs,
                         details: 'Lorem ipsum dolor sit amet, consectetu adipiscing elit. Sed .'
                     },
                     c: {
                         title: 'Virtual home staging06',
-                        url: '/',
+                        url: '/service',
                         img: imgs,
                         details: 'Lorem ipsum dolor sit amet, consectetu adipiscing elit. Sed .'
                     }
@@ -57,19 +57,19 @@ export class LargeNavbar extends Component {
                 datas: {
                     a: {
                         title: 'Virtual home staging07',
-                        url: '/',
+                        url: '/service',
                         img: imgs,
                         details: 'Lorem ipsum dolor sit amet, consectetu adipiscing elit. Sed a.'
                     },
                     b: {
                         title: 'Virtual home staging08',
-                        url: '/',
+                        url: '/service',
                         img: imgs,
                         details: 'Lorem ipsum dolor sit amet, consectetu adipiscing elit. Sed a.'
                     },
                     c: {
                         title: 'Virtual home staging09',
-                        url: '/',
+                        url: '/service',
                         img: imgs,
                         details: 'Lorem ipsum dolor sit amet, consectetu adipiscing elit. Sed a.'
                     }

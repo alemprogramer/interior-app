@@ -12,7 +12,6 @@ import Pertnership from "./Pertnership";
 import array from "../../components/Js";
 
 function Home() {
-    
 
     return (
         <section className="home_page">
@@ -23,7 +22,7 @@ function Home() {
                 rare={array[3]}/>
             <PreviousWork/>
             <DeskService/>
-            <HowItWork title="How it works ?" work={array[4]}/>
+            <HowItWork title="How it works ?" object={array[4]}/>
             <Pricing/>
             <Agencies/>
             <Pertnership/>

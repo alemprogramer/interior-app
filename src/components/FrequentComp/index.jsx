@@ -1,12 +1,12 @@
 import React from 'react'
-import HowDesk from "../HowItWork/Desk";
-/* import HowMobile from "../HowItWork/Mobile"; */
+import FaqDesk from "./Desk";
+/* import HowMobile from "./Mobile"; */
 
 const HowItWork = (props)=> {
     
         const { title, object}=props;
         return (
-            <HowDesk title={title} obj={object} />
+            <FaqDesk title={title} obj={object} />
         )
 }
 

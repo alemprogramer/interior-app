@@ -1,5 +1,6 @@
 import React from 'react';
 import CommonHead from "../../components/headings/CommonHead";
+import { Link } from "react-router-dom";
 
 function PreviousWork() {
     const img = process.env.PUBLIC_URL + 'vendor/images/';
@@ -32,13 +33,13 @@ function PreviousWork() {
                 </div>
                 <div className="row">
                     <div className="col-md-12">
-                        <a
-                            href={process.env.PUBLIC_URL}
+                        <Link
+                            to='/portfolio'
                             className="mini_btn d-inline-block text-capitalize text-center">
                             <h5>view more
                             </h5>
                             <i className="fas fa-long-arrow-alt-right"></i>
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>
