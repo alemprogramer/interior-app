@@ -920,6 +920,11 @@ footer .container .row .reservation .links a {
   left: 4%;
   z-index: 9;
 }
+
+.home_page .services .slick-arrow{
+  display: none !important;
+}
+
 .home_page .services .icon_left span {
   left: 5px;
 }
