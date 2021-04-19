@@ -905,7 +905,7 @@ footer .container .row .reservation .links a {
   line-height: 2.75rem;
 }
 .home_page .services .icon_right {
-  right: -24%;
+  right: 4%;
   z-index: 9;
 }
 .home_page .services .icon_right span {
@@ -917,7 +917,7 @@ footer .container .row .reservation .links a {
   box-shadow: 5px 5px 1.25rem -0.5rem rgba(0, 0, 0, 0.75);
 }
 .home_page .services .icon_left {
-  left: -24%;
+  left: 4%;
   z-index: 9;
 }
 .home_page .services .icon_left span {
@@ -939,6 +939,9 @@ footer .container .row .reservation .links a {
   -o-transition: all linear 0.25s;
   transition: all linear 0.25s;
   height: 100%;
+}
+.slick-slider {
+	width: 100%;
 }
 .home_page .services .content::after {
   position: absolute;
