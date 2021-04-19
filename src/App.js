@@ -10,10 +10,12 @@ import Portfolio from "./pages/portfolio/index";
 import Blog from "./pages/blog/index";
 import BlogOpen from "./pages/blogOpen/index";
 import Reseller from "./pages/reseller/index";
+import ScrollToTop from "./components/scrollToTop";
 
 function App() {
     return (
         <Switch>
+        
             <Route path='/' exact component={Home}/>
             <Route path='/service' component={Service}/>
             <Route path='/contact' component={Contact}/>

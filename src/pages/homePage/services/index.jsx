@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
+import React, { Component} from 'react'
 import CommonHead from "../../../components/headings/CommonHead";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 
-export class DeskService extends Component {
+class DeskService extends Component {
     constructor(props) {
         super(props);
         this.next = this.next.bind(this);
