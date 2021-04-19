@@ -16,4 +16,4 @@ The Footer and the carousel takes more time than expected, Last thing to do is a
 
 On development : I've target to develop this app with Laravel and then make it a progressive app. This message is for my Laravel Developer.
 
-You've to use Passport ( Laravel Package of Oauth2), Spatie, Stripe, Cashier (for stripe), Excel Sheet, Easypost, Multiple Mailing API.
+You've to use Passport ( Laravel Package of Oauth2), Spatie, Stripe, Cashier (for stripe), Excel Sheet, Easypost, Multiple Mailing API, ReCaptcha and maybe more .

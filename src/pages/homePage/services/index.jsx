@@ -80,8 +80,8 @@ export class DeskService extends Component {
         }
 
         var settings = {
-            /* autoplay: true,
-            autoplaySpeed: 5000, */
+            autoplay: true,
+            autoplaySpeed: 5000,
             speed: 500,
             infinite:false,
             swipeToSlide: true,
