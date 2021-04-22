@@ -4658,7 +4658,7 @@ footer .container .row .reservation .links a {
 .blog .blog_parts .blog_partitions .pagination_part nav ul.pagination li.page-item {
   margin: 0 16px;
 }
-.blog .blog_parts .blog_partitions .pagination_part nav ul.pagination li.page-item a.page-link {
+.blog .blog_parts .blog_partitions .pagination_part nav ul.pagination li.page-item .page-link {
   font-family: 'Muli', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -4669,13 +4669,13 @@ footer .container .row .reservation .links a {
   border: 1.5px solid #dfe3eb;
   color: #363840;
 }
-.blog .blog_parts .blog_partitions .pagination_part nav ul.pagination li.page-item a.page-link span .fa-long-arrow-alt-right {
+.blog .blog_parts .blog_partitions .pagination_part nav ul.pagination li.page-item .page-link span .fa-long-arrow-alt-right {
   margin-left: 12px;
 }
-.blog .blog_parts .blog_partitions .pagination_part nav ul.pagination li.page-item a.page-link span .fa-long-arrow-alt-left {
+.blog .blog_parts .blog_partitions .pagination_part nav ul.pagination li.page-item .page-link span .fa-long-arrow-alt-left {
   margin-right: 12px;
 }
-.blog .blog_parts .blog_partitions .pagination_part nav ul.pagination li.page-item a.page-link.arrows {
+.blog .blog_parts .blog_partitions .pagination_part nav ul.pagination li.page-item .page-link.arrows {
   border-color: transparent;
   font-family: 'Muli', sans-serif;
   font-style: normal;
@@ -4685,14 +4685,14 @@ footer .container .row .reservation .links a {
   color: #7b7d84;
   color: #f16334;
 }
-.blog .blog_parts .blog_partitions .pagination_part nav ul.pagination li.page-item.active a.page-link {
+.blog .blog_parts .blog_partitions .pagination_part nav ul.pagination li.page-item.active .page-link {
   border: 1.5px solid #f16334;
   color: #f16334;
 }
 .blog .blog_parts .blog_partitions .pagination_part nav ul.pagination li.page-item.disabled {
   cursor: not-allowed;
 }
-.blog .blog_parts .blog_partitions .pagination_part nav ul.pagination li.page-item.disabled a.page-link {
+.blog .blog_parts .blog_partitions .pagination_part nav ul.pagination li.page-item.disabled .page-link {
   color: #7b7d84;
 }
 /*========================Bloge 2 Pages CSS===================================*/
@@ -5959,7 +5959,7 @@ footer .container .row .reservation .links a {
 .blog_open .blog_parts .blog_partitions .pagination_part nav ul.pagination li.page-item {
   margin: 0 16px;
 }
-.blog_open .blog_parts .blog_partitions .pagination_part nav ul.pagination li.page-item a.page-link {
+.blog_open .blog_parts .blog_partitions .pagination_part nav ul.pagination li.page-item .page-link {
   font-family: 'Muli', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -5970,13 +5970,13 @@ footer .container .row .reservation .links a {
   border: 1.5px solid #dfe3eb;
   color: #363840;
 }
-.blog_open .blog_parts .blog_partitions .pagination_part nav ul.pagination li.page-item a.page-link span .fa-long-arrow-alt-right {
+.blog_open .blog_parts .blog_partitions .pagination_part nav ul.pagination li.page-item .page-link span .fa-long-arrow-alt-right {
   margin-left: 12px;
 }
-.blog_open .blog_parts .blog_partitions .pagination_part nav ul.pagination li.page-item a.page-link span .fa-long-arrow-alt-left {
+.blog_open .blog_parts .blog_partitions .pagination_part nav ul.pagination li.page-item .page-link span .fa-long-arrow-alt-left {
   margin-right: 12px;
 }
-.blog_open .blog_parts .blog_partitions .pagination_part nav ul.pagination li.page-item a.page-link.arrows {
+.blog_open .blog_parts .blog_partitions .pagination_part nav ul.pagination li.page-item .page-link.arrows {
   border-color: transparent;
   font-family: 'Muli', sans-serif;
   font-style: normal;
@@ -20011,7 +20011,7 @@ footer .container .row .reservation .links a {
     transform: translate(0);
     width: 35%;
   }
-  .blog .blog_parts .blog_partitions .pagination_part nav ul.pagination li.page-item a.page-link {
+  .blog .blog_parts .blog_partitions .pagination_part nav ul.pagination li.page-item .page-link {
     padding: 11px 14px;
   }
   .blog .blog_parts .blog_partitions .pagination_part nav ul.pagination li.page-item {
@@ -20071,7 +20071,7 @@ footer .container .row .reservation .links a {
     color: #363840 !important;
     float: left;
   }
-  .blog .blog_parts .blog_partitions .pagination_part nav ul.pagination li.page-item a.page-link.arrows {
+  .blog .blog_parts .blog_partitions .pagination_part nav ul.pagination li.page-item .page-link.arrows {
     font-weight: 700;
     font-size: 12px;
     padding: 0;
@@ -25620,7 +25620,7 @@ footer .container .row .reservation .links a {
   .blog .blog_parts .blog_partitions .pagination_part nav ul.pagination li.page-item {
     margin: 0 13px;
   }
-  .blog .blog_parts .blog_partitions .pagination_part nav ul.pagination li.page-item a.page-link {
+  .blog .blog_parts .blog_partitions .pagination_part nav ul.pagination li.page-item .page-link {
     font-family: 'Muli', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -25631,7 +25631,7 @@ footer .container .row .reservation .links a {
     border: 1.5px solid #dfe3eb;
     color: #363840;
   }
-  .blog .blog_parts .blog_partitions .pagination_part nav ul.pagination li.page-item a.page-link.arrows {
+  .blog .blog_parts .blog_partitions .pagination_part nav ul.pagination li.page-item .page-link.arrows {
     border-color: transparent;
     font-family: 'Muli', sans-serif;
     font-style: normal;
