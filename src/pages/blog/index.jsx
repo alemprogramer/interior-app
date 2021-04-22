@@ -11,7 +11,7 @@ function Blog() {
         blogLoading] = useState(false);
     const [page,
         setPage] = useState(1);
-    const [blogLimit] = useState(15);
+    const [blogLimit,limitChange] = useState(15);
 
     useEffect(() => {
         blogLoading(true);
@@ -250,9 +250,9 @@ function Blog() {
                                                     </h6>
                                                 </div>
                                                 <select className="styled">
-                                                     <option value='5'>5</option>
-                                                     <option value='15'>15</option>
-                                                     <option value='25'>25</option>
+                                                     <option onClick={()=>limitChange(5)} value='5'>5</option>
+                                                     <option onClick={()=>limitChange(15)} value='15'>15</option>
+                                                     <option onClick={()=>limitChange(25)} value='25'>25</option>
                                                 </select>
                                             </div>
                                         </div>
