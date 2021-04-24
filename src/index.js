@@ -13,14 +13,15 @@ import "./vendor/css/all.min.css";
 import "./vendor/css/menu2.css";
 import "./vendor/css/style.css";
 import reportWebVitals from './reportWebVitals';
-import ScrollToTop from './components/scrollToTop';
+import RouteTop, { ScrollToTop} from './components/scrollToTop';
 const Footer = lazy(()=> import('./components/footer/Footer'));
 
 ReactDOM.render(
     <React.StrictMode>
     <Router>
-    <ScrollToTop />
+    <RouteTop />
     <LargeNavbar/>
+    <ScrollToTop/>
     <SmallNavbar/> 
     <App/>
     <Suspense fallback={<p>Please wait...</p>} >

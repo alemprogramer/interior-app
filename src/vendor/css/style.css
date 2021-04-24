@@ -4390,29 +4390,30 @@ footer .container .row .reservation .links a {
 .blog .blog_parts .blog_options .navbar .filter_options li {
   padding: 0 12px;
 }
-.blog .blog_parts .blog_options .filters .filter_options li a,
-.blog .blog_parts .blog_options .navbar .filter_options li a {
+.blog .blog_parts .blog_options .filters .filter_options li button.nav-link,
+.blog .blog_parts .blog_options .navbar .filter_options li button.nav-link {
   font-family: 'Muli', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 170%;
-  color: #7b7d84;
   font-weight: 700;
   color: #363840;
   position: relative;
+  border: 0;
+background: transparent;
   -webkit-transition: all linear 0.2s;
   -moz-transition: all linear 0.2s;
   -ms-transition: all linear 0.2s;
   -o-transition: all linear 0.2s;
   transition: all linear 0.2s;
 }
-.blog .blog_parts .blog_options .filters .filter_options li a::after,
-.blog .blog_parts .blog_options .navbar .filter_options li a::after {
+.blog .blog_parts .blog_options .filters .filter_options li button.nav-link::after,
+.blog .blog_parts .blog_options .navbar .filter_options li button.nav-link::after {
   position: absolute;
   content: "";
   width: 0;
-  bottom: -33px;
+  bottom: -10px;
   left: 0;
   background: #f16334;
   height: 4px;
@@ -4423,8 +4424,8 @@ footer .container .row .reservation .links a {
   transition: all linear 0.2s;
   opacity: 0;
 }
-.blog .blog_parts .blog_options .filters .filter_options li a:hover::after,
-.blog .blog_parts .blog_options .navbar .filter_options li a:hover::after {
+.blog .blog_parts .blog_options .filters .filter_options li button.nav-link:hover::after,
+.blog .blog_parts .blog_options .navbar .filter_options li button.nav-link:hover::after {
   width: 70%;
   opacity: 1;
   left: 19%;
@@ -4657,6 +4658,9 @@ footer .container .row .reservation .links a {
 }
 .blog .blog_parts .blog_partitions .pagination_part nav ul.pagination li.page-item {
   margin: 0 16px;
+}
+.blog .blog_parts .blog_partitions .pagination_part nav ul.pagination li.page-item .page-link:focus {
+	box-shadow: none;
 }
 .blog .blog_parts .blog_partitions .pagination_part nav ul.pagination li.page-item .page-link {
   font-family: 'Muli', sans-serif;
@@ -5691,8 +5695,8 @@ footer .container .row .reservation .links a {
 .blog_open .blog_parts .blog_options .navbar .filter_options li {
   padding: 0 12px;
 }
-.blog_open .blog_parts .blog_options .filters .filter_options li a,
-.blog_open .blog_parts .blog_options .navbar .filter_options li a {
+.blog_open .blog_parts .blog_options .filters .filter_options li button.nav-link,
+.blog_open .blog_parts .blog_options .navbar .filter_options li button.nav-link {
   font-family: 'Muli', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -5708,8 +5712,8 @@ footer .container .row .reservation .links a {
   -o-transition: all linear 0.2s;
   transition: all linear 0.2s;
 }
-.blog_open .blog_parts .blog_options .filters .filter_options li a::after,
-.blog_open .blog_parts .blog_options .navbar .filter_options li a::after {
+.blog_open .blog_parts .blog_options .filters .filter_options li button.nav-link::after,
+.blog_open .blog_parts .blog_options .navbar .filter_options li button.nav-link::after {
   position: absolute;
   content: "";
   width: 0;
@@ -5724,8 +5728,8 @@ footer .container .row .reservation .links a {
   transition: all linear 0.2s;
   opacity: 0;
 }
-.blog_open .blog_parts .blog_options .filters .filter_options li a:hover::after,
-.blog_open .blog_parts .blog_options .navbar .filter_options li a:hover::after {
+.blog_open .blog_parts .blog_options .filters .filter_options li button.nav-link:hover::after,
+.blog_open .blog_parts .blog_options .navbar .filter_options li button.nav-link:hover::after {
   width: 70%;
   opacity: 1;
   left: 19%;
