@@ -94,9 +94,11 @@ function Blog() {
                                                     </h6>
                                                 </div>
                                                 <select className="styled">
+                                                    <option>Select</option>
                                                     <option value='name'>Name</option>
-                                                    <option value='time' selected>time</option>
+                                                    <option value='time'>Time</option>
                                                     <option value='most-viewed'>Most Viewed</option>
+                                                    <option value='most-commented'>Most Commented</option>
                                                 </select>
                                             </div>
                                         </div> 
