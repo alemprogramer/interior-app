@@ -4472,7 +4472,7 @@ background: transparent;
 .blog .blog_parts .blog_options .filters .form-inline .form_sector .input,
 .blog .blog_parts .blog_options .navbar .form-inline .form_sector .input {
   float: left;
-  width: 19%;
+  width: 45%;
   margin-top: 7px;
   margin-right: 8px;
 }
@@ -4484,12 +4484,12 @@ background: transparent;
   font-size: 14px;
   line-height: 170%;
   color: #7b7d84;
-  text-align: left;
+  text-align: center;
   color: #999BA2;
 }
 .blog .blog_parts .blog_options .filters .form-inline .form_sector .select,
 .blog .blog_parts .blog_options .navbar .form-inline .form_sector .select {
-  width: 153px !important;
+  width: 30% !important;
   font-family: 'Muli', sans-serif;
   color: #7B7D84;
   font-weight: 400;
@@ -4499,6 +4499,10 @@ background: transparent;
   line-height: 18px;
   color: #363840 !important;
   float: left;
+}
+.blog .blog_parts .blog_options .filters .form-inline .form_sector .styled,
+.blog .blog_parts .blog_options .navbar .form-inline .form_sector .styled {
+  width: 45%;
 }
 .blog .blog_parts .blog_partitions {
   padding-top: 96px;

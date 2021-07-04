@@ -6,7 +6,8 @@ import PreviousWork from "../../components/previousWork/index";
 import DeskService from "./services";
 import HowItWork from "../../components/HowItWork/index";
 
-/* import Desk from "./Desk"; */
+/* import Desk from "./Desk";
+import Desk from "./Desk"; */
 import Pricing from "./Pricing/Index";
 import Agencies from "./Agencies";
 import Pertnership from "./Pertnership";

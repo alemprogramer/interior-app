@@ -81,12 +81,12 @@ function Blog() {
                                                 </div>
                                                 <select className="styled">
                                                     <option onClick={() => limitChange(5)} value='5'>5</option>
-                                                    <option onClick={() => limitChange(15)} defaultValue='15'>15</option>
+                                                    <option onClick={() => limitChange(15)} value='15' selected>15</option>
                                                     <option onClick={() => limitChange(25)} value='25'>25</option>
                                                 </select>
                                             </div>
                                         </div>
-                                        {/* <div className="form-inline my-2 my-lg-0">
+                                        <div className="form-inline my-2 my-lg-0">
                                             <div className="form_sector options">
                                                 <div className="input">
                                                     <h6>
@@ -94,12 +94,12 @@ function Blog() {
                                                     </h6>
                                                 </div>
                                                 <select className="styled">
-                                                    {Object
-                                                        .keys(short)
-                                                        .map(s => <option key={k++} value={short[s].value}>{short[s].text}</option>)}
+                                                    <option value='name'>Name</option>
+                                                    <option value='time' selected>time</option>
+                                                    <option value='most-viewed'>Most Viewed</option>
                                                 </select>
                                             </div>
-                                        </div> */}
+                                        </div> 
                                     </div>
                                 </nav>
                             </div>
