@@ -185,17 +185,16 @@ function Blog() {
                         {loader === false
                             ? <div className="row">
 
-                                    {Object
-                                        .keys(currentBlogs)
+                                    {currentBlogs
                                         .map(b => <Blogger
-                                            key={currentBlogs[b].id}
-                                            date={currentBlogs[b].date}
-                                            slug={currentBlogs[b].slug}
-                                            text={currentBlogs[b].text}
-                                            writer={currentBlogs[b].writer}
-                                            avatar={currentBlogs[b].avatar}
-                                            title={currentBlogs[b].title}
-                                            img={currentBlogs[b].img}
+                                            key={b.id}
+                                            date={b.date}
+                                            slug={b.slug}
+                                            text={b.text}
+                                            writer={b.writer}
+                                            avatar={b.avatar}
+                                            title={b.title}
+                                            img={b.img}
                                             loading={loading}/>)}
                                 </div>
                             : <h2>Loading....</h2>}
