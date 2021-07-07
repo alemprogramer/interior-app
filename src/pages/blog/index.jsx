@@ -2,48 +2,105 @@ import React, {useState, useEffect} from 'react';
 import Banner from "../../components/banner/index";
 import Blogger from "./blog";
 import Pagination from './pagination';
-import data, { category } from "./data";
+import Data, {tags} from "./data";
 
 function Blog() {
-    let k = 0;
     const link = process.env.PUBLIC_URL;
     const person = {
         avatar: `${link}/vendor/images/blogger.png`,
         name: `Jhon Doe13579`
     };
+
     const [blog,
-        blogPagi] = useState([]);
+        setBlog] = useState([]);
     const [loading,
         blogLoading] = useState(false);
     const [page,
         setPage] = useState(1);
     const [blogLimit,
         limitChange] = useState(15);
-        
-    
+    const [loader,
+        setLoader] = useState(false);
+
+    // Used For Post Data Rendering
     useEffect(() => {
         blogLoading(true);
-        blogPagi(data);
+        setBlog(Data);
+        setTimeout(() => {
         blogLoading(false);
+        }, 1000);        
     }, []);
 
-    const [loader,setLoader]=useState(false);
+    // Filter Method
+    const filtering = (t) => {
+        let rslt = []
+        setLoader(true)
+        Data.forEach((e) => {
+            let value = e
+                .tags
+                .find((d) => {
+                    return d === t;
+                })
+            if (value) {
+                return rslt.push(e);
+            }
+        })
+        setTimeout(() => {
+            setLoader(false)
+            return setBlog(rslt)
+        }, 1000);
+    };
 
-    const lastBlogIndex = page * blogLimit;
-    const firstBlogIndex = lastBlogIndex - blogLimit;
-    const currentBlogs = blog.slice(firstBlogIndex, lastBlogIndex);
-
+    // Pagination Method
     const pageGo = (n) => {
         setLoader(true)
         setTimeout(() => {
             setPage(n);
             setLoader(false)
-            window.scrollTo({
-                top: 650,
-                left: 0,
-            });
+            window.scrollTo({top: 650, left: 0});
         }, 1000);
     };
+
+    // View Limit
+    const lastBlogIndex = page * blogLimit;
+    const firstBlogIndex = lastBlogIndex - blogLimit;
+    const currentBlogs = blog.slice(firstBlogIndex, lastBlogIndex);
+    const limit=(n)=>{
+        setLoader(true)
+        setTimeout(() => {
+            limitChange(n.target.value);
+            setLoader(false)
+        }, 1000);
+    };
+
+    //sorting Blogs
+
+    const sorting = (n)=>{
+        let v= n.target.value
+        let sorted=[];
+        setLoader(true);
+
+        // if (v === 'name') {
+        //     sorted = blog.sort((a, b) => {
+        //         if (a.title < b.title) return -1;
+        //         if (a.title > b.title) return 1;
+        //         return 0;
+        //     });
+        //     } else if (v === 'time') {
+        //     sorted = blog.sort((a, b) => {
+        //         if (a.date < b.date) return -1;
+        //         if (a.date > b.date) return 1;
+        //         return 0;
+        //     });
+        // }
+        v === 'name' && (sorted = blog.sort((a, b) => a.title < b.title ? -1 : 1));
+        v === 'time' && (sorted = blog.sort((a, b) => a.date < b.date ? -1 : 1));
+        setTimeout(() => {
+            setLoader(false);
+        }, 1000);
+        return setBlog(sorted);
+        
+    }
 
     return (
         <section className="blog">
@@ -68,8 +125,28 @@ function Blog() {
                                     <span className="navbar-brand">Blog Categories</span>
                                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                                         <ul className="navbar-nav filter_options ml-auto mr-auto">
-                                            {category.map(c => <li key={c.id} className='nav-item'>
-                                                <button type='button' className="nav-link">{c.value}</button>
+                                            <li className='nav-item'>
+                                                <button
+                                                    type='button'
+                                                    onClick={() => {
+                                                        if (Data.length !== blog.length) {
+                                                        setLoader(true);
+                                                        setTimeout(() => {
+                                                            setBlog(Data);
+                                                            setLoader(false);
+                                                            window.scrollTo({top: 650, left: 0});
+                                                        }, 1000);
+                                                    };
+                                                }}
+                                                    className="nav-link">All</button>
+                                            </li>
+                                            {tags.map(c => <li key={c.id} className='nav-item'>
+                                                <button
+                                                    type='button'
+                                                    onClick={() => {
+                                                    filtering(c.value)
+                                                }}
+                                                    className="nav-link">{c.value}</button>
                                             </li>)}
                                         </ul>
                                         <div className="form-inline my-2 my-lg-0">
@@ -79,10 +156,10 @@ function Blog() {
                                                         Per Page
                                                     </h6>
                                                 </div>
-                                                <select className="styled">
-                                                    <option onClick={() => limitChange(5)} value='5'>5</option>
-                                                    <option onClick={() => limitChange(15)} value='15' selected>15</option>
-                                                    <option onClick={() => limitChange(25)} value='25'>25</option>
+                                                <select className="styled" defaultValue={blogLimit} onChange={limit}>
+                                                    <option value='5'>5</option>
+                                                    <option value='15'>15</option>
+                                                    <option value='25'>25</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -93,7 +170,7 @@ function Blog() {
                                                         Sort by
                                                     </h6>
                                                 </div>
-                                                <select className="styled">
+                                                <select className="styled" onChange={sorting}>
                                                     <option>Select</option>
                                                     <option value='name'>Name</option>
                                                     <option value='time'>Time</option>
@@ -101,7 +178,7 @@ function Blog() {
                                                     <option value='most-commented'>Most Commented</option>
                                                 </select>
                                             </div>
-                                        </div> 
+                                        </div>
                                     </div>
                                 </nav>
                             </div>
@@ -110,29 +187,26 @@ function Blog() {
                 </div>
                 <div className="blog_partitions">
                     <div className="container">
-{loader===false ? <div className="row">
-                            
-                            {Object
-                                .keys(currentBlogs)
-                                .map(b => <Blogger
-                                    key={k++}
-                                    date={currentBlogs[b].date}
-                                    slug={currentBlogs[b].slug}
-                                    text={currentBlogs[b].text}
-                                    writer={currentBlogs[b].writer}
-                                    avatar={currentBlogs[b].avatar}
-                                    title={currentBlogs[b].title}
-                                    img={currentBlogs[b].img}
-                                    loading={loading}/>)}
+                        {loader === false
+                            ? <div className="row">
 
-                            {/* <Blogger post={currentBlogs} load={loading}/> */}
-                        </div> : <h2>Loading....</h2> }
-                        
+                                    {Object
+                                        .keys(currentBlogs)
+                                        .map(b => <Blogger
+                                            key={currentBlogs[b].id}
+                                            date={currentBlogs[b].date}
+                                            slug={currentBlogs[b].slug}
+                                            text={currentBlogs[b].text}
+                                            writer={currentBlogs[b].writer}
+                                            avatar={currentBlogs[b].avatar}
+                                            title={currentBlogs[b].title}
+                                            img={currentBlogs[b].img}
+                                            loading={loading}/>)}
+                                </div>
+                            : <h2>Loading....</h2>}
 
                         <div className="row">
                             <div className="col-md-12 col-sm-4 col-12">
-
-                                {/* Need Modification */}
 
                                 <div className="pagination_part">
                                     <Pagination
