@@ -1,8 +1,8 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import Banner from "../../components/banner/index";
 import Blogger from "./blog";
 import Pagination from './pagination';
-import Data, {tags} from "./data";
+import Data, { tags } from "./data";
 
 function Blog() {
     const link = process.env.PUBLIC_URL;
@@ -11,9 +11,6 @@ function Blog() {
         name: `Jhon Doe13579`
     };
 
-    const scrollTo=()=>{
-        window.scrollTo({top: 680, left: 0});
-    }
     const [blog,
         setBlog] = useState([]);
     const [loading,
@@ -30,8 +27,8 @@ function Blog() {
         blogLoading(true);
         setBlog(Data);
         setTimeout(() => {
-        blogLoading(false);
-        }, 1000);        
+            blogLoading(false);
+        }, 1000);
     }, []);
 
     // Filter Method
@@ -47,8 +44,7 @@ function Blog() {
             if (value) {
                 return rslt.push(e);
             }
-        });
-        scrollTo();
+        })
         setTimeout(() => {
             setLoader(false)
             return setBlog(rslt)
@@ -58,10 +54,10 @@ function Blog() {
     // Pagination Method
     const pageGo = (n) => {
         setLoader(true)
-        scrollTo();
         setTimeout(() => {
             setPage(n);
             setLoader(false)
+            window.scrollTo({ top: 650, left: 0 });
         }, 1000);
     };
 
@@ -69,9 +65,8 @@ function Blog() {
     const lastBlogIndex = page * blogLimit;
     const firstBlogIndex = lastBlogIndex - blogLimit;
     const currentBlogs = blog.slice(firstBlogIndex, lastBlogIndex);
-    const limit=(n)=>{
+    const limit = (n) => {
         setLoader(true)
-        scrollTo();
         setTimeout(() => {
             limitChange(n.target.value);
             setLoader(false)
@@ -80,21 +75,31 @@ function Blog() {
 
     //sorting Blogs
 
-    const sorting = (n)=>{
-        let v= n.target.value
-        let sorted=[];
-        if (v!=='') {
-            setLoader(true);
-            v === 'name' && (sorted = blog.sort((a, b) => a.title < b.title ? -1 : 1));
-            v === 'time' && (sorted = blog.sort((a, b) => a.date < b.date ? -1 : 1));
-            v === 'author' && (sorted = blog.sort((a, b) => a.writer < b.writer ? -1 : 1));
-            scrollTo();
-            setTimeout(() => {
-                setLoader(false);
-            }, 1000);
-            return setBlog(sorted);
-        
-        }
+    const sorting = (n) => {
+        let v = n.target.value
+        let sorted = [];
+        setLoader(true);
+
+        // if (v === 'name') {
+        //     sorted = blog.sort((a, b) => {
+        //         if (a.title < b.title) return -1;
+        //         if (a.title > b.title) return 1;
+        //         return 0;
+        //     });
+        //     } else if (v === 'time') {
+        //     sorted = blog.sort((a, b) => {
+        //         if (a.date < b.date) return -1;
+        //         if (a.date > b.date) return 1;
+        //         return 0;
+        //     });
+        // }
+        v === 'name' && (sorted = blog.sort((a, b) => a.title < b.title ? -1 : 1));
+        v === 'time' && (sorted = blog.sort((a, b) => a.date < b.date ? -1 : 1));
+        setTimeout(() => {
+            setLoader(false);
+        }, 1000);
+        return setBlog(sorted);
+
     }
 
     return (
@@ -108,7 +113,7 @@ function Blog() {
                 img={`${link}/vendor/images/banner_banner_bg.jpg`}
                 url={link}
                 urlIcon='fa-long-arrow-alt-right'
-                blogger={person}/>
+                blogger={person} />
 
             <section
                 className="blog_parts d-none d-md-block d-sm-none d-lg-block d-xl-block">
@@ -125,22 +130,22 @@ function Blog() {
                                                     type='button'
                                                     onClick={() => {
                                                         if (Data.length !== blog.length) {
-                                                        setLoader(true);
-                                                        setTimeout(() => {
-                                                            setBlog(Data);
-                                                            setLoader(false);
-                                                            window.scrollTo({top: 650, left: 0});
-                                                        }, 1000);
-                                                    };
-                                                }}
+                                                            setLoader(true);
+                                                            setTimeout(() => {
+                                                                setBlog(Data);
+                                                                setLoader(false);
+                                                                window.scrollTo({ top: 650, left: 0 });
+                                                            }, 1000);
+                                                        };
+                                                    }}
                                                     className="nav-link">All</button>
                                             </li>
                                             {tags.map(c => <li key={c.id} className='nav-item'>
                                                 <button
                                                     type='button'
                                                     onClick={() => {
-                                                    filtering(c.value)
-                                                }}
+                                                        filtering(c.value)
+                                                    }}
                                                     className="nav-link">{c.value}</button>
                                             </li>)}
                                         </ul>
@@ -166,10 +171,11 @@ function Blog() {
                                                     </h6>
                                                 </div>
                                                 <select className="styled" onChange={sorting}>
-                                                    <option value=''>Select</option>
-                                                    <option value='name'>Title</option>
+                                                    <option>Select</option>
+                                                    <option value='name'>Name</option>
                                                     <option value='time'>Time</option>
-                                                    <option value='author'>Author Name</option>
+                                                    <option value='most-viewed'>Most Viewed</option>
+                                                    <option value='most-commented'>Most Commented</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -184,18 +190,19 @@ function Blog() {
                         {loader === false
                             ? <div className="row">
 
-                                    {currentBlogs
-                                        .map(b => <Blogger
-                                            key={b.id}
-                                            date={b.date}
-                                            slug={b.slug}
-                                            text={b.text}
-                                            writer={b.writer}
-                                            avatar={b.avatar}
-                                            title={b.title}
-                                            img={b.img}
-                                            loading={loading}/>)}
-                                </div>
+                                {Object
+                                    .keys(currentBlogs)
+                                    .map(b => <Blogger
+                                        key={currentBlogs[b].id}
+                                        date={currentBlogs[b].date}
+                                        slug={currentBlogs[b].slug}
+                                        text={currentBlogs[b].text}
+                                        writer={currentBlogs[b].writer}
+                                        avatar={currentBlogs[b].avatar}
+                                        title={currentBlogs[b].title}
+                                        img={currentBlogs[b].img}
+                                        loading={loading} />)}
+                            </div>
                             : <h2>Loading....</h2>}
 
                         <div className="row">
@@ -206,7 +213,7 @@ function Blog() {
                                         totalBlogs={blog.length}
                                         currentPages={page}
                                         paginate={pageGo}
-                                        blogPerPage={blogLimit}/>
+                                        blogPerPage={blogLimit} />
                                 </div>
                             </div>
                         </div>
