@@ -11,6 +11,9 @@ function Blog() {
         name: `Jhon Doe13579`
     };
 
+    const scrollTo=()=>{
+        window.scrollTo({top: 680, left: 0});
+    }
     const [blog,
         setBlog] = useState([]);
     const [loading,
@@ -44,7 +47,8 @@ function Blog() {
             if (value) {
                 return rslt.push(e);
             }
-        })
+        });
+        scrollTo();
         setTimeout(() => {
             setLoader(false)
             return setBlog(rslt)
@@ -54,10 +58,10 @@ function Blog() {
     // Pagination Method
     const pageGo = (n) => {
         setLoader(true)
+        scrollTo();
         setTimeout(() => {
             setPage(n);
             setLoader(false)
-            window.scrollTo({top: 650, left: 0});
         }, 1000);
     };
 
@@ -67,6 +71,7 @@ function Blog() {
     const currentBlogs = blog.slice(firstBlogIndex, lastBlogIndex);
     const limit=(n)=>{
         setLoader(true)
+        scrollTo();
         setTimeout(() => {
             limitChange(n.target.value);
             setLoader(false)
@@ -78,28 +83,18 @@ function Blog() {
     const sorting = (n)=>{
         let v= n.target.value
         let sorted=[];
-        setLoader(true);
-
-        // if (v === 'name') {
-        //     sorted = blog.sort((a, b) => {
-        //         if (a.title < b.title) return -1;
-        //         if (a.title > b.title) return 1;
-        //         return 0;
-        //     });
-        //     } else if (v === 'time') {
-        //     sorted = blog.sort((a, b) => {
-        //         if (a.date < b.date) return -1;
-        //         if (a.date > b.date) return 1;
-        //         return 0;
-        //     });
-        // }
-        v === 'name' && (sorted = blog.sort((a, b) => a.title < b.title ? -1 : 1));
-        v === 'time' && (sorted = blog.sort((a, b) => a.date < b.date ? -1 : 1));
-        setTimeout(() => {
-            setLoader(false);
-        }, 1000);
-        return setBlog(sorted);
+        if (v!=='') {
+            setLoader(true);
+            v === 'name' && (sorted = blog.sort((a, b) => a.title < b.title ? -1 : 1));
+            v === 'time' && (sorted = blog.sort((a, b) => a.date < b.date ? -1 : 1));
+            v === 'author' && (sorted = blog.sort((a, b) => a.writer < b.writer ? -1 : 1));
+            scrollTo();
+            setTimeout(() => {
+                setLoader(false);
+            }, 1000);
+            return setBlog(sorted);
         
+        }
     }
 
     return (
@@ -171,11 +166,10 @@ function Blog() {
                                                     </h6>
                                                 </div>
                                                 <select className="styled" onChange={sorting}>
-                                                    <option>Select</option>
-                                                    <option value='name'>Name</option>
+                                                    <option value=''>Select</option>
+                                                    <option value='name'>Title</option>
                                                     <option value='time'>Time</option>
-                                                    <option value='most-viewed'>Most Viewed</option>
-                                                    <option value='most-commented'>Most Commented</option>
+                                                    <option value='author'>Author Name</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -190,17 +184,16 @@ function Blog() {
                         {loader === false
                             ? <div className="row">
 
-                                    {Object
-                                        .keys(currentBlogs)
+                                    {currentBlogs
                                         .map(b => <Blogger
-                                            key={currentBlogs[b].id}
-                                            date={currentBlogs[b].date}
-                                            slug={currentBlogs[b].slug}
-                                            text={currentBlogs[b].text}
-                                            writer={currentBlogs[b].writer}
-                                            avatar={currentBlogs[b].avatar}
-                                            title={currentBlogs[b].title}
-                                            img={currentBlogs[b].img}
+                                            key={b.id}
+                                            date={b.date}
+                                            slug={b.slug}
+                                            text={b.text}
+                                            writer={b.writer}
+                                            avatar={b.avatar}
+                                            title={b.title}
+                                            img={b.img}
                                             loading={loading}/>)}
                                 </div>
                             : <h2>Loading....</h2>}
