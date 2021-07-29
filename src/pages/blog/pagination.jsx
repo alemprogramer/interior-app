@@ -8,12 +8,13 @@ const pagination = ({blogPerPage, totalBlogs, paginate, currentPages}) => {
     return (
         <nav aria-label="Page navigation example">
             <ul className="pagination justify-content-center">
-                <li className="page-item disabled">
-                    <a className="page-link arrows" href='!#' tabIndex="-1" aria-disabled="true">
+                <li className={currentPages > 1 ? "page-item" : "page-item disabled" }>
+                    <button className="page-link arrows" type='button' onClick={() => paginate(currentPages-1)} tabIndex="-1" aria-disabled="true">
                         <span aria-hidden="true">
                             <i className="fas fa-long-arrow-alt-left"></i>
-                        </span>Previous</a>
+                        </span>Previous</button>
                 </li>
+
                 {pageNumbers.map(n => (
                     <li
                         key={n}
@@ -23,11 +24,11 @@ const pagination = ({blogPerPage, totalBlogs, paginate, currentPages}) => {
                         <button type='button' className="page-link" onClick={() => paginate(n)}>{n}</button>
                     </li>
                 ))}
-                <li className="page-item">
-                    <a className="page-link arrows" href='!#'>Next<span aria-hidden="true">
+                <li className={currentPages === pageNumbers.length ? "page-item disabled" : "page-item"}>
+                    <button className="page-link arrows" type='button' onClick={() => paginate(currentPages+1)}>Next<span aria-hidden="true">
                             <i className="fas fa-long-arrow-alt-right"></i>
                         </span>
-                    </a>
+                    </button>
                 </li>
             </ul>
         </nav>
