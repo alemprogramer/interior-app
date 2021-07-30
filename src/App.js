@@ -23,7 +23,7 @@ function App() {
             <Route path='/faq' component={Faq}/>
             <Route path='/portfolio' component={Portfolio}/>
             <Route path='/blog' component={Blog}/>
-            <Route path='/blog-open' component={BlogOpen}/>
+            <Route path='/blog-open/:url' exact> <BlogOpen/> </Route>
             <Route path='/reseller' component={Reseller}/>
         </Switch>
     )

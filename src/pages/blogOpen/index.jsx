@@ -1,16 +1,24 @@
 import React from 'react'
+import Data from "../blog/data";
+import { useParams, Link } from "react-router-dom";
+import { withRouter } from "react-router";
 
 function BlogOpen() {
     const link = process.env.PUBLIC_URL;
+
+    let {url}=useParams(); //should be exact that declared on router declaration
+    let blog = Data.find(d => d.slug === url);
+
+    console.log(blog);
     return (
         <section className="blog_open">
             <header>
                 <div className="container">
                     <div className="row">
                         <nav className="navbar navbar-light">
-                            <a className="navbar-brand" href={link}>
+                            <Link className="navbar-brand" to='/blog'>
                                 <i className="fas fa-long-arrow-alt-left"></i>
-                                Back to Blogs</a>
+                                Back to Blogs</Link>
                         </nav>
                     </div>
                 </div>
@@ -20,15 +28,15 @@ function BlogOpen() {
                     <div className="row">
                         <div className="col-md-12 col-sm-12 col-12">
                             <div className="banner_content">
-                                <h2>Meet our People - Marketing Team Leader Paul Wazouski</h2>
+                                <h2>{blog.title}</h2>
                                 <div className="blogger">
                                     <div className="imgs float-left">
                                         <img
-                                            src={`${link}/vendor/images/blogger.png`}
+                                            src={blog.avatar}
                                             alt="blogger.png"
                                             className="img-fluid"/>
                                     </div>
-                                    <h6>Paul Wazouski</h6>
+                                    <h6>{blog.writer}</h6>
                                     <p>24 September 2019</p>
                                 </div>
                             </div>
@@ -45,52 +53,13 @@ function BlogOpen() {
                                 <div className="blog_opened">
                                     <div className="blog_img">
                                         <img
-                                            src={`${link}/vendor/images/blog-2.jpg`}
+                                            src={blog.img}
                                             className="img-fluid"
                                             alt="blog-2.jpg"/>
                                     </div>
                                     <div className="blogging_text">
                                         <h4>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed est
-                                            congue, rhoncus ligula condimentum, efficitur ligula. Nulla auctor egestas
-                                            ipsum, a bibendum purus. Proin at ullamcorper velit. Integer tempor euismod
-                                            sagittis. Sed sodales quis massa vel ornare. Fusce feugiat porttitor nisi eu
-                                            eleifend. Aliquam rhoncus, lectus sit amet dictum euismod, nisi tortor fringilla
-                                            eros, nec interdum eros tortor at enim.
-                                        </h4>
-                                        <h4>Orci varius natoque penatibus et magnis dis parturient montes, nascetur
-                                            ridiculus mus. Donec tincidunt dolor aliquet bibendum ultrices. Morbi ultrices,
-                                            mi vel fermentum gravida, tortor est lacinia purus, quis convallis quam velit a
-                                            nisi. Duis commodo pulvinar tortor, id viverra sem porta in. Orci varius natoque
-                                            penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum
-                                            maximus nibh sed mi tempus, nec gravida lacus fringilla. Nam ac feugiat erat.
-                                            Phasellus molestie, orci quis finibus fringilla, magna velit lobortis nibh, et
-                                            efficitur ex orci at neque. Duis eu nisl erat. Vivamus semper, ligula eu
-                                            facilisis bibendum, libero felis mollis tellus, a euismod felis purus at augue.
-                                            Pellentesque nec quam placerat, tempor magna nec, aliquam nulla. Vivamus
-                                            tincidunt interdum sapien, quis mattis magna vehicula eu.</h4>
-                                        <h4>Quisque sed purus eget erat pharetra porta. Integer ultricies mollis auctor.
-                                            Fusce non ullamcorper felis. Nullam semper mauris ut orci eleifend, non sodales
-                                            massa auctor. Curabitur efficitur nunc ut quam venenatis consequat. Donec in
-                                            semper velit, at finibus nisl. Sed placerat, odio non condimentum ornare, ex
-                                            tortor tincidunt neque, ac finibus metus tellus et eros. Quisque interdum
-                                            tincidunt lectus, vel luctus odio scelerisque et. Sed id lectus placerat,
-                                            hendrerit lorem id, mollis ligula. Etiam egestas urna in felis congue, eget
-                                            sodales felis blandit. Curabitur non varius ante. Duis vel lobortis turpis.</h4>
-                                        <h4>Aliquam sit amet erat sed lorem iaculis rutrum non placerat metus. Donec
-                                            interdum, tortor eget blandit faucibus, sem lectus pretium neque, id efficitur
-                                            leo massa a libero. Suspendisse fermentum ipsum vitae mattis semper. Etiam sed
-                                            leo quam. Donec ut mattis massa. Duis quam purus, vehicula sed ligula vitae,
-                                            eleifend fringilla ligula. Quisque sed varius magna, at ultrices felis. Nam
-                                            aliquam metus ac ligula laoreet mollis. Fusce in ante sit amet ipsum tincidunt
-                                            eleifend. Sed sodales placerat augue vel semper. Donec malesuada varius lectus,
-                                            ut tristique massa. Fusce commodo erat sapien, vitae auctor lacus efficitur nec.</h4>
-                                        <h4>Nullam vitae ipsum eu sapien gravida varius sit amet quis metus. Donec nec
-                                            nunc volutpat, sodales enim id, elementum nunc. Nunc risus massa, eleifend vitae
-                                            orci iaculis, maximus ullamcorper erat. Donec at est cursus metus volutpat
-                                            vehicula. Aliquam at felis eget lorem fringilla consequat ut et felis.
-                                            Pellentesque vitae auctor elit. Donec maximus risus velit, at congue leo
-                                            lobortis sed. Duis sed orci a urna facilisis volutpat et sit amet sapien.
+                                            {blog.blogs}
                                         </h4>
                                     </div>
                                     <div className="comment_box">
@@ -100,23 +69,23 @@ function BlogOpen() {
                                             </div>
                                             {/*  Collapse
                                         <div className="shares float-right">
-                                            <a className="share_btn" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                            <Link className="share_btn" data-toggle="collapse" to="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
                                                 <i className="fas fa-share"></i> Share this article
-                                            </a>
+                                            </Link>
                                             <div className="collapse collaps_box" id="collapseExample">
                                                 <div className="card card-body">
-                                                    <a href={link}>
+                                                    <Link to='/blog'>
                                                         <i className="fab fa-facebook-f"></i>
-                                                    </a>
-                                                    <a href={link}>
+                                                    </Link>
+                                                    <Link to='/blog'>
                                                         <i className="fab fa-twitter"></i>
-                                                    </a>
-                                                    <a href={link}>
+                                                    </Link>
+                                                    <Link to='/blog'>
                                                         <i className="fab fa-linkedin-in"></i>
-                                                    </a>
-                                                    <a href={link}>
+                                                    </Link>
+                                                    <Link to='/blog'>
                                                         <i className="fas fa-copy"></i>
-                                                    </a>
+                                                    </Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -141,13 +110,13 @@ function BlogOpen() {
                                                     <h6>Paul Wazouski <span> | 2 months ago</span></h6>
                                                     <div className="mbody">
                                                         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed est congue, rhoncus ligula condimentum, efficitur ligula. Nulla auctor egestas ipsum, a bibendum purus. Proin at ullamcorper velit. Integer tempor euismod sagittis. Sed sodales quis massa vel ornare. </p>
-                                                        <a href={link} className="show-btn">Show More</a>
+                                                        <Link to='/blog' className="show-btn">Show More</Link>
                                                     </div>
                                                     <div className="drop-btn">
-                                                        <a href={link} className="reply btn">Reply</a>
-                                                        <a href={link} className="cmtn cancel btn">View 9 replies <i className="fas fa-caret-down"></i>
+                                                        <Link to='/blog' className="reply btn">Reply</Link>
+                                                        <Link to='/blog' className="cmtn cancel btn">View 9 replies <i className="fas fa-caret-down"></i>
                                                             <!-- On click this button, inner html will be "Hide 9 replies <i className="fas fa-caret-up"></i>" -->
-                                                        </a>
+                                                        </Link>
                                                     </div>
                                                     <div className="media hide see">
                                                         <span className="cmnt_img"></span>
@@ -157,7 +126,7 @@ function BlogOpen() {
                                                                 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed est congue, rhoncus ligula condimentum, efficitur ligula. Nulla auctor egestas ipsum, a bibendum purus. Proin at ullamcorper velit. Integer tempor euismod sagittis. Sed sodales quis massa vel ornare. </p>
                                                             </div>
                                                             <div className="drop-btn">
-                                                                <a href={link} className="reply btn">Reply</a>
+                                                                <Link to='/blog' className="reply btn">Reply</Link>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -184,18 +153,18 @@ function BlogOpen() {
                                     </div>
                                 </div>
                                 <div className="blog_button">
-                                    <a href={link} className="btn text-capitalize">Load More</a>
+                                    <Link to='/blog' className="btn text-capitalize">Load More</Link>
                                 </div>
                             </div>
                             <div className="col-md-4 col-sm-4">
                                 <div className="col-md-12 col-sm-12">
                                     <div className="more_blog_title d-block">
                                         <h6>Related Articles</h6>
-                                        <a href={link} className="mini_btn d-inline-block text-capitalize float-right">
+                                        <Link to='/blog' className="mini_btn d-inline-block text-capitalize float-right">
                                             <h5>View more
                                             </h5>
                                             <i className="fas fa-long-arrow-alt-right"></i>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                                 <div className="col-md-12 col-sm-12">
@@ -228,11 +197,11 @@ function BlogOpen() {
                                                     research to help you sell or rent properties faster
                                                 </h6>
                                             </div>
-                                            <a href={link} className="mini_btn d-inline-block text-capitalize text-center">
+                                            <Link to='/blog' className="mini_btn d-inline-block text-capitalize text-center">
                                                 <h5>Read more
                                                 </h5>
                                                 <i className="fas fa-long-arrow-alt-right"></i>
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>
@@ -266,11 +235,11 @@ function BlogOpen() {
                                                     research to help you sell or rent properties faster
                                                 </h6>
                                             </div>
-                                            <a href={link} className="mini_btn d-inline-block text-capitalize text-center">
+                                            <Link to='/blog' className="mini_btn d-inline-block text-capitalize text-center">
                                                 <h5>Read more
                                                 </h5>
                                                 <i className="fas fa-long-arrow-alt-right"></i>
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>
@@ -283,4 +252,4 @@ function BlogOpen() {
     )
 }
 
-export default BlogOpen
+export default withRouter(BlogOpen) 

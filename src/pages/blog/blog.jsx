@@ -1,19 +1,22 @@
 import React, {Component} from 'react'
+import {Link} from 'react-router-dom';
 
 class Blogger extends Component {
     render() {
         const {
             date,
-            slug,
+            link,
             text,
             writer,
             avatar,
             title,
-            img,loading
+            img,
+            loading
         } = this.props;
-        if(loading){
+        if (loading) {
             return <h2>Loading...</h2>
         }
+        console.log(link);
         return (
             <div className="col-md-4 col-sm-4 col-12">
                 <div className="partner_slide">
@@ -42,11 +45,11 @@ class Blogger extends Component {
                                 {text}
                             </h6>
                         </div>
-                        <a href={slug} className="mini_btn d-inline-block text-capitalize text-center">
+                        <Link to={`/blog-open/${link}`} className="mini_btn d-inline-block text-capitalize text-center">
                             <h5>view more
                             </h5>
                             <i className="fas fa-long-arrow-alt-right"></i>
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>

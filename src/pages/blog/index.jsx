@@ -79,20 +79,6 @@ function Blog() {
         let v = n.target.value
         let sorted = [];
         setLoader(true);
-
-        // if (v === 'name') {
-        //     sorted = blog.sort((a, b) => {
-        //         if (a.title < b.title) return -1;
-        //         if (a.title > b.title) return 1;
-        //         return 0;
-        //     });
-        //     } else if (v === 'time') {
-        //     sorted = blog.sort((a, b) => {
-        //         if (a.date < b.date) return -1;
-        //         if (a.date > b.date) return 1;
-        //         return 0;
-        //     });
-        // }
         v === 'name' && (sorted = blog.sort((a, b) => a.title < b.title ? -1 : 1));
         v === 'time' && (sorted = blog.sort((a, b) => a.date < b.date ? -1 : 1));
         setTimeout(() => {
@@ -101,6 +87,8 @@ function Blog() {
         return setBlog(sorted);
 
     }
+
+    console.log(currentBlogs);
 
     return (
         <section className="blog">
@@ -190,17 +178,16 @@ function Blog() {
                         {loader === false
                             ? <div className="row">
 
-                                {Object
-                                    .keys(currentBlogs)
+                                {currentBlogs
                                     .map(b => <Blogger
-                                        key={currentBlogs[b].id}
-                                        date={currentBlogs[b].date}
-                                        slug={currentBlogs[b].slug}
-                                        text={currentBlogs[b].text}
-                                        writer={currentBlogs[b].writer}
-                                        avatar={currentBlogs[b].avatar}
-                                        title={currentBlogs[b].title}
-                                        img={currentBlogs[b].img}
+                                        key={b.id}
+                                        date={b.date}
+                                        link={b.slug}
+                                        text={b.slogan}
+                                        writer={b.writer}
+                                        avatar={b.avatar}
+                                        title={b.title}
+                                        img={b.img}
                                         loading={loading} />)}
                             </div>
                             : <h2>Loading....</h2>}
