@@ -1038,7 +1038,7 @@ footer .container .row .reservation .links a {
 .home_page .hiw .nav_list {
   width: 100%;
 }
-.home_page .hiw .nav_list .slick-track {
+.hiw .nav_list .slick-track {
   height: auto !important;
 }
 .home_page .hiw .nav_list .nav_items {
