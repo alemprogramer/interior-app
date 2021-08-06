@@ -46,7 +46,7 @@ export class Desk extends Component {
         }
 
         return (
-            <section className='hiw d-lg-block d-xl-block d-md-block d-none d-sm-none'>
+            <section className='hiw desk'>
                 <div className="container">
                     <CommonHead title={title} />
                     <div className="row">

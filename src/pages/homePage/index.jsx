@@ -28,6 +28,7 @@ function Home() {
                 rare={array[3]}/>
             <PreviousWork/>
             <DeskService/>
+            {/* Incomplete Mobile Part */}
             <HowItWork title="How it works ?" work={array[4]}/>
             <Pricing/>
             <Agencies/>

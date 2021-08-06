@@ -1,53 +1,28 @@
-import React, {Component} from 'react'
+import React from 'react'
 import {CommonHead} from "../../components/headings/CommonHead";
 import {MiniHead} from "../../components/headings/MiniHead";
-export class Mobile extends Component {
-    render() {
-        let k = 0;
-        let url=process.env.PUBLIC_URL;
-        let image = url +`vendor/images/how.jpg`;
-        const obj = {
-            setA: {
-                head: 'Virtual Home Staging',
-                text: `Upload photos ( please use professional high resolution photos, not the ones you can take on your phone)`,
-                img:image,
-            },
-            setB: {
-                head: 'Interior Design and Support',
-                text: `Upload photos (not the ones you can take on your phone)`,
-                img:image,
-            },
-            setC: {
-                head: 'Virtual Home Staging',
-                text: `Upload photos ( please use professional high resolution photos, not the ones you  can take on your phone)`,
-                img:image,
-            },
-            setD: {
-                head: 'Interior Design',
-                text: `Upload photos (not the ones you can take on your phone)`,
-                img:image,
-            }
-        }
+import obj from "./data";
+const Mobile = ({ title,frequents,work}) => {
         return (
-            <section className="hiw d-lg-none d-xl-none d-md-none d-block d-sm-block">
+            <section className="hiw mobile">
                 <div className="container">
 
-                    <CommonHead title="How it works ?"/>
+                    <CommonHead title={title}/>
 
                     <div className="row">
                         <div className="col-12">
                             <ul className="hiw_list">
-                            {Object.keys(obj).map(h=><li key={k++} className="hiw_items">
+                            {obj.map(h=><li key={h} className="hiw_items">
                                     <div className="hiw_img">
-                                        <img src={obj[h].image} className="img-fluid" alt="how.jpg"/>
+                                        <img src={h.image} className="img-fluid" alt="how.jpg"/>
                                     </div>
                                     <div className="content">
 
-                                        <MiniHead title={obj[h].title}/>
+                                        <MiniHead title={h.title}/>
 
                                         <div className="texts">
                                             <p>
-                                                {obj[h].text}
+                                                {h.text}
                                             </p>
                                         </div>
                                     </div>
@@ -108,7 +83,7 @@ export class Mobile extends Component {
                 </div>
             </section>
         )
-    }
+    
 }
 
 export default Mobile
