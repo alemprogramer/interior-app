@@ -1,6 +1,6 @@
 import React,{Suspense,lazy} from 'react';
 
-/* import BannerMobile from "./banner/bannerMobile"; */
+
 import Difference from "../../components/difference/difference";
 import PreviousWork from "../../components/previousWork/index";
 import DeskService from "./services";
@@ -14,7 +14,7 @@ import Pertnership from "./Pertnership";
 
 import array from "../../components/Js";
 
-const Banner=lazy(()=>import('./banner/bannerDesk'))
+const Banner=lazy(()=>import('./banner/main'))
 function Home() {
 
     return (

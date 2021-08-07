@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Carousel} from 'react-bootstrap';
 
-export class Banner extends Component {
+export class BannerDesk extends Component {
     render() {
         const img = process.env.PUBLIC_URL + "/vendor/images/home_banner_bg1.png";
         return (
@@ -54,4 +54,4 @@ export class Banner extends Component {
     }
 }
 
-export default Banner
+export default BannerDesk
