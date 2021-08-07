@@ -119,7 +119,7 @@ class DeskService extends Component {
 
         return (
             <section
-                className="services d-lg-block d-xl-block d-md-block d-none d-sm-none position-relative">
+                className="services position-relative">
                 <div className="slide_icon icon_right position-absolute">
                     <span className="right swiper-button-next" onClick={this.next}>
                         <i className="fas fa-chevron-right"></i>

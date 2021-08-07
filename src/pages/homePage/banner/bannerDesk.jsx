@@ -6,7 +6,7 @@ export class BannerDesk extends Component {
         const img = process.env.PUBLIC_URL + "/vendor/images/home_banner_bg1.png";
         return (
             <section
-                className="banner position-relative d-none d-sm-block d-xl-block d-lg-block d-md-block">
+                className="banner position-relative">
                 <div className="container">
                     <div
                         className="banner_content position-absolute"
