@@ -22,17 +22,16 @@ function Home() {
         <Suspense fallback={<p>Please Wait...</p>}>
             <Banner/>
         </Suspense>
-            {/* <BannerMobile/> */}
-            <Difference
-                title='What set us apart from other virtual staging companies'
-                rare={array[3]}/>
-            <PreviousWork/>
-            <DeskService/>
-            {/* Incomplete Mobile Part */}
-            <HowItWork title="How it works ?" work={array[4]}/>
-            <Pricing/>
-            <Agencies/>
-            <Pertnership/>
+        <Difference
+            title='What set us apart from other virtual staging companies'
+            rare={array[3]}/>
+        <PreviousWork/>
+        <DeskService/>
+        {/* Incomplete Mobile Part */}
+        <HowItWork title="How it works ?" work={array[4]}/>
+        <Pricing/>
+        <Agencies/>
+        <Pertnership/>
         </section>
     )
 }

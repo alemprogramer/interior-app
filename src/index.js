@@ -1,28 +1,16 @@
-import React,{Suspense,lazy} from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import { BrowserRouter as Router } from "react-router-dom";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./vendor/css/all.min.css";
 import "./vendor/css/menu2.css";
 import "./vendor/css/style.css";
 import reportWebVitals from './reportWebVitals';
-import RouteTop, { ScrollToTop} from './components/scrollToTop';
-import NavBar from './components/navbar/main';
-const Footer = lazy(()=> import('./components/footer/Footer'));
 
 ReactDOM.render(
     <React.StrictMode>
-    <Router>
-    <RouteTop />
-    <ScrollToTop/>
-    <NavBar/>
     <App/>
-    <Suspense fallback={<p>Please wait...</p>} >
-    <Footer/>
-    </Suspense>
-    </Router>
 
 </React.StrictMode>, document.getElementById('root'));
 
