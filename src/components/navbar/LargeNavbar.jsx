@@ -16,6 +16,9 @@ const LargeNavbar = () => {
                 setServices(dataList);
                 setLoading(false);
             }, 2000);
+            return () => {
+                setServices();
+            };
             // eslint-disable-next-line
         }, [services])
 
