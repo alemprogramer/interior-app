@@ -3,9 +3,9 @@ import Banner from "../../components/banner/index";
 import Blogger from "./blog";
 import Pagination from './pagination';
 
-import imgUrl,{ url as link, blog as Data, tags } from '../../components/data/data';
+import imgUrl,{ url as link, tags } from '../../components/data/data';
 
-function Blog() {
+function Desk({data}) {
     const person = {
         avatar: `${imgUrl}/blogger.png`,
         name: `Jhon Doe13579`
@@ -25,17 +25,19 @@ function Blog() {
     // Used For Post Data Rendering
     useEffect(() => {
         blogLoading(true);
-        setBlog(Data);
+        setBlog(data);
         setTimeout(() => {
             blogLoading(false);
         }, 1000);
+        return () => { setBlog([]);}
+        // eslint-disable-next-line 
     }, []);
 
     // Filter Method
     const filtering = (t) => {
         let rslt = []
         setLoader(true)
-        Data.forEach((e) => {
+        data.forEach((e) => {
             let value = e
                 .tags
                 .find((d) => {
@@ -88,7 +90,6 @@ function Blog() {
 
     }
 
-    console.log(currentBlogs);
 
     return (
         <section className="blog">
@@ -117,10 +118,10 @@ function Blog() {
                                                 <button
                                                     type='button'
                                                     onClick={() => {
-                                                        if (Data.length !== blog.length) {
+                                                        if (data.length !== blog.length) {
                                                             setLoader(true);
                                                             setTimeout(() => {
-                                                                setBlog(Data);
+                                                                setBlog(data);
                                                                 setLoader(false);
                                                                 window.scrollTo({ top: 650, left: 0 });
                                                             }, 1000);
@@ -211,4 +212,4 @@ function Blog() {
     )
 }
 
-export default Blog
+export default Desk

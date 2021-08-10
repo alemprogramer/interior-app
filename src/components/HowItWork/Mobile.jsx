@@ -15,7 +15,7 @@ const Mobile = ({title, frequents, work}) => {
         if (work) {
             setObj(work)
         }
-        
+       // eslint-disable-next-line
     }, []);
     return (
         <section className="hiw mobile">

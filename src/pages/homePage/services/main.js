@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import mediaObserver from "../../../components/breakPoints/breakpoint";
-import DeskService from "./index";
+import DeskService from "./dekstop";
 import Mobile from "./mobile";
 
 function Services() {
