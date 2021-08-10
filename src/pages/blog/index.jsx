@@ -2,12 +2,12 @@ import React, { useState, useEffect } from 'react';
 import Banner from "../../components/banner/index";
 import Blogger from "./blog";
 import Pagination from './pagination';
-import Data, { tags } from "./data";
+
+import imgUrl,{ url as link, blog as Data, tags } from '../../components/data/data';
 
 function Blog() {
-    const link = process.env.PUBLIC_URL;
     const person = {
-        avatar: `${link}/vendor/images/blogger.png`,
+        avatar: `${imgUrl}/blogger.png`,
         name: `Jhon Doe13579`
     };
 
@@ -98,7 +98,7 @@ function Blog() {
                 miniTitle='Featured Blog'
                 text="We specialize in transforming photos of vacant properties into  beautiful, virtually staged homes that sells faster and for top dollar."
                 urlText='Read More'
-                img={`${link}/vendor/images/banner_banner_bg.jpg`}
+                img={`${imgUrl}/banner_banner_bg.jpg`}
                 url={link}
                 urlIcon='fa-long-arrow-alt-right'
                 blogger={person} />

@@ -1,17 +1,14 @@
 import React from 'react'
 
 function Referd(props) {
-    let k = 0;
     const {Contact, Referrer} = props;
-    const obj = {
+    const obj = [
         ...Contact,
         ...Referrer
-    };
+    ];
     return (
         <div className="row">
-            {Object
-                .keys(obj)
-                .map(b => <div
+            {obj.map((b,k) => <div
                     className={Referrer
                     ? 'col-md-4 col-12 col-sm-4'
                     : Contact
@@ -19,12 +16,12 @@ function Referd(props) {
                             '0'
                         : ''}>
                     <div key={k++} className="adress_bars">
-                        <div className="image float-left"><img src={obj[b].image} className="img-fluid" alt="email.png"/></div>
+                        <div className="image float-left"><img src={b.image} className="img-fluid" alt="email.png"/></div>
                         <div className="text">
                             {Contact
-                                ? <h5>{obj[b].text}</h5>
+                                ? <h5>{b.text}</h5>
                                 : Referrer
-                                    ? <h6>{obj[b].text}</h6>
+                                    ? <h6>{b.text}</h6>
                                     : ''}
                         </div>
                     </div>
