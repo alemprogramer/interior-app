@@ -2,10 +2,9 @@ import React from 'react';
 import Banner from "../../components/banner/index";
 import CommonHead from "../../components/headings/CommonHead";
 import HowItWork from "../../components/HowItWork/index";
-import array from "../../components/Js/index";
+import imgUrl, { url, faq } from '../../components/data/data';
 
 function Faq() {
-    const link = process.env.PUBLIC_URL;
 
     return (
         <section className="faq">
@@ -14,8 +13,8 @@ function Faq() {
                 miniTitle="FAQ"
                 text="We specialize in transforming photos of vacant properties into  beautiful, virtually staged homes that sells faster and for top dollar."
                 urlText='Sign Up'
-                img={`${link}/vendor/images/banner_banner_bg.jpg`}
-                url={link}
+                img={`${imgUrl}/banner_banner_bg.jpg`}
+                url={url}
                 urlIcon='fa-long-arrow-alt-right' />
             
             <section className="contact">
@@ -49,7 +48,7 @@ function Faq() {
                         </div>
         </section>
 
-            <HowItWork title="FAQ's" frequents={array[2]} />
+            <HowItWork title="FAQ's" frequents={faq} />
         </section>
     )
 }

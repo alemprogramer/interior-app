@@ -109,4 +109,4 @@ const howItWork = [
 ]
 
 export default imgUrl
-export { take, give, faq, different, howItWork }
+export { url,take, give, faq, different, howItWork }

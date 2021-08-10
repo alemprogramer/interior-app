@@ -5,14 +5,11 @@ import Difference from "../../components/difference/difference";
 import PreviousWork from "../../components/previousWork/index";
 import DeskService from "./services";
 import HowItWork from "../../components/HowItWork/index";
-
-/* import Desk from "./Desk";
-import Desk from "./Desk"; */
 import Pricing from "./Pricing/Index";
 import Agencies from "./Agencies";
 import Pertnership from "./Pertnership";
 
-import array from "../../components/Js";
+import { different, howItWork } from "../../components/data/data";
 
 const Banner=lazy(()=>import('./banner/main'))
 function Home() {
@@ -24,11 +21,11 @@ function Home() {
         </Suspense>
         <Difference
             title='What set us apart from other virtual staging companies'
-            rare={array[3]}/>
+                rare={different}/>
         <PreviousWork/>
         <DeskService/>
         {/* Incomplete Mobile Part */}
-        <HowItWork title="How it works ?" work={array[4]}/>
+            <HowItWork title="How it works ?" work={howItWork}/>
         <Pricing/>
         <Agencies/>
         <Pertnership/>
