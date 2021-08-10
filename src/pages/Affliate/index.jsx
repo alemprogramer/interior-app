@@ -1,8 +1,8 @@
 import React from 'react';
 import Banner from "../../components/banner/index";
-import imgUrl, { url, faq } from '../../components/data/data';
 import HowItWork from "../../components/HowItWork/index";
-
+// Dummy Data
+import imgUrl, { url, faq } from '../../components/data/data';
 function Reseller() {
     return (
         <section className="affliate">

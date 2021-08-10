@@ -3,9 +3,8 @@ import Banner from "../../components/banner/index";
 import Difference from "../../components/difference/difference";
 import PreviousWork from "../../components/previousWork/index";
 import HowItWork from "../../components/HowItWork/index";
-
-
-import imgUrl, { url,give,take,faq } from "../../components/data/data.js";
+// Dummy Data
+import imgUrl, { url,give,take,faq } from "../../components/data/data";
 
 function Services() {
     return (
