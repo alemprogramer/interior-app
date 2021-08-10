@@ -124,6 +124,68 @@ const contact = [
     }
 ]
 
+/* Services Start */
+
+const img = imgUrl + '/service.png';
+const services = [
+    {
+        image: img,
+        title: 'Virtual Home Staging',
+        text: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, provident!`,
+        link: '/service'
+    },
+    {
+        image: img,
+        title: 'Virtual Interior Design',
+        text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ut a officiis nulla eos ea.`,
+        link: '/service'
+    },
+    {
+        image: img,
+        title: 'Virtual Staging',
+        text: `Lorem ipsum dolor sit, amet, consectetur adipisicing elit. Rem, nostrum, minima? Eveniet dolor corrupti beatae et quasi excepturi vitae. Voluptas perspiciatis e x soluta accusantium harum.`,
+        link: '/service'
+    },
+    {
+        image: img,
+        title: 'Virtual Home Staging',
+        text: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, provident!`,
+        link: '/service'
+    },
+    {
+        image: img,
+        title: 'Virtual Interior Design',
+        text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ut a officiis nulla eos ea.`,
+        link: '/service'
+    },
+    {
+        image: img,
+        title: 'Virtual Staging',
+        text: `Lorem ipsum dolor sit, amet, consectetur adipisicing elit. Rem, nostrum, minima? Eveniet dolor corrupti beatae et quasi excepturi vitae. Voluptas perspiciatis e x soluta accusantium harum.`,
+        link: '/service'
+    },
+    {
+        image: img,
+        title: 'Virtual Home Staging',
+        text: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, provident!`,
+        link: '/service'
+    },
+    {
+        image: img,
+        title: 'Virtual Interior Design',
+        text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ut a officiis nulla eos ea.`,
+        link: '/service'
+    },
+    {
+        image: img,
+        title: 'Virtual Staging',
+        text: `Lorem ipsum dolor sit, amet, consectetur adipisicing elit. Rem, nostrum, minima? Eveniet dolor corrupti beatae et quasi excepturi vitae. Voluptas perspiciatis e x soluta accusantium harum.`,
+        link: '/service'
+    }
+]
+
+/* Services End */
+
 /*  Blog Pages Data */
 
 const blog = [
@@ -473,4 +535,4 @@ const sort = [
 /* Blog Page Data End */
 
 export default imgUrl
-export { url, take, give, faq, different, howItWork, blog, tags, sort, contact }
+export { url, take, give, faq, different, howItWork, blog, tags, sort, contact, services }

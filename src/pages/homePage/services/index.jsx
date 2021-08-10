@@ -1,8 +1,11 @@
 import React, {Component} from 'react'
-import CommonHead from "../../../components/headings/CommonHead";
+import CommonHead from "../../../components/headings/index";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
+// dummy data
+import { services } from '../../../components/data/data';
 
 class DeskService extends Component {
     constructor(props) {
@@ -25,66 +28,7 @@ class DeskService extends Component {
             .slickPrev();
     }
     render() {
-        const url = process.env.PUBLIC_URL;
-        const img = url + 'vendor/images/service.png';
-        let k = 0;
-
-        const obj = {
-            setA: {
-                image: img,
-                title: 'Virtual Home Staging',
-                text: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, provident!`,
-                link: '/service'
-            },
-            setB: {
-                image: img,
-                title: 'Virtual Interior Design',
-                text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ut a officiis nulla eos ea.`,
-                link: '/service'
-            },
-            setC: {
-                image: img,
-                title: 'Virtual Staging',
-                text: `Lorem ipsum dolor sit, amet, consectetur adipisicing elit. Rem, nostrum, minima? Eveniet dolor corrupti beatae et quasi excepturi vitae. Voluptas perspiciatis e x soluta accusantium harum.`,
-                link: '/service'
-            },
-            ssetA: {
-                image: img,
-                title: 'Virtual Home Staging',
-                text: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, provident!`,
-                link: '/service'
-            },
-            seftB: {
-                image: img,
-                title: 'Virtual Interior Design',
-                text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ut a officiis nulla eos ea.`,
-                link: '/service'
-            },
-            sestC: {
-                image: img,
-                title: 'Virtual Staging',
-                text: `Lorem ipsum dolor sit, amet, consectetur adipisicing elit. Rem, nostrum, minima? Eveniet dolor corrupti beatae et quasi excepturi vitae. Voluptas perspiciatis e x soluta accusantium harum.`,
-                link: '/service'
-            },
-            seetA: {
-                image: img,
-                title: 'Virtual Home Staging',
-                text: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, provident!`,
-                link: '/service'
-            },
-            setwB: {
-                image: img,
-                title: 'Virtual Interior Design',
-                text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ut a officiis nulla eos ea.`,
-                link: '/service'
-            },
-            setgC: {
-                image: img,
-                title: 'Virtual Staging',
-                text: `Lorem ipsum dolor sit, amet, consectetur adipisicing elit. Rem, nostrum, minima? Eveniet dolor corrupti beatae et quasi excepturi vitae. Voluptas perspiciatis e x soluta accusantium harum.`,
-                link: '/service'
-            }
-        }
+        
 
         var settings = {
             autoplay: true,
@@ -134,24 +78,23 @@ class DeskService extends Component {
                     <CommonHead title='Our Services'/>
                     <div className="row">
                         <Slider ref={c => (this.slider = c)} {...settings}>
-                            {Object
-                                .keys(obj)
-                                .map(m => <div key={k++} className='col-xl-12'>
+                            {services
+                                .map((m,k) => <div key={k++} className='col-xl-12'>
                                     <div className="content">
                                         <div className="image">
-                                            <img src={obj[m].image} alt="service.png" className="img-fluid"/>
+                                            <img src={m.image} alt="service.png" className="img-fluid"/>
                                         </div>
                                         <div className="texts">
 
                                             <div className="title text-center text-capitalize">
-                                                <h4>{obj[m].title}</h4>
+                                                <h4>{m.title}</h4>
                                             </div>
 
                                             <div className="text_part">
-                                                <h6>{obj[m].text}</h6>
+                                                <h6>{m.text}</h6>
                                             </div>
                                             <a
-                                                href={obj[m].link}
+                                                href={m.link}
                                                 className="mini_btn d-inline-block text-capitalize text-center">
                                                 <h5>Learn more</h5>
                                                 <i className="fas fa-long-arrow-alt-right"></i>

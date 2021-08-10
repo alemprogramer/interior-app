@@ -1,5 +1,5 @@
 import React from 'react';
-import CommonHead from "../../../components/headings/CommonHead";
+import CommonHead from "../../../components/headings/index";
 
 function Agencies() {
     let url = process.env.PUBLIC_URL;

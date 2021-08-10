@@ -1,6 +1,6 @@
 import React from 'react';
 import Banner from "../../components/banner/index";
-import CommonHead from "../../components/headings/CommonHead";
+import CommonHead from "../../components/headings/index";
 import HowItWork from "../../components/HowItWork/index";
 // Dummy Data
 import imgUrl, { url, faq } from '../../components/data/data';

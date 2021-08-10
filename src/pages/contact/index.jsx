@@ -1,7 +1,7 @@
 import React from 'react';
 import Banner from "../../components/banner/index";
 import Referd from "../../components/referComps";
-import CommonHead from "../../components/headings/CommonHead";
+import CommonHead from "../../components/headings/index";
 import imgUrl, { url as link, contact } from '../../components/data/data';
 
 function Contact() {

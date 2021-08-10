@@ -1,7 +1,7 @@
 import React from 'react'
 import {Accordion, Card} from 'react-bootstrap';
-import {CommonHead} from "../../components/headings/CommonHead";
-// import {MiniHead} from "../../components/headings/MiniHead";
+import CommonHead from "../../components/headings/index";
+// import {MiniHead} from "../../components/headings/index";
 import obj from "./data";
 const Mobile = ({title, frequents, work}) => {
     return (

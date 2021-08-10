@@ -1,5 +1,5 @@
 import React from 'react';
-import CommonHead from "../../../components/headings/CommonHead";
+import CommonHead from "../../../components/headings/index";
 
 function Partner() {
     const url = process.env.PUBLIC_URL;

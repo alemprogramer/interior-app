@@ -1,5 +1,5 @@
 import React from 'react';
-import CommonHead from "../../components/headings/CommonHead";
+import CommonHead from "../../components/headings/index";
 import { Link } from "react-router-dom";
 
 function PreviousWork() {

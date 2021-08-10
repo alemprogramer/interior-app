@@ -3,8 +3,8 @@ import React,{Suspense,lazy} from 'react';
 
 import Difference from "../../components/difference/difference";
 import PreviousWork from "../../components/previousWork/index";
-import DeskService from "./services";
 import HowItWork from "../../components/HowItWork/index";
+import Services from './services/main';
 import Pricing from "./Pricing/Index";
 import Agencies from "./Agencies";
 import Pertnership from "./Pertnership";
@@ -23,7 +23,7 @@ function Home() {
             title='What set us apart from other virtual staging companies'
                 rare={different}/>
         <PreviousWork/>
-        <DeskService/>
+            <Services/>
         {/* Incomplete Mobile Part */}
             <HowItWork title="How it works ?" work={howItWork}/>
         <Pricing/>

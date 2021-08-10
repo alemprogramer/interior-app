@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
-import CommonHead from "../headings/CommonHead";
-import MiniHead from "../headings/MiniHead";
+import CommonHead, { MiniHead } from "../../components/headings/index";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 
