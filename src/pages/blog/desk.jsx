@@ -29,8 +29,13 @@ function Desk({data}) {
         setTimeout(() => {
             blogLoading(false);
         }, 1000);
-        return () => { setBlog([]);}
         // eslint-disable-next-line 
+    }, []);
+
+    useEffect(() => {
+        return () => {
+        setBlog([])
+        };
     }, []);
 
     // Filter Method
