@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { useState, useEffect} from 'react'
 import mediaObserver from '../breakPoints/breakpoint'
-import { useState, useEffect} from 'react'
 import SmallNavbar from './SmallNavbar';
 import LargeNavbar from './LargeNavbar';
+import dataList from "./data";
 
 function NavBar() {
     const [breakPoint,
@@ -14,8 +14,8 @@ function NavBar() {
 
     return ( <> {
         breakPoint === 'mobile'
-            ? <SmallNavbar/>
-            : <LargeNavbar/>
+            ? <SmallNavbar data={dataList}/>
+            : <LargeNavbar data={dataList}/>
     } </>  )
         
 }

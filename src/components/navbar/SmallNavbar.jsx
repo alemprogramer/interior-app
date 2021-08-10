@@ -1,4 +1,4 @@
-const SmallNavbar = () => {
+const SmallNavbar = ({data}) => {
     return (
         <section className="header">
             <div className="container">

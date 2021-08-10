@@ -2,10 +2,9 @@ import React, {Suspense, lazy, useState, useEffect} from 'react'
 
 import {Link} from "react-router-dom";
 import { Logo, NavItem } from './skeleton';
-import dataList from "./data";
 const MegaMenu = lazy(() => import ("./MegaMenu"));
 
-const LargeNavbar = () => {
+const LargeNavbar = ({data}) => {
     
     const [services,
         setServices] = useState([]);
@@ -13,14 +12,19 @@ const LargeNavbar = () => {
 
         useEffect(() => {
             setTimeout(() => {
-                setServices(dataList);
+                setServices(data);
                 setLoading(false);
             }, 2000);
             return () => {
-                setServices();
             };
             // eslint-disable-next-line
-        }, [services])
+        }, [services]);
+        
+        useEffect(() => {
+            return () => {
+                setServices();
+            };
+        }, []);
 
         
     return (
