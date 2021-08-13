@@ -3,14 +3,14 @@ import mediaObserver from "../../../components/breakPoints/breakpoint";
 import DeskService from "./dekstop";
 import Mobile from "./mobile";
 
-function Services() {
+function Services({data}) {
     const [media, setMedia] = useState();
     useEffect(() => {
         mediaObserver(setMedia);
     }, [media]);
     return (
         <>
-            {media === 'mobile' ? <Mobile /> : <DeskService />}
+            {media === 'mobile' ? <Mobile services={data} /> : <DeskService services={data} />}
         </>
     )
 }

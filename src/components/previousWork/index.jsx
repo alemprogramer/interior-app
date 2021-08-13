@@ -2,31 +2,19 @@ import React from 'react';
 import CommonHead from "../../components/headings/index";
 import { Link } from "react-router-dom";
 
-function PreviousWork() {
-    const img = process.env.PUBLIC_URL + 'vendor/images/';
-    let k = 0;
-    const obj = {
-        setA: {
-            image: img + "previous.jpg",
-            title: 'Hill View Apartments'
-        },
-        setB: {
-            image: img + "previous2.jpg",
-            title: 'Residential Apartments'
-        }
-    }
+
+function PreviousWork({data}) {
     return (
         <section className="previous_work">
             <div className="container">
                 <CommonHead title='Our Previous Work'/>
                 <div className="row">
-                    {Object
-                        .keys(obj)
-                        .map(d => <div key={k++} className="col-md-6 col-sm-6 col-12">
+                    {data
+                        .map((d,k) => <div key={k++} className="col-md-6 col-sm-6 col-12">
                             <div className="content position-relative">
-                                <img src={obj[d].image} className="img-fluid" alt="previous.jpg"/>
+                                <img src={d.image} className="img-fluid" alt="previous.jpg"/>
                                 <div className="slogan position-absolute text-center text-capitalize">
-                                    <h6>{obj[d].title}</h6>
+                                    <h6>{d.title}</h6>
                                 </div>
                             </div>
                         </div>)}

@@ -1,9 +1,8 @@
 import React, {useState, useEffect} from 'react';
-// dummy data
-import { services } from '../../../components/data/data';
 import CommonHead, {MiniHead} from "../../../components/headings/index";
 
-function Mobile() {
+
+function Mobile({ services}) {
     const [data, setData] = useState([]);
     useEffect(() => {
         setData(services);

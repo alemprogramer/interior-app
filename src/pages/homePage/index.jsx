@@ -1,5 +1,4 @@
-import React,{Suspense,lazy} from 'react';
-
+import React,{useState, useEffect, Suspense, lazy} from 'react';
 
 import Difference from "../../components/difference/difference";
 import PreviousWork from "../../components/previousWork/index";
@@ -9,27 +8,57 @@ import Pricing from "./Pricing/Index";
 import Agencies from "./Agencies";
 import Pertnership from "./Pertnership";
 
-import { different, howItWork } from "../../components/data/data";
+// Dummy Data
+
+import { different, howItWork, services, previousWork, agency, partner } from "../../components/data/data";
 
 const Banner=lazy(()=>import('./banner/main'))
 function Home() {
 
+const [dif, setDif] = useState([]);
+const [hiw, setHiw] = useState([]);
+const [serv, setServ] = useState([]);
+const [prevWork, setprevWork] = useState([]);
+const [agent, setAgent] = useState([]);
+const [partnership, setPartnership] = useState([]);
+
+const [loader, setLoader] = useState(true);
+
+useEffect(() => {
+    setDif(different);
+    setHiw(howItWork);
+    setServ(services);
+    setprevWork(previousWork);
+    setAgent(agency);
+    setPartnership(partner);
+    setTimeout(() => {
+        setLoader(false);
+    }, 2000);
+    return () => {
+        
+    };
+}, []);
+
     return (
+        <>
+{loader===true ? 'Loading...':
         <section className="home_page">
         <Suspense fallback={<p>Please Wait...</p>}>
             <Banner/>
         </Suspense>
         <Difference
             title='What set us apart from other virtual staging companies'
-                rare={different}/>
-        <PreviousWork/>
-            <Services/>
+                rare={dif}/>
+            <PreviousWork data={prevWork}/>
+            <Services data={serv} />
         {/* Incomplete Mobile Part */}
-            <HowItWork title="How it works ?" work={howItWork}/>
+            <HowItWork title="How it works ?" work={hiw}/>
         <Pricing/>
-        <Agencies/>
-        <Pertnership/>
+            <Agencies data={agent} />
+            <Pertnership data={partnership} />
         </section>
+}
+</>
     )
 }
 

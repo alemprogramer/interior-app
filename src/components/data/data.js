@@ -108,6 +108,38 @@ const howItWork = [
     }
 ]
 
+const previousWork = [
+    {
+        image: imgUrl + "/previous.jpg",
+        title: 'Hill View Apartments'
+    },
+    {
+        image: imgUrl + "/previous2.jpg",
+        title: 'Residential Apartments'
+    }
+]
+
+const partner = [
+    {
+        img: `${imgUrl}/partner.jpg`,
+        title: `Reseller Program`,
+        text: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, provident!`,
+        link: url
+    },
+    {
+        img: `${imgUrl}/partner.jpg`,
+        title: `Reseller Program`,
+        text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ut a officiis nulla eos ea.`,
+        link: url
+    },
+    {
+        img: `${imgUrl}/partner.jpg`,
+        title: `Reseller Program`,
+        text: `Lorem ipsum dolor sit, amet, consectetur adipisicing elit. Rem, nostrum, minima? Eveniet dolor corrupti beatae et quasi excepturi vitae. Voluptas perspiciatis ex soluta accusantium harum.`,
+        link: url
+    }
+]
+
 // Contact Us Page Data
 const contact = [
     {
@@ -185,6 +217,31 @@ const services = [
 ]
 
 /* Services End */
+
+/* Agency Data */
+
+const agency=[
+    {
+        img: `${imgUrl}/logo.png`
+    },
+    {
+        img: `${imgUrl}/logo2.png`
+    },
+    {
+        img: `${imgUrl}/logo3.png`
+    },
+    {
+        img: `${imgUrl}/logo4.png`
+    },
+    {
+        img: `${imgUrl}/logo5.png`
+    },
+    {
+        img: `${imgUrl}/logo6.png`
+    }
+]
+
+/* Agency Data End*/
 
 /*  Blog Pages Data */
 
@@ -535,4 +592,4 @@ const sort = [
 /* Blog Page Data End */
 
 export default imgUrl
-export { url, take, give, faq, different, howItWork, blog, tags, sort, contact, services }
+export { url, take, give, faq, different, howItWork, blog, tags, sort, contact, services, agency, previousWork, partner }

@@ -4,8 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-// dummy data
-import { services } from '../../../components/data/data';
+
 
 class DeskService extends Component {
     constructor(props) {
@@ -78,7 +77,7 @@ class DeskService extends Component {
                     <CommonHead title='Our Services'/>
                     <div className="row">
                         <Slider ref={c => (this.slider = c)} {...settings}>
-                            {services
+                            {this.props.services
                                 .map((m,k) => <div key={k++} className='col-xl-12'>
                                     <div className="content">
                                         <div className="image">
