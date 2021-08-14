@@ -1,4 +1,4 @@
-import React,{useState, useEffect, Suspense, lazy, useContext} from 'react';
+import React,{useState, useEffect, Suspense, lazy} from 'react';
 
 import Difference from "../../components/difference/difference";
 import PreviousWork from "../../components/previousWork/index";
@@ -7,9 +7,6 @@ import Services from './services/main';
 import Pricing from "./Pricing/Index";
 import Agencies from "./Agencies";
 import Pertnership from "./Pertnership";
-
-// cpntext data
-import loaders from "../../components/contexts/index";
 
 // Dummy Data
 
@@ -27,8 +24,7 @@ const [partnership, setPartnership] = useState([]);
 
 // Global Loader
 
-const loading = useContext(loaders);
-const [loader, setLoader] = useState(loading);
+const [loader, setLoader] = useState(true);
 
 useEffect(() => {
     setDif(different);

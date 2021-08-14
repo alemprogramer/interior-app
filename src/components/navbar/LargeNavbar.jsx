@@ -1,33 +1,36 @@
-import React, {Suspense, lazy, useState, useEffect,useContext} from 'react'
+import React, {Suspense, lazy, useState, useEffect, useContext} from 'react'
 
 import {Link} from "react-router-dom";
+import Loaders from '../contexts';
 import { Logo, NavItem } from './skeleton';
-import loaders from "../contexts/index";
 const MegaMenu = lazy(() => import ("./MegaMenu"));
 
 const LargeNavbar = ({data}) => {
+
+    const {loader}= useContext(Loaders);
+
     
     const [services,
         setServices] = useState([]);
-        const load = useContext(loaders);
-    const [loading, setLoading] = useState(load);
-
-
+        
+        
         useEffect(() => {
-            setTimeout(() => {
-                setServices(data);
-                setLoading(false);
-            }, 2000);
+            setServices(data);
             return () => {
             };
             // eslint-disable-next-line
         }, [services]);
         
         useEffect(() => {
+            console.log(loader);
+            setTimeout(() => {
+            }, 2000);
             return () => {
-                setServices();
+                setServices([]);
             };
+            // eslint-disable-next-line
         }, []);
+        console.log(loader);
 
         
     return (
@@ -40,14 +43,14 @@ const LargeNavbar = ({data}) => {
                             <div className="row">
                                 <div className="col-lg-2 col-xl-2 col-sm-2 col-md-2 d-flex align-items-center">
                                 <div className="logo-area overflow-hidden">
-                                    {loading === true ? <Logo/> :<Link to='/'>Virtual Decor</Link>}
+                                    {loader === true ? <Logo/> :<Link to='/'>Virtual Decor</Link>}
                                         
                                     </div>
                                 </div>
                                 <div className="col-lg-10 col-md-10 col-sm-10 col-xl-10 text-right">
                                     <div className="main-menu">
                                         <ul>
-                                        {loading === true ? [1, 2, 3, 4, 5, 6].map(d => <li className="overflow-hidden" key={d}>
+                                        {loader === true ? [1, 2, 3, 4, 5, 6].map(d => <li className="overflow-hidden" key={d}>
                                             <NavItem/>
                                         </li>):<>
                                             <li>

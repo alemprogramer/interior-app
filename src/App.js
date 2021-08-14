@@ -1,4 +1,4 @@
-import React, {Suspense, lazy} from 'react';
+import React, { Suspense, lazy, useState} from 'react';
 import {Switch, Route, BrowserRouter as Router} from "react-router-dom";
 import Home from "./pages/homePage";
 import Service from "./pages/services";
@@ -12,16 +12,24 @@ import BlogOpen from "./pages/blogOpen/index";
 import Reseller from "./pages/reseller/index";
 import RouteTop, {ScrollToTop} from './components/scrollToTop';
 import NavBar from './components/navbar/main';
+import Loaders from "./components/contexts/index";
 
 const Footer = lazy(() => import ('./components/footer/Footer'));
 
-
 function App() {
+
+    const [loader, setLoader] = useState(true);
+
+    const updateLoader = (e) =>{
+        setLoader(e);
+    }
+
     return (  
         
     <Router>
         <RouteTop/>
         <ScrollToTop/>
+            <Loaders.Provider value={{loader, updateLoader}} >
         <NavBar/>
         <Switch>
             <Route path='/' exact>
@@ -55,9 +63,11 @@ function App() {
             <Reseller/>
             </Route>
         </Switch>
-        <Suspense fallback={< p > Please wait ...</p>}>
+        {loader===false && 
+        <Suspense fallback={''}>
             <Footer/>
-        </Suspense>
+        </Suspense>}
+        </Loaders.Provider>
     </Router> 
     
     )

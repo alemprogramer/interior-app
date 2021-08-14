@@ -1,7 +1,6 @@
 import { createContext } from "react"
 
 
-const loaders = createContext(true);
+const Loaders = createContext();
 
-
-export default loaders
+export default Loaders
