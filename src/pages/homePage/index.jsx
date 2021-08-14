@@ -1,4 +1,4 @@
-import React,{useState, useEffect, Suspense, lazy} from 'react';
+import React,{useState, useEffect, Suspense, lazy, useContext} from 'react';
 
 import Difference from "../../components/difference/difference";
 import PreviousWork from "../../components/previousWork/index";
@@ -11,8 +11,11 @@ import Pertnership from "./Pertnership";
 // Dummy Data
 
 import { different, howItWork, services, previousWork, agency, partner } from "../../components/data/data";
+import Loaders from '../../components/contexts';
 
 const Banner=lazy(()=>import('./banner/main'))
+
+
 function Home() {
 
 const [dif, setDif] = useState([]);
@@ -24,7 +27,7 @@ const [partnership, setPartnership] = useState([]);
 
 // Global Loader
 
-const [loader, setLoader] = useState(true);
+    const { loader, updateLoader } = useContext(Loaders);
 
 useEffect(() => {
     setDif(different);
@@ -34,10 +37,10 @@ useEffect(() => {
     setAgent(agency);
     setPartnership(partner);
     setTimeout(() => {
-        setLoader(false);
+        updateLoader(false);
     }, 2000);
     return () => {
-        setLoader(true);
+        updateLoader(true);
     };
     // eslint-disable-next-line
 }, []);
