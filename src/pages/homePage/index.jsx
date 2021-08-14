@@ -1,4 +1,4 @@
-import React,{useState, useEffect, Suspense, lazy} from 'react';
+import React,{useState, useEffect, Suspense, lazy, useContext} from 'react';
 
 import Difference from "../../components/difference/difference";
 import PreviousWork from "../../components/previousWork/index";
@@ -7,6 +7,8 @@ import Services from './services/main';
 import Pricing from "./Pricing/Index";
 import Agencies from "./Agencies";
 import Pertnership from "./Pertnership";
+
+import { loaders } from "../../App.js";
 
 // Dummy Data
 
@@ -22,7 +24,10 @@ const [prevWork, setprevWork] = useState([]);
 const [agent, setAgent] = useState([]);
 const [partnership, setPartnership] = useState([]);
 
-const [loader, setLoader] = useState(true);
+// Global Loader
+
+const loading = useContext(loaders);
+const [loader, setLoader] = useState(loading);
 
 useEffect(() => {
     setDif(different);
@@ -35,8 +40,9 @@ useEffect(() => {
         setLoader(false);
     }, 2000);
     return () => {
-        
+        setLoader(true);
     };
+    // eslint-disable-next-line
 }, []);
 
     return (

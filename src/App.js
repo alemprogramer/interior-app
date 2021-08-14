@@ -1,5 +1,5 @@
-import React, {Suspense, lazy} from 'react';
-import {Switch, Route,BrowserRouter as Router} from "react-router-dom";
+import React, {Suspense, lazy, createContext} from 'react';
+import {Switch, Route, BrowserRouter as Router} from "react-router-dom";
 import Home from "./pages/homePage";
 import Service from "./pages/services";
 import Contact from "./pages/contact";
@@ -14,34 +14,53 @@ import RouteTop, {ScrollToTop} from './components/scrollToTop';
 import NavBar from './components/navbar/main';
 const Footer = lazy(() => import ('./components/footer/Footer'));
 
+const loaders= createContext(true);
 function App() {
-    return ( 
-    <>
-        <Router>
-            <RouteTop/>
-            <ScrollToTop/>
-            <NavBar/>
-            <Switch>
-
-                <Route path='/' exact component={Home}/>
-                <Route path='/service' component={Service}/>
-                <Route path='/contact' component={Contact}/>
-                <Route path='/refer' component={Refer}/>
-                <Route path='/affliate' component={Affliate}/>
-                <Route path='/faq' component={Faq}/>
-                <Route path='/portfolio' component={Portfolio}/>
-                <Route path='/blog' component={Blog}/>
-                <Route path='/blog-open/:url' exact>
-                    <BlogOpen/>
-                </Route>
-                <Route path='/reseller' component={Reseller}/>
-            </Switch>
-            <Suspense fallback={< p > Please wait ...</p>}>
-                <Footer/>
-            </Suspense>
-        </Router> 
+    return ( <> 
+    <Router>
+        <RouteTop/>
+        <ScrollToTop/>
+        <NavBar/>
+        <Switch>
+            <Route path='/' exact>
+            <Home/>
+            </Route>
+            <Route path='/service'>
+            <Service/>
+            </Route>
+            <Route path='/contact'>
+            <Contact/>
+            </Route>
+            <Route path='/refer'>
+            <Refer/>
+            </Route>
+            <Route path='/affliate'>
+            <Affliate/>
+            </Route>
+            <Route path='/faq'>
+            <Faq/>
+            </Route>
+            <Route path='/portfolio'>
+            <Portfolio/>
+            </Route>
+            <Route path='/blog'>
+            <Blog/>
+            </Route>
+            <Route path='/blog-open/:url' exact>
+                <BlogOpen/>
+            </Route>
+            <Route path='/reseller'>
+            <Reseller/>
+            </Route>
+        </Switch>
+        <Suspense fallback={< p > Please wait ...</p>}>
+            <Footer/>
+        </Suspense>
+    </Router> 
     </>
     )
 }
 
 export default App;
+
+export {loaders};

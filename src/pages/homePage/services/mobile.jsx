@@ -6,6 +6,7 @@ function Mobile({ services}) {
     const [data, setData] = useState([]);
     useEffect(() => {
         setData(services);
+        // eslint-disable-next-line
     }, []);
     return (
         <section
