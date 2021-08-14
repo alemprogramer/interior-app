@@ -1,14 +1,17 @@
-import React, {Suspense, lazy, useState, useEffect} from 'react'
+import React, {Suspense, lazy, useState, useEffect,useContext} from 'react'
 
 import {Link} from "react-router-dom";
 import { Logo, NavItem } from './skeleton';
+import loaders from "../contexts/index";
 const MegaMenu = lazy(() => import ("./MegaMenu"));
 
 const LargeNavbar = ({data}) => {
     
     const [services,
         setServices] = useState([]);
-        const [loading, setLoading] = useState(true)
+        const load = useContext(loaders);
+    const [loading, setLoading] = useState(load);
+
 
         useEffect(() => {
             setTimeout(() => {

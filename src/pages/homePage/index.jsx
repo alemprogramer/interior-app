@@ -8,7 +8,8 @@ import Pricing from "./Pricing/Index";
 import Agencies from "./Agencies";
 import Pertnership from "./Pertnership";
 
-import { loaders } from "../../App.js";
+// cpntext data
+import loaders from "../../components/contexts/index";
 
 // Dummy Data
 

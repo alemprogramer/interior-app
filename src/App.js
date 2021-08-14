@@ -1,4 +1,4 @@
-import React, {Suspense, lazy, createContext} from 'react';
+import React, {Suspense, lazy} from 'react';
 import {Switch, Route, BrowserRouter as Router} from "react-router-dom";
 import Home from "./pages/homePage";
 import Service from "./pages/services";
@@ -12,11 +12,13 @@ import BlogOpen from "./pages/blogOpen/index";
 import Reseller from "./pages/reseller/index";
 import RouteTop, {ScrollToTop} from './components/scrollToTop';
 import NavBar from './components/navbar/main';
+
 const Footer = lazy(() => import ('./components/footer/Footer'));
 
-const loaders= createContext(true);
+
 function App() {
-    return ( <> 
+    return (  
+        
     <Router>
         <RouteTop/>
         <ScrollToTop/>
@@ -57,10 +59,8 @@ function App() {
             <Footer/>
         </Suspense>
     </Router> 
-    </>
+    
     )
 }
 
 export default App;
-
-export {loaders};
