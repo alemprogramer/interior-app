@@ -1,11 +1,33 @@
-import React from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import Banner from "../../components/banner/index";
 import Referd from "../../components/referComps";
 import CommonHead from "../../components/headings/index";
-import imgUrl, { url as link, contact } from '../../components/data/data';
+
+// Dummy Data
+import imgUrl, { url as link, contact as data } from '../../components/data/data';
+
+// Loader
+
+import Loaders from "../../components/contexts/index";
 
 function Contact() {
+    const { loader, updateLoader } = useContext(Loaders);
+    const [info, setInfo] = useState([]);
+
+    useEffect(() => {
+        setInfo(data)
+        setTimeout(() => {
+            updateLoader(false);
+        }, 2000);
+        return () => {
+            setInfo([])            
+            updateLoader(true);
+        };
+        // eslint-disable-next-line
+    }, []);
     return (
+        <>
+            {loader===false &&
         <section className="our_location">
             <Banner
                 title='Bangalore, India'
@@ -18,10 +40,11 @@ function Contact() {
             <section className="contact">
                 <div className="container">
                     <CommonHead title='Reach out to'/>
-                    <Referd Contact={contact}/>
+                    <Referd Contact={info}/>
                 </div>
             </section>
         </section>
+    }</>
     )
 }
 
