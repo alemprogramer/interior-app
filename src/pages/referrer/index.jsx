@@ -1,38 +1,42 @@
-import React from 'react'
+import React, { useState, useContext, useEffect} from 'react'
 import CommonHead from "../../components/headings/index";
 import Referd from "../../components/referComps/index";
 import Banner from "../../components/banner/index";
 
+// dummy data
+import imgUrl, { url, referral } from "../../components/data/data";
+
+// Global Loader
+import Loaders from '../../components/contexts';
+
 function Refer() {
-    const link = process.env.PUBLIC_URL;
-    const imgLink = `${link}/vendor/images`;
-    const obj = {
-        a: {
-            image: `${imgLink}/number.png`,
-            text: `Let others know about VSS and share your unique referral code with them.`
-        },
-        b: {
-            image: `${imgLink}/number.png`,
-            text: `When someone you refer signs up they'll receive a $40 discount on their first order.`
-        },
-        c: {
-            image: `${imgLink}/number.png`,
-            text: `Once confirmed we'll send you a $40 account credit that can be used on any of our services.`
-        }
-    }
+    const { loader, updateLoader }= useContext(Loaders)
+    const [data, setData] = useState([]);
+
+    useEffect(() => {
+        setData(referral);
+        setTimeout(() => {
+            updateLoader(false)
+        }, 2000);
+        return () => {
+            updateLoader(true)            
+        };
+        // eslint-disable-next-line
+    }, []);
     return (
+        <> {loader === false &&
         <section className="referral">
             <Banner title='Bangalore, India'
                 text='112 E Pecan St. #1135, San Antonio, TX 78205'
                 urlText='Refer a friend'
-                img={`${link}/vendor/images/banner_banner_bg.jpg`}
-                url={link}
+                img={`${imgUrl}/banner_banner_bg.jpg`}
+                url={url}
                 urlIcon='fa-long-arrow-alt-right' />
             <section class="contact">
                 <div class="container">
 
                     <CommonHead title="Here’s how it works" />
-                    <Referd Referrer={obj} />
+                    <Referd Referrer={data} />
                 </div>
             </section>
             <section class="share">
@@ -45,13 +49,14 @@ function Refer() {
                             <div class="login_bar">
                                 <h5>Please Log in</h5>
                                 <h6>You must have an account to refer a friend.</h6>
-                                <a href={link} class="btn">Login or register</a>
+                                <a href={url} class="btn">Login or register</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
         </section>
+    }</>
     )
 }
 

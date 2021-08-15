@@ -591,5 +591,24 @@ const sort = [
 
 /* Blog Page Data End */
 
+/* Refferal Page */
+
+const referral = [
+    {
+        image: `${imgUrl}/number.png`,
+        text: `Let others know about VSS and share your unique referral code with them.`
+    },
+    {
+        image: `${imgUrl}/number.png`,
+        text: `When someone you refer signs up they'll receive a $40 discount on their first order.`
+    },
+    {
+        image: `${imgUrl}/number.png`,
+        text: `Once confirmed we'll send you a $40 account credit that can be used on any of our services.`
+    }
+]
+
+/* Refferal Page End */
+
 export default imgUrl
-export { url, take, give, faq, different, howItWork, blog, tags, sort, contact, services, agency, previousWork, partner }
+export { url, take, give, faq, different, howItWork, blog, tags, sort, contact, services, agency, previousWork, partner, referral }
