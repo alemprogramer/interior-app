@@ -57,6 +57,7 @@ function App() {
             <Blog/>
             </Route>
             <Route path='/blog-open/:url' exact>
+            {/* Blog Page Incomplete */}
                 <BlogOpen/>
             </Route>
             <Route path='/reseller'>
