@@ -13,7 +13,7 @@ function Blog() {
     }, [media])
     return (
         <>
-            {media === 'mobile' ? <Mobile data={blog} /> : <Desk  data={blog}/> }
+            {media === 'mobile' ? <Mobile data={blog} /> : <Desk data={blog}/> }
         </>
     )
 }

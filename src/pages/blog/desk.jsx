@@ -1,11 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import Banner from "../../components/banner/index";
 import Blogger from "./blog";
 import Pagination from './pagination';
 
 import imgUrl,{ url as link, tags } from '../../components/data/data';
+import Loaders from '../../components/contexts';
 
 function Desk({data}) {
+
+    const { loader, updateLoader } = useContext(Loaders);
+    
     const person = {
         avatar: `${imgUrl}/blogger.png`,
         name: `Jhon Doe13579`
@@ -13,29 +17,23 @@ function Desk({data}) {
 
     const [blog,
         setBlog] = useState([]);
-    const [loading,
-        blogLoading] = useState(false);
     const [page,
         setPage] = useState(1);
     const [blogLimit,
         limitChange] = useState(15);
-    const [loader,
+    const [blogLoader,
         setLoader] = useState(false);
 
     // Used For Post Data Rendering
     useEffect(() => {
-        blogLoading(true);
         setBlog(data);
         setTimeout(() => {
-            blogLoading(false);
+            updateLoader(false)
         }, 1000);
-        // eslint-disable-next-line 
-    }, []);
-
-    useEffect(() => {
         return () => {
         setBlog([])
         };
+        // eslint-disable-next-line 
     }, []);
 
     // Filter Method
@@ -97,6 +95,7 @@ function Desk({data}) {
 
 
     return (
+        <> {loader===false && 
         <section className="blog">
 
             <Banner
@@ -181,7 +180,7 @@ function Desk({data}) {
                 </div>
                 <div className="blog_partitions">
                     <div className="container">
-                        {loader === false
+                        {blogLoader === false
                             ? <div className="row">
 
                                 {currentBlogs
@@ -194,7 +193,7 @@ function Desk({data}) {
                                         avatar={b.avatar}
                                         title={b.title}
                                         img={b.img}
-                                        loading={loading} />)}
+                                        />)}
                             </div>
                             : <h2>Loading....</h2>}
 
@@ -214,6 +213,7 @@ function Desk({data}) {
                 </div>
             </section>
         </section>
+   } </>
     )
 }
 
