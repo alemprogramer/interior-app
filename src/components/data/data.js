@@ -610,5 +610,104 @@ const referral = [
 
 /* Refferal Page End */
 
+/* Portfolio Page */
+
+const select = [
+    {
+        value: `All`,
+        text: `All`
+    },
+    {
+        value: `Kitchen`,
+        text: `Kitchen`
+    },
+    {
+        value: `Bedroom`,
+        text: `Bedroom`
+    },
+    {
+        value: `Dinning room`,
+        text: `Dinning room`
+    },
+    {
+        value: `Living Room`,
+        text: `Living Room`
+    },
+    {
+        value: `Bathroom`,
+        text: `Bathroom`
+    },
+    {
+        value: `Kitchen`,
+        text: `Kitchen`
+    },
+    {
+        value: `Kitchen`,
+        text: `Kitchen`
+    },
+    {
+        value: `Bedroom`,
+        text: `Bedroom`
+    },
+    {
+        value: `Bedroom`,
+        text: `Bedroom`
+    },
+    {
+        value: `Bedroom`,
+        text: `Bedroom`
+    }
+]
+
+const item = [
+    {
+        image: `${url}/vendor/images/portfolio.jpg`,
+        text: `Hill View Apartments`,
+        url,
+    },
+    {
+        image: `${url}/vendor/images/portfolio9.jpg`,
+        text: `Hill View Apartments`,
+        url,
+    },
+    {
+        image: `${url}/vendor/images/portfolio2.jpg`,
+        text: `Hill View Apartments`,
+        url,
+    },
+    {
+        image: `${url}/vendor/images/portfolio3.jpg`,
+        text: `Hill View Apartments`,
+        url,
+    },
+    {
+        image: `${url}/vendor/images/portfolio4.jpg`,
+        text: `Hill View Apartments`,
+        url,
+    },
+    {
+        image: `${url}/vendor/images/portfolio5.jpg`,
+        text: `Hill View Apartments`,
+        url,
+    },
+    {
+        image: `${url}/vendor/images/portfolio7.jpg`,
+        text: `Hill View Apartments`,
+        url,
+    },
+    {
+        image: `${url}/vendor/images/portfolio8.jpg`,
+        text: `Hill View Apartments`,
+        url,
+    },
+    {
+        image: `${url}/vendor/images/portfolio9.jpg`,
+        text: `Hill View Apartments`,
+        url,
+    },
+]
+
+/* Portfolio Page End */
+
 export default imgUrl
-export { url, take, give, faq, different, howItWork, blog, tags, sort, contact, services, agency, previousWork, partner, referral }
+export { url, take, give, faq, different, howItWork, blog, tags, sort, contact, services, agency, previousWork, partner, referral, item, select }
