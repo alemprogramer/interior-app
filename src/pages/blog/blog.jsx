@@ -10,7 +10,7 @@ class Blogger extends Component {
             writer,
             avatar,
             title,
-            img,
+            img
         } = this.props;
         return (
             <div className="col-md-4 col-sm-4 col-12">

@@ -5,6 +5,7 @@ import HowItWork from "../../components/HowItWork/index";
 // Dummy Data
 import imgUrl, {url, faq} from '../../components/data/data';
 import Loaders from '../../components/contexts';
+import LoadingBanner from '../../components/loader/banner';
 
 function Faq() {
     const [state, setstate] = useState([])
@@ -21,7 +22,7 @@ function Faq() {
     }, [])  
 
     return (
-        <> {loader===false &&
+        <> {loader===false ?
         <section className="faq">
             <Banner
                 title="What is virtual Staging?"
@@ -73,7 +74,7 @@ function Faq() {
 
             <HowItWork title="FAQ's" frequents={state}/>
         </section>
-    }</>
+    : <LoadingBanner/>}</>
     )
 }
 

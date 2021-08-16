@@ -19,6 +19,7 @@ import {
     partner
 } from "../../components/data/data";
 import Loaders from '../../components/contexts';
+import LoadingBanner from "../../components/loader/banner";
 
 const Banner = lazy(() => import ('./banner/main'))
 
@@ -59,7 +60,7 @@ function Home() {
 
     return ( <> {
         loader === true
-            ? 'Loading...'
+            ? <LoadingBanner/>
             : <section className="home_page">
                     <Suspense fallback={< p > Please Wait ...</p>}>
                         <Banner/>

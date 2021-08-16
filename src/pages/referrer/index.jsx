@@ -8,6 +8,7 @@ import imgUrl, { url, referral } from "../../components/data/data";
 
 // Global Loader
 import Loaders from '../../components/contexts';
+import LoadingBanner from '../../components/loader/banner';
 
 function Refer() {
     const { loader, updateLoader }= useContext(Loaders)
@@ -24,7 +25,7 @@ function Refer() {
         // eslint-disable-next-line
     }, []);
     return (
-        <> {loader === false &&
+        <> {loader === false ?
         <section className="referral">
             <Banner title='Bangalore, India'
                 text='112 E Pecan St. #1135, San Antonio, TX 78205'
@@ -56,7 +57,7 @@ function Refer() {
                 </div>
             </section>
         </section>
-    }</>
+    : <LoadingBanner/>}</>
     )
 }
 

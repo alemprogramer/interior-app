@@ -6,6 +6,7 @@ import HowItWork from "../../components/HowItWork/index";
 // Dummy Data
 import imgUrl, { url, give, take, faq, previousWork} from "../../components/data/data";
 import Loaders from '../../components/contexts';
+import LoadingBanner from '../../components/loader/banner';
 
 function Services() {
 
@@ -33,7 +34,7 @@ function Services() {
         // eslint-disable-next-line
     }, []);
 
-    return ( <> {loader===true ? '' : <section className="service_page">
+    return ( <> {loader===true ? <LoadingBanner/> : <section className="service_page">
         <Banner
             title='Virtual Home Staging'
             text='We specialize in transforming photos of vacant properties into beautiful, virtually staged homes that sells faster and for top dollar.'

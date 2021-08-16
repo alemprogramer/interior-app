@@ -4,6 +4,7 @@ import HowItWork from "../../components/HowItWork/index";
 // Dummy Data
 import imgUrl, { url, faq } from '../../components/data/data';
 import Loaders from '../../components/contexts';
+import LoadingBanner from '../../components/loader/banner';
 
 function Reseller() {
     const [data, setData] = useState([])
@@ -19,7 +20,7 @@ function Reseller() {
         // eslint-disable-next-line
     }, []);
     return ( <>
-        {loader===false && 
+        {loader===false ?
         <section className="affliate">
             <Banner
                 title="Affiliate Program"
@@ -29,7 +30,7 @@ function Reseller() {
                 url={url}
                 urlIcon='fa-long-arrow-alt-right' />
             <HowItWork title="FAQ's" frequents={data} />
-        </section>}
+        </section>: <LoadingBanner/>}
     </>
     )
 }

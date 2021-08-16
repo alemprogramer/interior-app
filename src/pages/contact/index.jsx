@@ -9,6 +9,7 @@ import imgUrl, { url as link, contact as data } from '../../components/data/data
 // Loader
 
 import Loaders from "../../components/contexts/index";
+import LoadingBanner from '../../components/loader/banner';
 
 function Contact() {
     const { loader, updateLoader } = useContext(Loaders);
@@ -27,7 +28,7 @@ function Contact() {
     }, []);
     return (
         <>
-            {loader===false &&
+            {loader===false ?
         <section className="our_location">
             <Banner
                 title='Bangalore, India'
@@ -44,7 +45,7 @@ function Contact() {
                 </div>
             </section>
         </section>
-    }</>
+    : <LoadingBanner/>}</>
     )
 }
 

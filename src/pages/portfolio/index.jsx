@@ -4,6 +4,7 @@ import Loaders from '../../components/contexts';
 // Dummy Data
 
 import {url, select, item} from '../../components/data/data';
+import LoadingBanner from '../../components/loader/banner';
 
 function Portfolio() {
     const [options,
@@ -23,7 +24,7 @@ function Portfolio() {
     }, [])
 
     return ( <> {
-        loader === false && <section className="portfolio">
+        loader === false ? <section className="portfolio">
                 <div className="filter_options main-nav">
 
                     <div className="container">
@@ -89,7 +90,7 @@ function Portfolio() {
                     </div>
                 </div>
             </section>
-    } </>
+    : <LoadingBanner/>} </>
     )
 }
 

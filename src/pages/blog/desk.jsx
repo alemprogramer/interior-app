@@ -3,17 +3,18 @@ import Banner from "../../components/banner/index";
 import Blogger from "./blog";
 import Pagination from './pagination';
 
-import imgUrl,{ url as link, tags } from '../../components/data/data';
+import imgUrl, { url as link, tags } from '../../components/data/data';
 import Loaders from '../../components/contexts';
+import BlogLoading from '../../components/loader/blogLoader';
+import LoadingBanner from '../../components/loader/banner';
 
-function Desk({data}) {
-
-    const { loader, updateLoader } = useContext(Loaders);
-    
+function Desk({ data }) {
     const person = {
         avatar: `${imgUrl}/blogger.png`,
         name: `Jhon Doe13579`
     };
+
+    const { loader, updateLoader } = useContext(Loaders);
 
     const [blog,
         setBlog] = useState([]);
@@ -22,24 +23,28 @@ function Desk({data}) {
     const [blogLimit,
         limitChange] = useState(15);
     const [blogLoader,
-        setLoader] = useState(false);
+        blogLoading] = useState(true);
 
     // Used For Post Data Rendering
     useEffect(() => {
         setBlog(data);
         setTimeout(() => {
+            blogLoading(false)
             updateLoader(false)
         }, 1000);
-        return () => {
-        setBlog([])
-        };
         // eslint-disable-next-line 
+    }, []);
+
+    useEffect(() => {
+        return () => {
+            setBlog([])
+        };
     }, []);
 
     // Filter Method
     const filtering = (t) => {
         let rslt = []
-        setLoader(true)
+        blogLoading(true)
         data.forEach((e) => {
             let value = e
                 .tags
@@ -51,17 +56,17 @@ function Desk({data}) {
             }
         })
         setTimeout(() => {
-            setLoader(false)
+            blogLoading(false)
             return setBlog(rslt)
         }, 1000);
     };
 
     // Pagination Method
     const pageGo = (n) => {
-        setLoader(true)
+        blogLoading(true)
         setTimeout(() => {
             setPage(n);
-            setLoader(false)
+            blogLoading(false)
             window.scrollTo({ top: 650, left: 0 });
         }, 1000);
     };
@@ -71,10 +76,10 @@ function Desk({data}) {
     const firstBlogIndex = lastBlogIndex - blogLimit;
     const currentBlogs = blog.slice(firstBlogIndex, lastBlogIndex);
     const limit = (n) => {
-        setLoader(true)
+        blogLoading(true)
         setTimeout(() => {
             limitChange(n.target.value);
-            setLoader(false)
+            blogLoading(false)
         }, 1000);
     };
 
@@ -83,11 +88,11 @@ function Desk({data}) {
     const sorting = (n) => {
         let v = n.target.value
         let sorted = [];
-        setLoader(true);
+        blogLoading(true);
         v === 'name' && (sorted = blog.sort((a, b) => a.title < b.title ? -1 : 1));
         v === 'time' && (sorted = blog.sort((a, b) => a.date < b.date ? -1 : 1));
         setTimeout(() => {
-            setLoader(false);
+            blogLoading(false);
         }, 1000);
         return setBlog(sorted);
 
@@ -95,10 +100,9 @@ function Desk({data}) {
 
 
     return (
-        <> {loader===false && 
-        <section className="blog">
-
-            <Banner
+         <section className="blog">
+            {loader === true ? <LoadingBanner/> :
+          <>  <Banner
                 title="Virtual Home Staging"
                 miniTitle='Featured Blog'
                 text="We specialize in transforming photos of vacant properties into  beautiful, virtually staged homes that sells faster and for top dollar."
@@ -123,10 +127,10 @@ function Desk({data}) {
                                                     type='button'
                                                     onClick={() => {
                                                         if (data.length !== blog.length) {
-                                                            setLoader(true);
+                                                            blogLoading(true);
                                                             setTimeout(() => {
                                                                 setBlog(data);
-                                                                setLoader(false);
+                                                                blogLoading(false);
                                                                 window.scrollTo({ top: 650, left: 0 });
                                                             }, 1000);
                                                         };
@@ -180,11 +184,8 @@ function Desk({data}) {
                 </div>
                 <div className="blog_partitions">
                     <div className="container">
-                        {blogLoader === false
-                            ? <div className="row">
-
-                                {currentBlogs
-                                    .map(b => <Blogger
+                         <div className="row">
+{blogLoader === false ? <> {currentBlogs.map(b => <Blogger
                                         key={b.id}
                                         date={b.date}
                                         link={b.slug}
@@ -192,12 +193,18 @@ function Desk({data}) {
                                         writer={b.writer}
                                         avatar={b.avatar}
                                         title={b.title}
-                                        img={b.img}
-                                        />)}
-                            </div>
-                            : <h2>Loading....</h2>}
-
-                        <div className="row">
+                                        img={b.img} />)} </>
+                            
+                                    : <>
+                                    <BlogLoading/>
+                                    <BlogLoading/>
+                                    <BlogLoading/>
+                                    <BlogLoading/>
+                                    <BlogLoading/>
+                                    <BlogLoading/>
+                                    </>}
+                                    </div>
+                                { blogLoader === false && <div className="row">
                             <div className="col-md-12 col-sm-4 col-12">
 
                                 <div className="pagination_part">
@@ -208,12 +215,16 @@ function Desk({data}) {
                                         blogPerPage={blogLimit} />
                                 </div>
                             </div>
-                        </div>
+                        </div>}
+                        
                     </div>
                 </div>
             </section>
+        </>} 
         </section>
-   } </>
+     
+        
+        
     )
 }
 
