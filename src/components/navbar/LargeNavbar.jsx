@@ -2,7 +2,7 @@ import React, {Suspense, lazy, useState, useEffect, useContext} from 'react'
 
 import {Link} from "react-router-dom";
 import Loaders from '../contexts';
-import { Logo, NavItem } from './skeleton';
+import { Logo, NavItem } from '../loader/navbarLoader';
 const MegaMenu = lazy(() => import ("./MegaMenu"));
 
 const LargeNavbar = ({data}) => {
