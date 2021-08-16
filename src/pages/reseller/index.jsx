@@ -5,6 +5,7 @@ import HowItWork from "../../components/HowItWork/index";
 // Dummy Data
 import imgUrl, { url, faq } from '../../components/data/data';
 import Loaders from "../../components/contexts/index";
+import LoadingBanner from '../../components/loader/banner';
 function Reseller() {
 
     const [data, setData] = useState([]);
@@ -27,7 +28,7 @@ function Reseller() {
     }
 
     return (
-        <> {loader===false && 
+        <> {loader===false ? 
         <section className="reseller">
             <Banner
                 title="Reseller Program"
@@ -52,7 +53,7 @@ function Reseller() {
             </section>
                 <HowItWork title="How to become a reseller?" frequents={data} />
         </section>
-    }</>
+    : <LoadingBanner/>}</>
     )
 }
 

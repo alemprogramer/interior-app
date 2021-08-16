@@ -16,7 +16,9 @@ function Portfolio() {
     useEffect(() => {
         setData(item);
         setOptions(select);
-        updateLoader(false)
+        setTimeout(() => {
+            updateLoader(false)
+        }, 2000);
         return () => {
             updateLoader(true)
         }
