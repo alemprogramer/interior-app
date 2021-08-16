@@ -4,7 +4,7 @@ import "./bannerLoading.css";
 
 const LoadingBanner = ()=> {
         return (
-            <section className="banner">
+            <section className="banner loadings">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-6 col-sm-6">
