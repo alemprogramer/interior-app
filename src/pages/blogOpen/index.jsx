@@ -1,10 +1,9 @@
 import React from 'react'
-import Data from "../blog/data";
+import { url as link, blog as Data } from '../../components/data/data';
 import { useParams, Link } from "react-router-dom";
 import { withRouter } from "react-router";
 
 function BlogOpen() {
-    const link = process.env.PUBLIC_URL;
 
     let {url}=useParams(); //should be exact that declared on router declaration
     let blog = Data.find(d => d.slug === url);

@@ -18,12 +18,12 @@ const matchObserver = (observerPoint) =>{
     }
 }
 
-const observer= (setMedia) => {
+const mediaObserver= (setMedia) => {
     matchObserver(setMedia);
     window.addEventListener('resize',()=>{
         matchObserver(setMedia);
     })
 }
-export default observer;
+export default mediaObserver;
 
 

@@ -1,38 +1,81 @@
-import React,{Suspense,lazy} from 'react';
+import React, {useState, useEffect, Suspense, lazy, useContext} from 'react';
 
-/* import BannerMobile from "./banner/bannerMobile"; */
 import Difference from "../../components/difference/difference";
 import PreviousWork from "../../components/previousWork/index";
-import DeskService from "./services";
 import HowItWork from "../../components/HowItWork/index";
-
-/* import Desk from "./Desk";
-import Desk from "./Desk"; */
+import Services from './services/main';
 import Pricing from "./Pricing/Index";
 import Agencies from "./Agencies";
 import Pertnership from "./Pertnership";
 
-import array from "../../components/Js";
+// Dummy Data
 
-const Banner=lazy(()=>import('./banner/bannerDesk'))
+import {
+    different,
+    howItWork,
+    services,
+    previousWork,
+    agency,
+    partner
+} from "../../components/data/data";
+import Loaders from '../../components/contexts';
+import LoadingBanner from "../../components/loader/banner";
+
+const Banner = lazy(() => import ('./banner/main'))
+
 function Home() {
 
-    return (
-        <section className="home_page">
-        <Suspense fallback={<p>Please Wait...</p>}>
-            <Banner/>
-        </Suspense>
-            {/* <BannerMobile/> */}
-            <Difference
-                title='What set us apart from other virtual staging companies'
-                rare={array[3]}/>
-            <PreviousWork/>
-            <DeskService/>
-            <HowItWork title="How it works ?" work={array[4]}/>
-            <Pricing/>
-            <Agencies/>
-            <Pertnership/>
-        </section>
+    const [dif,
+        setDif] = useState([]);
+    const [hiw,
+        setHiw] = useState([]);
+    const [serv,
+        setServ] = useState([]);
+    const [prevWork,
+        setprevWork] = useState([]);
+    const [agent,
+        setAgent] = useState([]);
+    const [partnership,
+        setPartnership] = useState([]);
+
+    // Global Loader
+
+    const {loader, updateLoader} = useContext(Loaders);
+
+    useEffect(() => {
+        setDif(different);
+        setHiw(howItWork);
+        setServ(services);
+        setprevWork(previousWork);
+        setAgent(agency);
+        setPartnership(partner);
+        setTimeout(() => {
+            updateLoader(false);
+        }, 2000);
+        return () => {
+            updateLoader(true);
+        };
+        // eslint-disable-next-line
+    }, []);
+
+    return ( <> {
+        loader === true
+            ? <LoadingBanner/>
+            : <section className="home_page">
+                    <Suspense fallback={< p > Please Wait ...</p>}>
+                        <Banner/>
+                    </Suspense>
+                    <Difference
+                        title='What set us apart from other virtual staging companies'
+                        rare={dif}/>
+                    <PreviousWork data={prevWork}/>
+                    <Services data={serv}/> {/* Incomplete Mobile Part */}
+                    <HowItWork title="How it works ?" work={hiw}/>
+                    <Pricing/>
+                    <Agencies data={agent}/>
+                    <Pertnership data={partnership}/>
+                </section>
+    } </>
     )
 }
 

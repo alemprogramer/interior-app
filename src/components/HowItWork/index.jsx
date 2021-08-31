@@ -1,12 +1,20 @@
-import React from 'react'
+import React, { useState,useEffect } from 'react'
+import mediaObserver from '../breakPoints/breakpoint';
 import HowDesk from "./Desk";
-/* import HowMobile from "../HowItWork/Mobile"; */
+import HowMobile from "./Mobile";
 
-const HowItWork = (props)=> {
+const HowItWork = ({ title, frequents, work })=> {
     
-    const { title, frequents, work } = props;
+    const [queries, setQueries] = useState();
+    useEffect(() => {
+        mediaObserver(setQueries);
+    }, [queries])
     return (
-        <HowDesk title={title} frequents={frequents} work={work} />
+        <>
+            {queries=== 'mobile' ? <HowMobile title={title} frequents={frequents} work={work} /> : <HowDesk title={title} frequents={frequents} work={work} />  }
+        
+        
+        </>
     )
 }
 

@@ -10,13 +10,8 @@ class Blogger extends Component {
             writer,
             avatar,
             title,
-            img,
-            loading
+            img
         } = this.props;
-        if (loading) {
-            return <h2>Loading...</h2>
-        }
-        console.log(link);
         return (
             <div className="col-md-4 col-sm-4 col-12">
                 <div className="partner_slide">

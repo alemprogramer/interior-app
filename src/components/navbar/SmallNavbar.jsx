@@ -1,10 +1,18 @@
-const SmallNavbar = () => {
+import React, {/* useState, useEffect */} from 'react';
+import { Link } from 'react-router-dom';
+
+
+const SmallNavbar = ({data}) => {
+    /* const [state, setState] = useState([]);
+    useEffect(() => {
+        setState(data)
+    }, []); */
     return (
         <section className="header">
             <div className="container">
                 <div className="row">
                     <div className="col-12">
-                        <a href="index.html" className="logo">Virtual Decor</a>
+                        <Link to="/" className="logo">Virtual Decor</Link>
                         <input className="menu-btn" type="checkbox" id="menu-btn"/>
                         <label className="menu-icon" htmlFor="menu-btn"><span className="navicon"/></label>
                         <ul className="menu">
@@ -266,19 +274,19 @@ const SmallNavbar = () => {
                                 </div>
                             </li>
                             <li className="main-list">
-                                <a href="index.html">Portfolio</a>
+                                <Link to="/portfolio">Portfolio</Link>
                             </li>
                             <li className="main-list">
-                                <a href="index.html">Blog</a>
+                                <Link to="/blog">Blog</Link>
                             </li>
                             <li className="main-list">
-                                <a href="index.html">Help</a>
+                                <Link to="/faq">Help</Link>
                             </li>
                             <li className="main-list">
-                                <a href="index.html">Contact</a>
+                                <Link to="/contact">Contact</Link>
                             </li>
                             <li className="main-list">
-                                <a href="index.html">Sign in</a>
+                                <Link to="index.html">Sign in</Link>
                             </li>
                         </ul>
                     </div>

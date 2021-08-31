@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Item from "./item";
-import CommonHead from "../../components/headings/CommonHead";
+import CommonHead from "../../components/headings/index";
 
 export class Difference extends Component {
     render() {

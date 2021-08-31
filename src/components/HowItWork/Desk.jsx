@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
-import CommonHead from "../headings/CommonHead";
-import MiniHead from "../headings/MiniHead";
+import CommonHead, { MiniHead } from "../../components/headings/index";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 
@@ -46,7 +45,7 @@ export class Desk extends Component {
         }
 
         return (
-            <section className='hiw d-lg-block d-xl-block d-md-block d-none d-sm-none'>
+            <section className='hiw desk'>
                 <div className="container">
                     <CommonHead title={title} />
                     <div className="row">

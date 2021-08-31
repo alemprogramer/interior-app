@@ -168,17 +168,17 @@ const Footer = () => {
                         <div className="row">
                             <div className="col-12 col-md-6 col-sm-6">
                                 <div className="copy">
-                                    <h6>&copy; 2018 Virtually Staging Properties</h6>
+                                    <h6> &copy; 2021 | React App Developed By </h6>
                                 </div>
                             </div>
                             <div className="col-12 col-md-6 col-sm-6">
                                 <div className="links float-md-right">
                                     <div className="row">
                                         <div className="col-12 col-md-6 col-sm-6">
-                                            <Link to='/'>Terms of Service</Link>
+                                            <a target='_blank' rel='noreferrer' href='mailto:maruf@fastcodertech.com'>Maruf</a> &amp;
                                         </div>
                                         <div className="col-12 col-md-6 col-sm-6">
-                                            <Link to='/'>Privacy Policy</Link>
+                                                <a target='_blank' rel='noreferrer' href='mailto:alemhasib@fastcodertech.com'>Aleam</a>
                                         </div>
                                     </div>
                                 </div>

@@ -3,7 +3,7 @@ import React, {Component} from 'react'
 export class BannerMobile extends Component {
     render() {
         return (
-            <section className="mobile_design d-md-none d-xl-none d-lg-none d-sm-none d-block">
+            <section className="mobile_design">
                 <div className="container">
                     <div className="row">
                         <div className="col-12">
