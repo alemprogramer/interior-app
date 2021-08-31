@@ -167,19 +167,13 @@ const Footer = () => {
                     <div className="col-md-12 col-sm-12">
                         <div className="row">
                             <div className="col-12 col-md-6 col-sm-6">
-                                <div className="copy">
-                                    <h6> &copy; 2021 | React App Developed By </h6>
-                                </div>
-                            </div>
-                            <div className="col-12 col-md-6 col-sm-6">
                                 <div className="links float-md-right">
                                     <div className="row">
-                                        <div className="col-12 col-md-6 col-sm-6">
-                                            <a target='_blank' rel='noreferrer' href='mailto:maruf@fastcodertech.com'>Maruf</a> &amp;
-                                        </div>
-                                        <div className="col-12 col-md-6 col-sm-6">
-                                                <a target='_blank' rel='noreferrer' href='mailto:alemhasib@fastcodertech.com'>Aleam</a>
-                                        </div>
+                                            <h6> &copy; 2021 | React App Developed By &nbsp;&nbsp;&nbsp; </h6>
+                                            <a target='_blank' rel='noreferrer' href='mailto:maruf@fastcodertech.com'>Maruf&nbsp;</a>
+                                            &amp;
+                                            <a target='_blank' rel='noreferrer' href='mailto:alemhasib@fastcodertech.com'>&nbsp;Aleam</a>
+                                        
                                     </div>
                                 </div>
                             </div>
