@@ -38,7 +38,7 @@
     left: 0;
     width: 32px;
     height: 4px;
-    background: #f16334;
+    background: var(--main);
 }
 
 .banner.loadings .container .banner_content .text_area {
@@ -65,7 +65,7 @@
     color: #363840;
     float: left;
     display: inline-block;
-    color: #f16334;
+    color: var(--main);
     padding-right: 8px;
 }
 
@@ -90,8 +90,8 @@
     font-size: 14px;
     line-height: 170%;
     color: #7b7d84;
-    color: #f16334 !important;
-    border: 1px solid #f16334;
+    color: var(--main) !important;
+    border: 1px solid var(--main);
     padding: 12px 23px;
     border-radius: 0;
     font-weight: 700;
@@ -105,8 +105,8 @@
 
 .banner.loadings .container .banner_content a.place_btn:hover {
     color: #ffffff !important;
-    background-color: #f16334;
-    border: 1px solid #f16334;
+    background-color: var(--main);
+    border: 1px solid var(--main);
 }
 
 .banner.loadings .container .banner_content a.place_btn:focus {

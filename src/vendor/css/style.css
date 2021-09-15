@@ -18,7 +18,7 @@
   font-weight: 700;
   font-size: 40px;
   text-align: center;
-  color: #f16334;
+  color: var(--main);
 }
 .h3 {
   font-family: 'Muli', sans-serif;
@@ -356,12 +356,12 @@ ul {
   color: #7b7d84;
   float: left;
   font-weight: 700;
-  color: #f16334;
+  color: var(--main);
 }
 .mini_btn i {
   position: absolute;
   right: 0;
-  color: #f16334;
+  color: var(--main);
   bottom: 3px;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
@@ -386,8 +386,8 @@ ul {
   font-size: 14px;
   line-height: 170%;
   color: #7b7d84;
-  color: #f16334 !important;
-  border: 1px solid #f16334;
+  color: var(--main) !important;
+  border: 1px solid var(--main);
   padding: 12px 23px;
   border-radius: 0;
   font-weight: 700;
@@ -400,8 +400,8 @@ ul {
 }
 .btn:hover {
   color: #ffffff !important;
-  background-color: #f16334;
-  border: 1px solid #f16334;
+  background-color: var(--main);
+  border: 1px solid var(--main);
 }
 .btn:focus {
   -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
@@ -529,7 +529,7 @@ footer .container .row .company .company_list ul li a {
   line-height: 18px;
 }
 footer .container .row .company .company_list ul li a.text-lowercase {
-  color: #f16334;
+  color: var(--main);
 }
 footer .container .row .company .company_list ul .pb68 {
   padding-bottom: 68px;
@@ -665,8 +665,8 @@ footer .container .row .reservation .links a {
   font-size: 14px;
   line-height: 170%;
   color: #7b7d84;
-  color: #f16334 !important;
-  border: 1px solid #f16334;
+  color: var(--main) !important;
+  border: 1px solid var(--main);
   padding: 12px 23px;
   border-radius: 0;
   font-weight: 700;
@@ -679,8 +679,8 @@ footer .container .row .reservation .links a {
 }
 .home_page .banner .container .banner_content a:hover {
   color: #ffffff !important;
-  background-color: #f16334;
-  border: 1px solid #f16334;
+  background-color: var(--main);
+  border: 1px solid var(--main);
 }
 .home_page .banner .container .banner_content a:focus {
   -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
@@ -713,7 +713,7 @@ footer .container .row .reservation .links a {
 }
 .home_page .banner .carousel.slide .carousel-indicators .active {
   opacity: 1;
-  background: #f16334;
+  background: var(--main);
 }
 .home_page .banner .carousel-inner {
   height: 100%;
@@ -960,7 +960,7 @@ footer .container .row .reservation .links a {
   right: 0;
   height: 6px;
   width: 0;
-  background: #f16334;
+  background: var(--main);
   -webkit-transition: all linear 0.25s;
   -moz-transition: all linear 0.25s;
   -ms-transition: all linear 0.25s;
@@ -1059,7 +1059,7 @@ footer .container .row .reservation .links a {
   top: 0;
   bottom: 0;
   left: 0;
-  background: #f16334;
+  background: var(--main);
   height: 0;
   width: 4px;
   -webkit-transition: all linear 0.25s;
@@ -1177,7 +1177,7 @@ footer .container .row .reservation .links a {
   color: #363840;
   text-align: center;
   line-height: 43px;
-  color: #f16334;
+  color: var(--main);
 }
 .home_page .pricing .pirce_list .title_part {
   border: 0;
@@ -1214,7 +1214,7 @@ footer .container .row .reservation .links a {
   font-weight: 700;
   font-size: 40px;
   text-align: center;
-  color: #f16334;
+  color: var(--main);
 }
 .home_page .pricing .pirce_list .list_part {
   padding-top: 8px;
@@ -1233,7 +1233,7 @@ footer .container .row .reservation .links a {
 }
 .home_page .pricing .pirce_list .list_part .list_sec ul .icon i {
   font-size: 14px;
-  color: #f16334;
+  color: var(--main);
 }
 .home_page .pricing .pirce_list .list_part .list_sec ul .text_part h5 {
   font-family: 'Muli', sans-serif;
@@ -1493,7 +1493,7 @@ footer .container .row .reservation .links a {
   right: 0;
   height: 6px;
   width: 0;
-  background: #f16334;
+  background: var(--main);
   -webkit-transition: all linear 0.25s;
   -moz-transition: all linear 0.25s;
   -ms-transition: all linear 0.25s;
@@ -1607,7 +1607,7 @@ footer .container .row .reservation .links a {
   left: 0;
   width: 32px;
   height: 4px;
-  background: #f16334;
+  background: var(--main);
 }
 .service_page .banner .container .banner_content .text_area {
   font-family: 'Muli', sans-serif;
@@ -1631,7 +1631,7 @@ footer .container .row .reservation .links a {
   color: #363840;
   float: left;
   display: inline-block;
-  color: #f16334;
+  color: var(--main);
   padding-right: 8px;
 }
 .service_page .banner .container .banner_content .price_tag p {
@@ -1654,8 +1654,8 @@ footer .container .row .reservation .links a {
   font-size: 14px;
   line-height: 170%;
   color: #7b7d84;
-  color: #f16334 !important;
-  border: 1px solid #f16334;
+  color: var(--main) !important;
+  border: 1px solid var(--main);
   padding: 12px 23px;
   border-radius: 0;
   font-weight: 700;
@@ -1668,8 +1668,8 @@ footer .container .row .reservation .links a {
 }
 .service_page .banner .container .banner_content a.place_btn:hover {
   color: #ffffff !important;
-  background-color: #f16334;
-  border: 1px solid #f16334;
+  background-color: var(--main);
+  border: 1px solid var(--main);
 }
 .service_page .banner .container .banner_content a.place_btn:focus {
   -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
@@ -1781,7 +1781,7 @@ footer .container .row .reservation .links a {
   line-height: 20px;
 }
 .service_page .difference .context .item .heading .red {
-  color: #f16334;
+  color: var(--main);
 }
 .service_page .difference .context .item .content {
   width: 317px;
@@ -1801,7 +1801,7 @@ footer .container .row .reservation .links a {
 }
 .service_page .difference .context .requ::after {
   content: "Required";
-  color: #f16334;
+  color: var(--main);
 }
 .service_page .difference .context .optional::after {
   content: "Optional";
@@ -1944,7 +1944,7 @@ footer .container .row .reservation .links a {
   border-right: 0;
 }
 .service_page .hiw .nav_list .nav_items .content:hover span {
-  color: #f16334;
+  color: var(--main);
 }
 .service_page .hiw .nav_list .nav_items .content .texts {
   overflow: hidden;
@@ -1962,7 +1962,7 @@ footer .container .row .reservation .links a {
   position: absolute;
   content: "";
   bottom: 0;
-  background: #f16334;
+  background: var(--main);
   -webkit-transition: all linear 0.25s;
   -moz-transition: all linear 0.25s;
   -ms-transition: all linear 0.25s;
@@ -1979,7 +1979,7 @@ footer .container .row .reservation .links a {
   height: 8px;
 }
 .service_page .hiw .nav_list .slick-current .content span {
-  color: #f16334;
+  color: var(--main);
 }
 .service_page .hiw .nav_list .slick-slide {
   width: 100% !important;
@@ -2105,7 +2105,7 @@ footer .container .row .reservation .links a {
   right: 0;
   height: 6px;
   width: 0;
-  background: #f16334;
+  background: var(--main);
   -webkit-transition: all linear 0.25s;
   -moz-transition: all linear 0.25s;
   -ms-transition: all linear 0.25s;
@@ -2513,7 +2513,7 @@ footer .container .row .reservation .links a {
   left: 0;
   width: 32px;
   height: 4px;
-  background: #f16334;
+  background: var(--main);
 }
 .faq .banner .container .banner_content .text_area {
   font-family: 'Muli', sans-serif;
@@ -2537,7 +2537,7 @@ footer .container .row .reservation .links a {
   color: #363840;
   float: left;
   display: inline-block;
-  color: #f16334;
+  color: var(--main);
   padding-right: 8px;
 }
 .faq .banner .container .banner_content .price_tag p {
@@ -2560,8 +2560,8 @@ footer .container .row .reservation .links a {
   font-size: 14px;
   line-height: 170%;
   color: #7b7d84;
-  color: #f16334 !important;
-  border: 1px solid #f16334;
+  color: var(--main) !important;
+  border: 1px solid var(--main);
   padding: 12px 23px;
   border-radius: 0;
   font-weight: 700;
@@ -2574,8 +2574,8 @@ footer .container .row .reservation .links a {
 }
 .faq .banner .container .banner_content a.place_btn:hover {
   color: #ffffff !important;
-  background-color: #f16334;
-  border: 1px solid #f16334;
+  background-color: var(--main);
+  border: 1px solid var(--main);
 }
 .faq .banner .container .banner_content a.place_btn:focus {
   -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
@@ -2687,7 +2687,7 @@ footer .container .row .reservation .links a {
   line-height: 20px;
 }
 .faq .difference .context .item .heading .red {
-  color: #f16334;
+  color: var(--main);
 }
 .faq .difference .context .item .content {
   width: 317px;
@@ -2707,7 +2707,7 @@ footer .container .row .reservation .links a {
 }
 .faq .difference .context .requ::after {
   content: "Required";
-  color: #f16334;
+  color: var(--main);
 }
 .faq .difference .context .optional::after {
   content: "Optional";
@@ -2850,7 +2850,7 @@ footer .container .row .reservation .links a {
   border-right: 0;
 }
 .faq .hiw .nav_list .nav_items .content:hover span {
-  color: #f16334;
+  color: var(--main);
 }
 .faq .hiw .nav_list .nav_items .content .texts {
   overflow: hidden;
@@ -2868,7 +2868,7 @@ footer .container .row .reservation .links a {
   position: absolute;
   content: "";
   bottom: 0;
-  background: #f16334;
+  background: var(--main);
   -webkit-transition: all linear 0.25s;
   -moz-transition: all linear 0.25s;
   -ms-transition: all linear 0.25s;
@@ -2885,7 +2885,7 @@ footer .container .row .reservation .links a {
   height: 8px;
 }
 .faq .hiw .nav_list .slick-current .content span {
-  color: #f16334;
+  color: var(--main);
 }
 .faq .hiw .nav_list .slick-slide {
   width: 100% !important;
@@ -3011,7 +3011,7 @@ footer .container .row .reservation .links a {
   right: 0;
   height: 6px;
   width: 0;
-  background: #f16334;
+  background: var(--main);
   -webkit-transition: all linear 0.25s;
   -moz-transition: all linear 0.25s;
   -ms-transition: all linear 0.25s;
@@ -3315,12 +3315,12 @@ footer .container .row .reservation .links a {
   color: #7b7d84;
   float: left;
   font-weight: 700;
-  color: #f16334;
+  color: var(--main);
 }
 .faq .banner .container .banner_content a.mini_btn i {
   position: absolute;
   right: 0;
-  color: #f16334;
+  color: var(--main);
   bottom: 3px;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
@@ -3439,7 +3439,7 @@ footer .container .row .reservation .links a {
   left: 0;
   width: 32px;
   height: 4px;
-  background: #f16334;
+  background: var(--main);
 }
 .blog .banner .container .banner_content .text_area {
   font-family: 'Muli', sans-serif;
@@ -3463,7 +3463,7 @@ footer .container .row .reservation .links a {
   color: #363840;
   float: left;
   display: inline-block;
-  color: #f16334;
+  color: var(--main);
   padding-right: 8px;
 }
 .blog .banner .container .banner_content .price_tag p {
@@ -3486,8 +3486,8 @@ footer .container .row .reservation .links a {
   font-size: 14px;
   line-height: 170%;
   color: #7b7d84;
-  color: #f16334 !important;
-  border: 1px solid #f16334;
+  color: var(--main) !important;
+  border: 1px solid var(--main);
   padding: 12px 23px;
   border-radius: 0;
   font-weight: 700;
@@ -3500,8 +3500,8 @@ footer .container .row .reservation .links a {
 }
 .blog .banner .container .banner_content a.place_btn:hover {
   color: #ffffff !important;
-  background-color: #f16334;
-  border: 1px solid #f16334;
+  background-color: var(--main);
+  border: 1px solid var(--main);
 }
 .blog .banner .container .banner_content a.place_btn:focus {
   -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
@@ -3613,7 +3613,7 @@ footer .container .row .reservation .links a {
   line-height: 20px;
 }
 .blog .difference .context .item .heading .red {
-  color: #f16334;
+  color: var(--main);
 }
 .blog .difference .context .item .content {
   width: 317px;
@@ -3633,7 +3633,7 @@ footer .container .row .reservation .links a {
 }
 .blog .difference .context .requ::after {
   content: "Required";
-  color: #f16334;
+  color: var(--main);
 }
 .blog .difference .context .optional::after {
   content: "Optional";
@@ -3776,7 +3776,7 @@ footer .container .row .reservation .links a {
   border-right: 0;
 }
 .blog .hiw .nav_list .nav_items .content:hover span {
-  color: #f16334;
+  color: var(--main);
 }
 .blog .hiw .nav_list .nav_items .content .texts {
   overflow: hidden;
@@ -3794,7 +3794,7 @@ footer .container .row .reservation .links a {
   position: absolute;
   content: "";
   bottom: 0;
-  background: #f16334;
+  background: var(--main);
   -webkit-transition: all linear 0.25s;
   -moz-transition: all linear 0.25s;
   -ms-transition: all linear 0.25s;
@@ -3811,7 +3811,7 @@ footer .container .row .reservation .links a {
   height: 8px;
 }
 .blog .hiw .nav_list .slick-current .content span {
-  color: #f16334;
+  color: var(--main);
 }
 .blog .hiw .nav_list .slick-slide {
   width: 100% !important;
@@ -3937,7 +3937,7 @@ footer .container .row .reservation .links a {
   right: 0;
   height: 6px;
   width: 0;
-  background: #f16334;
+  background: var(--main);
   -webkit-transition: all linear 0.25s;
   -moz-transition: all linear 0.25s;
   -ms-transition: all linear 0.25s;
@@ -4241,12 +4241,12 @@ footer .container .row .reservation .links a {
   color: #7b7d84;
   float: left;
   font-weight: 700;
-  color: #f16334;
+  color: var(--main);
 }
 .blog .banner .container .banner_content a.mini_btn i {
   position: absolute;
   right: 0;
-  color: #f16334;
+  color: var(--main);
   bottom: 3px;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
@@ -4418,7 +4418,7 @@ background: transparent;
   width: 0;
   bottom: -10px;
   left: 0;
-  background: #f16334;
+  background: var(--main);
   height: 4px;
   -webkit-transition: all linear 0.2s;
   -moz-transition: all linear 0.2s;
@@ -4452,11 +4452,11 @@ background: transparent;
 }
 .blog .blog_parts .blog_options .filters .filter_options li:hover a,
 .blog .blog_parts .blog_options .navbar .filter_options li:hover a {
-  color: #f16334;
+  color: var(--main);
 }
 .blog .blog_parts .blog_options .filters .filter_options .active > a.nav-link,
 .blog .blog_parts .blog_options .navbar .filter_options .active > a.nav-link {
-  color: #f16334;
+  color: var(--main);
 }
 .blog .blog_parts .blog_options .filters .filter_options .active > a.nav-link::after,
 .blog .blog_parts .blog_options .navbar .filter_options .active > a.nav-link::after {
@@ -4531,7 +4531,7 @@ background: transparent;
   right: 0;
   height: 6px;
   width: 0;
-  background: #f16334;
+  background: var(--main);
   -webkit-transition: all linear 0.25s;
   -moz-transition: all linear 0.25s;
   -ms-transition: all linear 0.25s;
@@ -4694,11 +4694,11 @@ background: transparent;
   font-size: 14px;
   line-height: 170%;
   color: #7b7d84;
-  color: #f16334;
+  color: var(--main);
 }
 .blog .blog_parts .blog_partitions .pagination_part nav ul.pagination li.page-item.active .page-link {
-  border: 1.5px solid #f16334;
-  color: #f16334;
+  border: 1.5px solid var(--main);
+  color: var(--main);
 }
 .blog .blog_parts .blog_partitions .pagination_part nav ul.pagination li.page-item.disabled {
   cursor: not-allowed;
@@ -4748,7 +4748,7 @@ background: transparent;
   left: 0;
   width: 32px;
   height: 4px;
-  background: #f16334;
+  background: var(--main);
 }
 .blog_open .banner .container .banner_content .text_area {
   font-family: 'Muli', sans-serif;
@@ -4772,7 +4772,7 @@ background: transparent;
   color: #363840;
   float: left;
   display: inline-block;
-  color: #f16334;
+  color: var(--main);
   padding-right: 8px;
 }
 .blog_open .banner .container .banner_content .price_tag p {
@@ -4795,8 +4795,8 @@ background: transparent;
   font-size: 14px;
   line-height: 170%;
   color: #7b7d84;
-  color: #f16334 !important;
-  border: 1px solid #f16334;
+  color: var(--main) !important;
+  border: 1px solid var(--main);
   padding: 12px 23px;
   border-radius: 0;
   font-weight: 700;
@@ -4809,8 +4809,8 @@ background: transparent;
 }
 .blog_open .banner .container .banner_content a.place_btn:hover {
   color: #ffffff !important;
-  background-color: #f16334;
-  border: 1px solid #f16334;
+  background-color: var(--main);
+  border: 1px solid var(--main);
 }
 .blog_open .banner .container .banner_content a.place_btn:focus {
   -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
@@ -4922,7 +4922,7 @@ background: transparent;
   line-height: 20px;
 }
 .blog_open .difference .context .item .heading .red {
-  color: #f16334;
+  color: var(--main);
 }
 .blog_open .difference .context .item .content {
   width: 317px;
@@ -4942,7 +4942,7 @@ background: transparent;
 }
 .blog_open .difference .context .requ::after {
   content: "Required";
-  color: #f16334;
+  color: var(--main);
 }
 .blog_open .difference .context .optional::after {
   content: "Optional";
@@ -5085,7 +5085,7 @@ background: transparent;
   border-right: 0;
 }
 .blog_open .hiw .nav_list .nav_items .content:hover span {
-  color: #f16334;
+  color: var(--main);
 }
 .blog_open .hiw .nav_list .nav_items .content .texts {
   overflow: hidden;
@@ -5103,7 +5103,7 @@ background: transparent;
   position: absolute;
   content: "";
   bottom: 0;
-  background: #f16334;
+  background: var(--main);
   -webkit-transition: all linear 0.25s;
   -moz-transition: all linear 0.25s;
   -ms-transition: all linear 0.25s;
@@ -5120,7 +5120,7 @@ background: transparent;
   height: 8px;
 }
 .blog_open .hiw .nav_list .slick-current .content span {
-  color: #f16334;
+  color: var(--main);
 }
 .blog_open .hiw .nav_list .slick-slide {
   width: 100% !important;
@@ -5246,7 +5246,7 @@ background: transparent;
   right: 0;
   height: 6px;
   width: 0;
-  background: #f16334;
+  background: var(--main);
   -webkit-transition: all linear 0.25s;
   -moz-transition: all linear 0.25s;
   -ms-transition: all linear 0.25s;
@@ -5550,12 +5550,12 @@ background: transparent;
   color: #7b7d84;
   float: left;
   font-weight: 700;
-  color: #f16334;
+  color: var(--main);
 }
 .blog_open .banner .container .banner_content a.mini_btn i {
   position: absolute;
   right: 0;
-  color: #f16334;
+  color: var(--main);
   bottom: 3px;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
@@ -5726,7 +5726,7 @@ background: transparent;
   width: 0;
   bottom: -33px;
   left: 0;
-  background: #f16334;
+  background: var(--main);
   height: 4px;
   -webkit-transition: all linear 0.2s;
   -moz-transition: all linear 0.2s;
@@ -5760,11 +5760,11 @@ background: transparent;
 }
 .blog_open .blog_parts .blog_options .filters .filter_options li:hover a,
 .blog_open .blog_parts .blog_options .navbar .filter_options li:hover a {
-  color: #f16334;
+  color: var(--main);
 }
 .blog_open .blog_parts .blog_options .filters .filter_options .active > a.nav-link,
 .blog_open .blog_parts .blog_options .navbar .filter_options .active > a.nav-link {
-  color: #f16334;
+  color: var(--main);
 }
 .blog_open .blog_parts .blog_options .filters .filter_options .active > a.nav-link::after,
 .blog_open .blog_parts .blog_options .navbar .filter_options .active > a.nav-link::after {
@@ -5835,7 +5835,7 @@ background: transparent;
   right: 0;
   height: 6px;
   width: 0;
-  background: #f16334;
+  background: var(--main);
   -webkit-transition: all linear 0.25s;
   -moz-transition: all linear 0.25s;
   -ms-transition: all linear 0.25s;
@@ -5995,11 +5995,11 @@ background: transparent;
   font-size: 14px;
   line-height: 170%;
   color: #7b7d84;
-  color: #f16334;
+  color: var(--main);
 }
 .blog_open .blog_parts .blog_partitions .pagination_part nav ul.pagination li.page-item.active a.page-link {
-  border: 1.5px solid #f16334;
-  color: #f16334;
+  border: 1.5px solid var(--main);
+  color: var(--main);
 }
 .blog_open .blog_parts .blog_partitions .pagination_part nav ul.pagination li.page-item.disabled {
   cursor: not-allowed;
@@ -6050,7 +6050,7 @@ background: transparent;
   font-weight: 700;
   font-size: 40px;
   text-align: center;
-  color: #f16334;
+  color: var(--main);
   color: #ffffff;
   font-weight: 800;
   line-height: 150%;
@@ -6148,7 +6148,7 @@ background: transparent;
 .blog_open .blog_parts .blog_partitions .blog_opened .comment_box .heading .shares .collaps_box .card a {
   float: left;
   padding: 13px 18px;
-  color: #f16334;
+  color: var(--main);
   font-size: 16px;
   -webkit-transition: all linear 0.25s;
   -moz-transition: all linear 0.25s;
@@ -6258,7 +6258,7 @@ background: transparent;
   background: transparent;
 }
 .blog_open .blog_parts .blog_partitions .blog_opened .comment_box .all_comments .other_cmnt .media .media-body .drop-btn .reply:hover {
-  color: #f16334 !important;
+  color: var(--main) !important;
 }
 .blog_open .blog_parts .blog_partitions .blog_opened .comment_box .all_comments .other_cmnt .hide {
   display: none;
@@ -6427,7 +6427,7 @@ background: transparent;
   left: 0;
   width: 32px;
   height: 4px;
-  background: #f16334;
+  background: var(--main);
 }
 .our_location .banner .container .banner_content .text_area {
   font-family: 'Muli', sans-serif;
@@ -6451,7 +6451,7 @@ background: transparent;
   color: #363840;
   float: left;
   display: inline-block;
-  color: #f16334;
+  color: var(--main);
   padding-right: 8px;
 }
 .our_location .banner .container .banner_content .price_tag p {
@@ -6474,8 +6474,8 @@ background: transparent;
   font-size: 14px;
   line-height: 170%;
   color: #7b7d84;
-  color: #f16334 !important;
-  border: 1px solid #f16334;
+  color: var(--main) !important;
+  border: 1px solid var(--main);
   padding: 12px 23px;
   border-radius: 0;
   font-weight: 700;
@@ -6488,8 +6488,8 @@ background: transparent;
 }
 .our_location .banner .container .banner_content a.place_btn:hover {
   color: #ffffff !important;
-  background-color: #f16334;
-  border: 1px solid #f16334;
+  background-color: var(--main);
+  border: 1px solid var(--main);
 }
 .our_location .banner .container .banner_content a.place_btn:focus {
   -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
@@ -6601,7 +6601,7 @@ background: transparent;
   line-height: 20px;
 }
 .our_location .difference .context .item .heading .red {
-  color: #f16334;
+  color: var(--main);
 }
 .our_location .difference .context .item .content {
   width: 317px;
@@ -6621,7 +6621,7 @@ background: transparent;
 }
 .our_location .difference .context .requ::after {
   content: "Required";
-  color: #f16334;
+  color: var(--main);
 }
 .our_location .difference .context .optional::after {
   content: "Optional";
@@ -6764,7 +6764,7 @@ background: transparent;
   border-right: 0;
 }
 .our_location .hiw .nav_list .nav_items .content:hover span {
-  color: #f16334;
+  color: var(--main);
 }
 .our_location .hiw .nav_list .nav_items .content .texts {
   overflow: hidden;
@@ -6782,7 +6782,7 @@ background: transparent;
   position: absolute;
   content: "";
   bottom: 0;
-  background: #f16334;
+  background: var(--main);
   -webkit-transition: all linear 0.25s;
   -moz-transition: all linear 0.25s;
   -ms-transition: all linear 0.25s;
@@ -6799,7 +6799,7 @@ background: transparent;
   height: 8px;
 }
 .our_location .hiw .nav_list .slick-current .content span {
-  color: #f16334;
+  color: var(--main);
 }
 .our_location .hiw .nav_list .slick-slide {
   width: 100% !important;
@@ -6925,7 +6925,7 @@ background: transparent;
   right: 0;
   height: 6px;
   width: 0;
-  background: #f16334;
+  background: var(--main);
   -webkit-transition: all linear 0.25s;
   -moz-transition: all linear 0.25s;
   -ms-transition: all linear 0.25s;
@@ -7229,12 +7229,12 @@ background: transparent;
   color: #7b7d84;
   float: left;
   font-weight: 700;
-  color: #f16334;
+  color: var(--main);
 }
 .our_location .banner .container .banner_content a.mini_btn i {
   position: absolute;
   right: 0;
-  color: #f16334;
+  color: var(--main);
   bottom: 3px;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
@@ -7328,7 +7328,7 @@ background: transparent;
   font-size: 12px;
   line-height: 170%;
   font-weight: 700;
-  color: #f16334;
+  color: var(--main);
 }
 .our_location .banner .container .banner_content .text_area {
   margin-top: 0;
@@ -7414,7 +7414,7 @@ background: transparent;
   left: 0;
   width: 32px;
   height: 4px;
-  background: #f16334;
+  background: var(--main);
 }
 .reseller .banner .container .banner_content .text_area {
   font-family: 'Muli', sans-serif;
@@ -7438,7 +7438,7 @@ background: transparent;
   color: #363840;
   float: left;
   display: inline-block;
-  color: #f16334;
+  color: var(--main);
   padding-right: 8px;
 }
 .reseller .banner .container .banner_content .price_tag p {
@@ -7461,8 +7461,8 @@ background: transparent;
   font-size: 14px;
   line-height: 170%;
   color: #7b7d84;
-  color: #f16334 !important;
-  border: 1px solid #f16334;
+  color: var(--main) !important;
+  border: 1px solid var(--main);
   padding: 12px 23px;
   border-radius: 0;
   font-weight: 700;
@@ -7475,8 +7475,8 @@ background: transparent;
 }
 .reseller .banner .container .banner_content a.place_btn:hover {
   color: #ffffff !important;
-  background-color: #f16334;
-  border: 1px solid #f16334;
+  background-color: var(--main);
+  border: 1px solid var(--main);
 }
 .reseller .banner .container .banner_content a.place_btn:focus {
   -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
@@ -7588,7 +7588,7 @@ background: transparent;
   line-height: 20px;
 }
 .reseller .difference .context .item .heading .red {
-  color: #f16334;
+  color: var(--main);
 }
 .reseller .difference .context .item .content {
   width: 317px;
@@ -7608,7 +7608,7 @@ background: transparent;
 }
 .reseller .difference .context .requ::after {
   content: "Required";
-  color: #f16334;
+  color: var(--main);
 }
 .reseller .difference .context .optional::after {
   content: "Optional";
@@ -7751,7 +7751,7 @@ background: transparent;
   border-right: 0;
 }
 .reseller .hiw .nav_list .nav_items .content:hover span {
-  color: #f16334;
+  color: var(--main);
 }
 .reseller .hiw .nav_list .nav_items .content .texts {
   overflow: hidden;
@@ -7769,7 +7769,7 @@ background: transparent;
   position: absolute;
   content: "";
   bottom: 0;
-  background: #f16334;
+  background: var(--main);
   -webkit-transition: all linear 0.25s;
   -moz-transition: all linear 0.25s;
   -ms-transition: all linear 0.25s;
@@ -7786,7 +7786,7 @@ background: transparent;
   height: 8px;
 }
 .reseller .hiw .nav_list .slick-current .content span {
-  color: #f16334;
+  color: var(--main);
 }
 .reseller .hiw .nav_list .slick-slide {
   width: 100% !important;
@@ -7912,7 +7912,7 @@ background: transparent;
   right: 0;
   height: 6px;
   width: 0;
-  background: #f16334;
+  background: var(--main);
   -webkit-transition: all linear 0.25s;
   -moz-transition: all linear 0.25s;
   -ms-transition: all linear 0.25s;
@@ -8216,12 +8216,12 @@ background: transparent;
   color: #7b7d84;
   float: left;
   font-weight: 700;
-  color: #f16334;
+  color: var(--main);
 }
 .reseller .banner .container .banner_content a.mini_btn i {
   position: absolute;
   right: 0;
-  color: #f16334;
+  color: var(--main);
   bottom: 3px;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
@@ -8323,7 +8323,7 @@ background: transparent;
   top: 50%;
   transform: translateY(-50%);
   left: 24px;
-  background: #f16334;
+  background: var(--main);
   height: 8px;
   width: 8px;
 }
@@ -8415,7 +8415,7 @@ background: transparent;
   left: 0;
   width: 32px;
   height: 4px;
-  background: #f16334;
+  background: var(--main);
 }
 .affliate .banner .container .banner_content .text_area {
   font-family: 'Muli', sans-serif;
@@ -8439,7 +8439,7 @@ background: transparent;
   color: #363840;
   float: left;
   display: inline-block;
-  color: #f16334;
+  color: var(--main);
   padding-right: 8px;
 }
 .affliate .banner .container .banner_content .price_tag p {
@@ -8462,8 +8462,8 @@ background: transparent;
   font-size: 14px;
   line-height: 170%;
   color: #7b7d84;
-  color: #f16334 !important;
-  border: 1px solid #f16334;
+  color: var(--main) !important;
+  border: 1px solid var(--main);
   padding: 12px 23px;
   border-radius: 0;
   font-weight: 700;
@@ -8476,8 +8476,8 @@ background: transparent;
 }
 .affliate .banner .container .banner_content a.place_btn:hover {
   color: #ffffff !important;
-  background-color: #f16334;
-  border: 1px solid #f16334;
+  background-color: var(--main);
+  border: 1px solid var(--main);
 }
 .affliate .banner .container .banner_content a.place_btn:focus {
   -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
@@ -8589,7 +8589,7 @@ background: transparent;
   line-height: 20px;
 }
 .affliate .difference .context .item .heading .red {
-  color: #f16334;
+  color: var(--main);
 }
 .affliate .difference .context .item .content {
   width: 317px;
@@ -8609,7 +8609,7 @@ background: transparent;
 }
 .affliate .difference .context .requ::after {
   content: "Required";
-  color: #f16334;
+  color: var(--main);
 }
 .affliate .difference .context .optional::after {
   content: "Optional";
@@ -8752,7 +8752,7 @@ background: transparent;
   border-right: 0;
 }
 .affliate .hiw .nav_list .nav_items .content:hover span {
-  color: #f16334;
+  color: var(--main);
 }
 .affliate .hiw .nav_list .nav_items .content .texts {
   overflow: hidden;
@@ -8770,7 +8770,7 @@ background: transparent;
   position: absolute;
   content: "";
   bottom: 0;
-  background: #f16334;
+  background: var(--main);
   -webkit-transition: all linear 0.25s;
   -moz-transition: all linear 0.25s;
   -ms-transition: all linear 0.25s;
@@ -8787,7 +8787,7 @@ background: transparent;
   height: 8px;
 }
 .affliate .hiw .nav_list .slick-current .content span {
-  color: #f16334;
+  color: var(--main);
 }
 .affliate .hiw .nav_list .slick-slide {
   width: 100% !important;
@@ -8913,7 +8913,7 @@ background: transparent;
   right: 0;
   height: 6px;
   width: 0;
-  background: #f16334;
+  background: var(--main);
   -webkit-transition: all linear 0.25s;
   -moz-transition: all linear 0.25s;
   -ms-transition: all linear 0.25s;
@@ -9217,12 +9217,12 @@ background: transparent;
   color: #7b7d84;
   float: left;
   font-weight: 700;
-  color: #f16334;
+  color: var(--main);
 }
 .affliate .banner .container .banner_content a.mini_btn i {
   position: absolute;
   right: 0;
-  color: #f16334;
+  color: var(--main);
   bottom: 3px;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
@@ -9324,7 +9324,7 @@ background: transparent;
   top: 50%;
   transform: translateY(-50%);
   left: 24px;
-  background: #f16334;
+  background: var(--main);
   height: 8px;
   width: 8px;
 }
@@ -9422,7 +9422,7 @@ background: transparent;
   left: 0;
   width: 32px;
   height: 4px;
-  background: #f16334;
+  background: var(--main);
 }
 .referral .banner .container .banner_content .text_area {
   font-family: 'Muli', sans-serif;
@@ -9446,7 +9446,7 @@ background: transparent;
   color: #363840;
   float: left;
   display: inline-block;
-  color: #f16334;
+  color: var(--main);
   padding-right: 8px;
 }
 .referral .banner .container .banner_content .price_tag p {
@@ -9469,8 +9469,8 @@ background: transparent;
   font-size: 14px;
   line-height: 170%;
   color: #7b7d84;
-  color: #f16334 !important;
-  border: 1px solid #f16334;
+  color: var(--main) !important;
+  border: 1px solid var(--main);
   padding: 12px 23px;
   border-radius: 0;
   font-weight: 700;
@@ -9483,8 +9483,8 @@ background: transparent;
 }
 .referral .banner .container .banner_content a.place_btn:hover {
   color: #ffffff !important;
-  background-color: #f16334;
-  border: 1px solid #f16334;
+  background-color: var(--main);
+  border: 1px solid var(--main);
 }
 .referral .banner .container .banner_content a.place_btn:focus {
   -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
@@ -9596,7 +9596,7 @@ background: transparent;
   line-height: 20px;
 }
 .referral .difference .context .item .heading .red {
-  color: #f16334;
+  color: var(--main);
 }
 .referral .difference .context .item .content {
   width: 317px;
@@ -9616,7 +9616,7 @@ background: transparent;
 }
 .referral .difference .context .requ::after {
   content: "Required";
-  color: #f16334;
+  color: var(--main);
 }
 .referral .difference .context .optional::after {
   content: "Optional";
@@ -9759,7 +9759,7 @@ background: transparent;
   border-right: 0;
 }
 .referral .hiw .nav_list .nav_items .content:hover span {
-  color: #f16334;
+  color: var(--main);
 }
 .referral .hiw .nav_list .nav_items .content .texts {
   overflow: hidden;
@@ -9777,7 +9777,7 @@ background: transparent;
   position: absolute;
   content: "";
   bottom: 0;
-  background: #f16334;
+  background: var(--main);
   -webkit-transition: all linear 0.25s;
   -moz-transition: all linear 0.25s;
   -ms-transition: all linear 0.25s;
@@ -9794,7 +9794,7 @@ background: transparent;
   height: 8px;
 }
 .referral .hiw .nav_list .slick-current .content span {
-  color: #f16334;
+  color: var(--main);
 }
 .referral .hiw .nav_list .slick-slide {
   width: 100% !important;
@@ -9920,7 +9920,7 @@ background: transparent;
   right: 0;
   height: 6px;
   width: 0;
-  background: #f16334;
+  background: var(--main);
   -webkit-transition: all linear 0.25s;
   -moz-transition: all linear 0.25s;
   -ms-transition: all linear 0.25s;
@@ -10224,12 +10224,12 @@ background: transparent;
   color: #7b7d84;
   float: left;
   font-weight: 700;
-  color: #f16334;
+  color: var(--main);
 }
 .referral .banner .container .banner_content a.mini_btn i {
   position: absolute;
   right: 0;
-  color: #f16334;
+  color: var(--main);
   bottom: 3px;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
@@ -10323,7 +10323,7 @@ background: transparent;
   font-size: 12px;
   line-height: 170%;
   font-weight: 700;
-  color: #f16334;
+  color: var(--main);
 }
 .referral .banner .container .banner_content .text_area {
   margin-top: 0;
@@ -10568,7 +10568,7 @@ background: transparent;
   font-weight: 700;
   font-size: 40px;
   text-align: center;
-  color: #f16334;
+  color: var(--main);
   font-size: 32px;
   line-height: 40px;
   text-align: left;
@@ -10619,7 +10619,7 @@ background: transparent;
   background: transparent;
 }
 .step-1 .p_5_1 .documents .step_1_box .file_box button:hover {
-  background: #f16334;
+  background: var(--main);
 }
 .step-1 .p_5_1 .documents .file_upload {
   /* change Here */
@@ -10690,7 +10690,7 @@ background: transparent;
   line-height: 170%;
   color: #7b7d84;
   line-height: 26px;
-  color: #f16334;
+  color: var(--main);
 }
 .step-1 .p_5_1 .documents .file_upload .add.files .dz-default.dz-message {
   opacity: 0;
@@ -10841,7 +10841,7 @@ background: transparent;
 }
 .step-1 .p_5_1 .confirm_button .next {
   margin-left: 15px;
-  border-color: #f16334;
+  border-color: var(--main);
 }
 .step-1 .p_5_1 .confirm_button .cross {
   cursor: not-allowed;
@@ -10885,7 +10885,7 @@ background: transparent;
   font-weight: 700;
   font-size: 40px;
   text-align: center;
-  color: #f16334;
+  color: var(--main);
   font-size: 32px;
   line-height: 40px;
   text-align: left;
@@ -10936,7 +10936,7 @@ background: transparent;
   background: transparent;
 }
 .Purchase-Step-2 .p_5_1 .documents .step_1_box .file_box button:hover {
-  background: #f16334;
+  background: var(--main);
 }
 .Purchase-Step-2 .p_5_1 .documents .file_upload {
   /* change Here */
@@ -11007,7 +11007,7 @@ background: transparent;
   line-height: 170%;
   color: #7b7d84;
   line-height: 26px;
-  color: #f16334;
+  color: var(--main);
 }
 .Purchase-Step-2 .p_5_1 .documents .file_upload .add.files .dz-default.dz-message {
   opacity: 0;
@@ -11158,7 +11158,7 @@ background: transparent;
 }
 .Purchase-Step-2 .p_5_1 .confirm_button .next {
   margin-left: 15px;
-  border-color: #f16334;
+  border-color: var(--main);
 }
 .Purchase-Step-2 .p_5_1 .confirm_button .cross {
   cursor: not-allowed;
@@ -11235,7 +11235,7 @@ background: transparent;
   content: "";
   width: 10px;
   height: 10px;
-  background: #f16334;
+  background: var(--main);
   right: 15px;
   top: 15px;
   -webkit-border-radius: 100%;
@@ -11274,7 +11274,7 @@ background: transparent;
   box-shadow: 0px 0px 40px -25px rgba(0, 0, 0, 0.75);
 }
 .Purchase-Step-2 .p_5_1 .documents .vibe [type="radio"]:checked + label::before {
-  border: 2px solid #f16334;
+  border: 2px solid var(--main);
   background: transparent;
 }
 .Purchase-Step-2 .p_5_1 .documents .vibe [type="radio"]:checked + label::after {
@@ -11283,7 +11283,7 @@ background: transparent;
   transform: scale(1);
 }
 .Purchase-Step-2 .p_5_1 .documents .vibe [type="radio"]:checked + label {
-  border: 1px solid #f16334;
+  border: 1px solid var(--main);
 }
 .Purchase-Step-2 .p_5_1 .summery_box {
   margin-top: 16px;
@@ -11318,7 +11318,7 @@ background: transparent;
   font-weight: 700;
   font-size: 40px;
   text-align: center;
-  color: #f16334;
+  color: var(--main);
   font-size: 32px;
   line-height: 40px;
   text-align: left;
@@ -11369,7 +11369,7 @@ background: transparent;
   background: transparent;
 }
 .Purchase-Step-3 .p_5_1 .documents .step_1_box .file_box button:hover {
-  background: #f16334;
+  background: var(--main);
 }
 .Purchase-Step-3 .p_5_1 .documents .file_upload {
   /* change Here */
@@ -11440,7 +11440,7 @@ background: transparent;
   line-height: 170%;
   color: #7b7d84;
   line-height: 26px;
-  color: #f16334;
+  color: var(--main);
 }
 .Purchase-Step-3 .p_5_1 .documents .file_upload .add.files .dz-default.dz-message {
   opacity: 0;
@@ -11591,7 +11591,7 @@ background: transparent;
 }
 .Purchase-Step-3 .p_5_1 .confirm_button .next {
   margin-left: 15px;
-  border-color: #f16334;
+  border-color: var(--main);
 }
 .Purchase-Step-3 .p_5_1 .confirm_button .cross {
   cursor: not-allowed;
@@ -11668,7 +11668,7 @@ background: transparent;
   content: "";
   width: 10px;
   height: 10px;
-  background: #f16334;
+  background: var(--main);
   right: 15px;
   top: 15px;
   -webkit-border-radius: 100%;
@@ -11707,7 +11707,7 @@ background: transparent;
   box-shadow: 0px 0px 40px -25px rgba(0, 0, 0, 0.75);
 }
 .Purchase-Step-3 .p_5_1 .documents .vibe [type="radio"]:checked + label::before {
-  border: 2px solid #f16334;
+  border: 2px solid var(--main);
   background: transparent;
 }
 .Purchase-Step-3 .p_5_1 .documents .vibe [type="radio"]:checked + label::after {
@@ -11716,7 +11716,7 @@ background: transparent;
   transform: scale(1);
 }
 .Purchase-Step-3 .p_5_1 .documents .vibe [type="radio"]:checked + label {
-  border: 1px solid #f16334;
+  border: 1px solid var(--main);
 }
 .Purchase-Step-3 .p_5_1 .summery_box {
   margin-top: 16px;
@@ -11834,8 +11834,8 @@ background: transparent;
 }
 .Purchase-Step-3 .p_5_1 .documents .preview .form .addons .custom-control-input:checked ~ .custom-control-label::before {
   color: #fff;
-  border-color: #F16334;
-  background-color: #F16334;
+  border-color: var(--main);
+  background-color: var(--main);
 }
 .Purchase-Step-3 .p_5_1 .documents .preview .form .addons .custom-control-input:checked ~ .custom-control-label::after {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
@@ -11870,7 +11870,7 @@ background: transparent;
   background-position: center center;
 }
 .Purchase-Step-3 .p_5_1 .documents .preview .form .reference .refer_btn .rbtn:hover {
-  color: #f16334;
+  color: var(--main);
   background: #f5f7fa;
 }
 .Purchase-Step-3 .p_5_1 .documents .preview .form .reference .refer_btn .rbtn:hover .img {
@@ -11900,7 +11900,7 @@ background: transparent;
   box-shadow: 0 32px 32px 0 rgba(0, 0, 0, 0.08);
 }
 .Purchase-Step-3 .p_5_1 .documents .preview .form .reference .show .rbtn {
-  color: #f16334;
+  color: var(--main);
   background: #f5f7fa;
 }
 .Purchase-Step-3 .p_5_1 .documents .preview .form .reference .show .rbtn .img {
@@ -11957,7 +11957,7 @@ background: transparent;
   font-weight: 700;
   font-size: 40px;
   text-align: center;
-  color: #f16334;
+  color: var(--main);
   font-size: 32px;
   line-height: 40px;
   text-align: left;
@@ -12008,7 +12008,7 @@ background: transparent;
   background: transparent;
 }
 .step-4 .p_5_1 .documents .step_1_box .file_box button:hover {
-  background: #f16334;
+  background: var(--main);
 }
 .step-4 .p_5_1 .documents .file_upload {
   /* change Here */
@@ -12079,7 +12079,7 @@ background: transparent;
   line-height: 170%;
   color: #7b7d84;
   line-height: 26px;
-  color: #f16334;
+  color: var(--main);
 }
 .step-4 .p_5_1 .documents .file_upload .add.files .dz-default.dz-message {
   opacity: 0;
@@ -12230,7 +12230,7 @@ background: transparent;
 }
 .step-4 .p_5_1 .confirm_button .next {
   margin-left: 15px;
-  border-color: #f16334;
+  border-color: var(--main);
 }
 .step-4 .p_5_1 .confirm_button .cross {
   cursor: not-allowed;
@@ -12318,7 +12318,7 @@ background: transparent;
   line-height: 170%;
   color: #7b7d84;
   line-height: 26px;
-  color: #f16334;
+  color: var(--main);
 }
 .step-4 .p_5_1 .documents .file_upload .add.files .dz-default.dz-message {
   opacity: 0;
@@ -12402,7 +12402,7 @@ background: transparent;
   font-weight: 700;
   font-size: 40px;
   text-align: center;
-  color: #f16334;
+  color: var(--main);
   font-size: 32px;
   line-height: 40px;
   text-align: left;
@@ -12453,7 +12453,7 @@ background: transparent;
   background: transparent;
 }
 .Purchase-Step-4a .p_5_1 .documents .step_1_box .file_box button:hover {
-  background: #f16334;
+  background: var(--main);
 }
 .Purchase-Step-4a .p_5_1 .documents .file_upload {
   /* change Here */
@@ -12524,7 +12524,7 @@ background: transparent;
   line-height: 170%;
   color: #7b7d84;
   line-height: 26px;
-  color: #f16334;
+  color: var(--main);
 }
 .Purchase-Step-4a .p_5_1 .documents .file_upload .add.files .dz-default.dz-message {
   opacity: 0;
@@ -12675,7 +12675,7 @@ background: transparent;
 }
 .Purchase-Step-4a .p_5_1 .confirm_button .next {
   margin-left: 15px;
-  border-color: #f16334;
+  border-color: var(--main);
 }
 .Purchase-Step-4a .p_5_1 .confirm_button .cross {
   cursor: not-allowed;
@@ -12763,7 +12763,7 @@ background: transparent;
   line-height: 170%;
   color: #7b7d84;
   line-height: 26px;
-  color: #f16334;
+  color: var(--main);
 }
 .Purchase-Step-4a .p_5_1 .documents .file_upload .add.files .dz-default.dz-message {
   opacity: 0;
@@ -12847,7 +12847,7 @@ background: transparent;
   font-weight: 700;
   font-size: 40px;
   text-align: center;
-  color: #f16334;
+  color: var(--main);
   font-size: 32px;
   line-height: 40px;
   text-align: left;
@@ -12898,7 +12898,7 @@ background: transparent;
   background: transparent;
 }
 .Purchase-Step-5 .p_5_1 .documents .step_1_box .file_box button:hover {
-  background: #f16334;
+  background: var(--main);
 }
 .Purchase-Step-5 .p_5_1 .documents .file_upload {
   /* change Here */
@@ -12969,7 +12969,7 @@ background: transparent;
   line-height: 170%;
   color: #7b7d84;
   line-height: 26px;
-  color: #f16334;
+  color: var(--main);
 }
 .Purchase-Step-5 .p_5_1 .documents .file_upload .add.files .dz-default.dz-message {
   opacity: 0;
@@ -13120,7 +13120,7 @@ background: transparent;
 }
 .Purchase-Step-5 .p_5_1 .confirm_button .next {
   margin-left: 15px;
-  border-color: #f16334;
+  border-color: var(--main);
 }
 .Purchase-Step-5 .p_5_1 .confirm_button .cross {
   cursor: not-allowed;
@@ -13208,7 +13208,7 @@ background: transparent;
   line-height: 170%;
   color: #7b7d84;
   line-height: 26px;
-  color: #f16334;
+  color: var(--main);
 }
 .Purchase-Step-5 .p_5_1 .documents .file_upload .add.files .dz-default.dz-message {
   opacity: 0;
@@ -13297,7 +13297,7 @@ background: transparent;
   color: #363840;
 }
 .Purchase-Step-5 .p_5_1 .documents .file_box label p a {
-  color: #f16334;
+  color: var(--main);
 }
 .Purchase-Step-5 .p_5_1 .documents .file_box .form-control {
   padding: 6px 16px;
@@ -13329,8 +13329,8 @@ background: transparent;
 }
 .Purchase-Step-5 .p_5_1 .documents .file_box .custom-control-input:checked ~ .custom-control-label::before {
   color: #fff;
-  border-color: #F16334;
-  background-color: #F16334;
+  border-color: var(--main);
+  background-color: var(--main);
 }
 .Purchase-Step-6 {
   margin-top: 80px;
@@ -13362,7 +13362,7 @@ background: transparent;
   font-weight: 700;
   font-size: 40px;
   text-align: center;
-  color: #f16334;
+  color: var(--main);
   font-size: 32px;
   line-height: 40px;
   text-align: left;
@@ -13413,7 +13413,7 @@ background: transparent;
   background: transparent;
 }
 .Purchase-Step-6 .p_5_1 .documents .step_1_box .file_box button:hover {
-  background: #f16334;
+  background: var(--main);
 }
 .Purchase-Step-6 .p_5_1 .documents .file_upload {
   /* change Here */
@@ -13484,7 +13484,7 @@ background: transparent;
   line-height: 170%;
   color: #7b7d84;
   line-height: 26px;
-  color: #f16334;
+  color: var(--main);
 }
 .Purchase-Step-6 .p_5_1 .documents .file_upload .add.files .dz-default.dz-message {
   opacity: 0;
@@ -13635,7 +13635,7 @@ background: transparent;
 }
 .Purchase-Step-6 .p_5_1 .confirm_button .next {
   margin-left: 15px;
-  border-color: #f16334;
+  border-color: var(--main);
 }
 .Purchase-Step-6 .p_5_1 .confirm_button .cross {
   cursor: not-allowed;
@@ -13723,7 +13723,7 @@ background: transparent;
   line-height: 170%;
   color: #7b7d84;
   line-height: 26px;
-  color: #f16334;
+  color: var(--main);
 }
 .Purchase-Step-6 .p_5_1 .documents .file_upload .add.files .dz-default.dz-message {
   opacity: 0;
@@ -13812,7 +13812,7 @@ background: transparent;
   color: #363840;
 }
 .Purchase-Step-6 .p_5_1 .documents .file_box label p a {
-  color: #f16334;
+  color: var(--main);
 }
 .Purchase-Step-6 .p_5_1 .documents .file_box .form-control {
   padding: 6px 16px;
@@ -13844,8 +13844,8 @@ background: transparent;
 }
 .Purchase-Step-6 .p_5_1 .documents .file_box .custom-control-input:checked ~ .custom-control-label::before {
   color: #fff;
-  border-color: #F16334;
-  background-color: #F16334;
+  border-color: var(--main);
+  background-color: var(--main);
 }
 .Purchase-Step-6 .p_5_1 .documents .file_box {
   width: 100%;
@@ -13886,7 +13886,7 @@ background: transparent;
   font-size: 16px;
   line-height: 20px;
   color: #363840;
-  color: #f16334;
+  color: var(--main);
 }
 .Purchase-Step-6 .p_5_1 .documents .file_box .order_part .order_head a i {
   font-size: 14px;
@@ -14036,7 +14036,7 @@ background: transparent;
   font-weight: 700;
   font-size: 40px;
   text-align: center;
-  color: #f16334;
+  color: var(--main);
   font-size: 32px;
   line-height: 40px;
   text-align: left;
@@ -14087,7 +14087,7 @@ background: transparent;
   background: transparent;
 }
 .Purchase-Step-7 .p_5_1 .documents .step_1_box .file_box button:hover {
-  background: #f16334;
+  background: var(--main);
 }
 .Purchase-Step-7 .p_5_1 .documents .file_upload {
   /* change Here */
@@ -14158,7 +14158,7 @@ background: transparent;
   line-height: 170%;
   color: #7b7d84;
   line-height: 26px;
-  color: #f16334;
+  color: var(--main);
 }
 .Purchase-Step-7 .p_5_1 .documents .file_upload .add.files .dz-default.dz-message {
   opacity: 0;
@@ -14309,7 +14309,7 @@ background: transparent;
 }
 .Purchase-Step-7 .p_5_1 .confirm_button .next {
   margin-left: 15px;
-  border-color: #f16334;
+  border-color: var(--main);
 }
 .Purchase-Step-7 .p_5_1 .confirm_button .cross {
   cursor: not-allowed;
@@ -14397,7 +14397,7 @@ background: transparent;
   line-height: 170%;
   color: #7b7d84;
   line-height: 26px;
-  color: #f16334;
+  color: var(--main);
 }
 .Purchase-Step-7 .p_5_1 .documents .file_upload .add.files .dz-default.dz-message {
   opacity: 0;
@@ -14486,7 +14486,7 @@ background: transparent;
   color: #363840;
 }
 .Purchase-Step-7 .p_5_1 .documents .file_box label p a {
-  color: #f16334;
+  color: var(--main);
 }
 .Purchase-Step-7 .p_5_1 .documents .file_box .form-control {
   padding: 6px 16px;
@@ -14518,8 +14518,8 @@ background: transparent;
 }
 .Purchase-Step-7 .p_5_1 .documents .file_box .custom-control-input:checked ~ .custom-control-label::before {
   color: #fff;
-  border-color: #F16334;
-  background-color: #F16334;
+  border-color: var(--main);
+  background-color: var(--main);
 }
 .Purchase-Step-7 .p_5_1 .documents .file_box {
   width: 100%;
@@ -14560,7 +14560,7 @@ background: transparent;
   font-size: 16px;
   line-height: 20px;
   color: #363840;
-  color: #f16334;
+  color: var(--main);
 }
 .Purchase-Step-7 .p_5_1 .documents .file_box .order_part .order_head a i {
   font-size: 14px;
@@ -14755,7 +14755,7 @@ background: transparent;
   font-size: 16px;
   line-height: 20px;
   color: #363840;
-  color: #f16334;
+  color: var(--main);
 }
 .Purchase-Step-7 .p_5_1 .documents .file_box .payment_head {
   padding: 24px;
@@ -14805,7 +14805,7 @@ background: transparent;
   font-size: 16px;
   line-height: 20px;
   color: #363840;
-  color: #f16334;
+  color: var(--main);
 }
 .Purchase-Step-7 .p_5_1 .documents .file_box .card .card-header::after {
   position: absolute;
@@ -14827,7 +14827,7 @@ background: transparent;
   left: 29.5px;
   width: 10px;
   height: 10px;
-  background: #f16334;
+  background: var(--main);
   -webkit-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%;
@@ -14839,7 +14839,7 @@ background: transparent;
   color: #363840;
 }
 .Purchase-Step-7 .p_5_1 .documents .file_box .card .card-header[aria-expanded="true"]::after {
-  border: 2px solid #f16334;
+  border: 2px solid var(--main);
 }
 .Purchase-Step-7 .p_5_1 .documents .file_box .card .card-header[aria-expanded="true"]::before {
   display: block;
@@ -14872,7 +14872,7 @@ background: transparent;
   text-align: center;
 }
 .Purchase-Step-7 .p_5_1 .confirm_button h5 a {
-  color: #f16334;
+  color: var(--main);
   font-weight: 700;
 }
 .Purchase-Step-7 .p_5_1 .confirm_button h6 {
@@ -14888,7 +14888,7 @@ background: transparent;
 }
 .Purchase-Step-7 .p_5_1 .confirm_button a {
   text-align: right;
-  color: #f16334;
+  color: var(--main);
   font-weight: 700;
 }
 .Purchase-Step-7 .p_5_1 .confirm_button form .promo {
@@ -14915,7 +14915,7 @@ background: transparent;
   line-height: 170%;
   color: #7b7d84;
   font-weight: 700;
-  color: #f16334;
+  color: var(--main);
 }
 .Placed {
   margin-top: 80px;
@@ -14947,7 +14947,7 @@ background: transparent;
   font-weight: 700;
   font-size: 40px;
   text-align: center;
-  color: #f16334;
+  color: var(--main);
   font-size: 32px;
   line-height: 40px;
   text-align: left;
@@ -14998,7 +14998,7 @@ background: transparent;
   background: transparent;
 }
 .Placed .p_5_1 .documents .step_1_box .file_box button:hover {
-  background: #f16334;
+  background: var(--main);
 }
 .Placed .p_5_1 .documents .file_upload {
   /* change Here */
@@ -15069,7 +15069,7 @@ background: transparent;
   line-height: 170%;
   color: #7b7d84;
   line-height: 26px;
-  color: #f16334;
+  color: var(--main);
 }
 .Placed .p_5_1 .documents .file_upload .add.files .dz-default.dz-message {
   opacity: 0;
@@ -15220,7 +15220,7 @@ background: transparent;
 }
 .Placed .p_5_1 .confirm_button .next {
   margin-left: 15px;
-  border-color: #f16334;
+  border-color: var(--main);
 }
 .Placed .p_5_1 .confirm_button .cross {
   cursor: not-allowed;
@@ -15308,7 +15308,7 @@ background: transparent;
   line-height: 170%;
   color: #7b7d84;
   line-height: 26px;
-  color: #f16334;
+  color: var(--main);
 }
 .Placed .p_5_1 .documents .file_upload .add.files .dz-default.dz-message {
   opacity: 0;
@@ -15397,7 +15397,7 @@ background: transparent;
   color: #363840;
 }
 .Placed .p_5_1 .documents .file_box label p a {
-  color: #f16334;
+  color: var(--main);
 }
 .Placed .p_5_1 .documents .file_box .form-control {
   padding: 6px 16px;
@@ -15429,8 +15429,8 @@ background: transparent;
 }
 .Placed .p_5_1 .documents .file_box .custom-control-input:checked ~ .custom-control-label::before {
   color: #fff;
-  border-color: #F16334;
-  background-color: #F16334;
+  border-color: var(--main);
+  background-color: var(--main);
 }
 .Placed .p_5_1 .documents .file_box {
   width: 100%;
@@ -15471,7 +15471,7 @@ background: transparent;
   font-size: 16px;
   line-height: 20px;
   color: #363840;
-  color: #f16334;
+  color: var(--main);
 }
 .Placed .p_5_1 .documents .file_box .order_part .order_head a i {
   font-size: 14px;
@@ -15603,7 +15603,7 @@ background: transparent;
   display: block;
   float: none;
   text-align: center;
-  color: #f16334;
+  color: var(--main);
   font-size: 30px;
 }
 .Placed .p_5_1 .documents .file_box h2 {
@@ -15612,7 +15612,7 @@ background: transparent;
   font-weight: 700;
   font-size: 40px;
   text-align: center;
-  color: #f16334;
+  color: var(--main);
   font-size: 32px;
   line-height: 40px;
   color: #363840;
@@ -15637,7 +15637,7 @@ background: transparent;
   text-transform: none;
 }
 .Placed .p_5_1 .documents .file_box .btn:hover {
-  border-color: #f16334;
+  border-color: var(--main);
   color: #ffffff !important;
 }
 /*===============================CSS for Modals==============================*/
@@ -15721,7 +15721,7 @@ background: transparent;
   line-height: 170%;
   color: #7b7d84;
   text-align: right;
-  color: #f16334;
+  color: var(--main);
 }
 .sign_in .sign_in_part .custom-checkbox .custom-control-label h6 {
   font-family: 'Muli', sans-serif;
@@ -15760,8 +15760,8 @@ background: transparent;
 }
 .sign_in .sign_in_part .custom-control-input:checked ~ .custom-control-label::before {
   color: #fff;
-  border-color: #F16334;
-  background-color: #F16334;
+  border-color: var(--main);
+  background-color: var(--main);
 }
 .sign_in .sign_in_part .custom-control-input:checked ~ .custom-control-label::after {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
@@ -15801,7 +15801,7 @@ background: transparent;
   margin-top: 10px;
   font-weight: bold;
   line-height: 15px;
-  color: #f16334;
+  color: var(--main);
   padding-bottom: 35px;
 }
 .order_management_change_password .profile_icon {
@@ -15936,7 +15936,7 @@ background: transparent;
   font-size: 12px;
   line-height: 170%;
   line-height: 18px;
-  color: #f16334;
+  color: var(--main);
   padding-bottom: 20px;
 }
 .profile_edit .projects {
@@ -15966,10 +15966,10 @@ background: transparent;
   transition: all linear 0.4s;
 }
 .profile_edit .projects .pro_content h5:hover {
-  color: #f16334;
+  color: var(--main);
 }
 .profile_edit .projects .pro_active h5 {
-  color: #f16334;
+  color: var(--main);
 }
 .profile_edit .projects .pb_35 {
   padding-bottom: 35px;
@@ -16151,7 +16151,7 @@ background: transparent;
   font-size: 12px;
   line-height: 170%;
   line-height: 18px;
-  color: #f16334;
+  color: var(--main);
   padding-bottom: 20px;
 }
 .past_project .projects {
@@ -16181,10 +16181,10 @@ background: transparent;
   transition: all linear 0.4s;
 }
 .past_project .projects .pro_content h5:hover {
-  color: #f16334;
+  color: var(--main);
 }
 .past_project .projects .pro_active h5 {
-  color: #f16334;
+  color: var(--main);
 }
 .past_project .projects .pb_35 {
   padding-bottom: 35px;
@@ -16478,7 +16478,7 @@ background: transparent;
   color: #000;
 }
 .active_project_ratting_part .active_project_ratting .active_project_ratting_img ul li a i:hover {
-  color: #F16334;
+  color: var(--main);
 }
 .active_project_ratting_part .active_project_ratting .active_project_ratting_img ul li p {
   font-family: 'Muli', sans-serif;
@@ -16557,7 +16557,7 @@ background: transparent;
   font-size: 12px;
   line-height: 170%;
   line-height: 18px;
-  color: #f16334;
+  color: var(--main);
   padding-bottom: 20px;
 }
 .active_project_ratting_submit_part .projects {
@@ -16587,10 +16587,10 @@ background: transparent;
   transition: all linear 0.4s;
 }
 .active_project_ratting_submit_part .projects .pro_content h5:hover {
-  color: #f16334;
+  color: var(--main);
 }
 .active_project_ratting_submit_part .projects .pro_active h5 {
-  color: #f16334;
+  color: var(--main);
 }
 .active_project_ratting_submit_part .projects .pb_35 {
   padding-bottom: 35px;
@@ -16847,7 +16847,7 @@ background: transparent;
   background: transparent;
 }
 .status-part_start .active_project_part_start .file_box button:hover {
-  background: #f16334;
+  background: var(--main);
 }
 .status-part_start .active_project_part_start .file_box {
   padding: 38px 182px;
@@ -16890,7 +16890,7 @@ background: transparent;
   color: #363840;
 }
 .status-part_start .active_project_part_start .file_box label p a {
-  color: #f16334;
+  color: var(--main);
 }
 .status-part_start .active_project_part_start .file_box .form-control {
   padding: 6px 16px;
@@ -16922,8 +16922,8 @@ background: transparent;
 }
 .status-part_start .active_project_part_start .file_box .custom-control-input:checked ~ .custom-control-label::before {
   color: #fff;
-  border-color: #F16334;
-  background-color: #F16334;
+  border-color: var(--main);
+  background-color: var(--main);
 }
 .status-part_start .active_project_part_start .file_box {
   width: 100%;
@@ -16964,7 +16964,7 @@ background: transparent;
   font-size: 16px;
   line-height: 20px;
   color: #363840;
-  color: #f16334;
+  color: var(--main);
 }
 .status-part_start .active_project_part_start .file_box .order_part .order_head a i {
   font-size: 14px;
@@ -17263,7 +17263,7 @@ background: transparent;
   background: transparent;
 }
 .status_page_error_part_start .active_project_part_start .file_box button:hover {
-  background: #f16334;
+  background: var(--main);
 }
 .status_page_error_part_start .active_project_part_start .file_box {
   padding: 38px 182px;
@@ -17306,7 +17306,7 @@ background: transparent;
   color: #363840;
 }
 .status_page_error_part_start .active_project_part_start .file_box label p a {
-  color: #f16334;
+  color: var(--main);
 }
 .status_page_error_part_start .active_project_part_start .file_box .form-control {
   padding: 6px 16px;
@@ -17338,8 +17338,8 @@ background: transparent;
 }
 .status_page_error_part_start .active_project_part_start .file_box .custom-control-input:checked ~ .custom-control-label::before {
   color: #fff;
-  border-color: #F16334;
-  background-color: #F16334;
+  border-color: var(--main);
+  background-color: var(--main);
 }
 .status_page_error_part_start .active_project_part_start .file_box {
   width: 100%;
@@ -17380,7 +17380,7 @@ background: transparent;
   font-size: 16px;
   line-height: 20px;
   color: #363840;
-  color: #f16334;
+  color: var(--main);
 }
 .status_page_error_part_start .active_project_part_start .file_box .order_part .order_head a i {
   font-size: 14px;
@@ -17702,7 +17702,7 @@ background: transparent;
   background: transparent;
 }
 .status_part_download_part_start .active_project_part_start .file_box button:hover {
-  background: #f16334;
+  background: var(--main);
 }
 .status_part_download_part_start .active_project_part_start .file_box {
   padding: 38px 182px;
@@ -17745,7 +17745,7 @@ background: transparent;
   color: #363840;
 }
 .status_part_download_part_start .active_project_part_start .file_box label p a {
-  color: #f16334;
+  color: var(--main);
 }
 .status_part_download_part_start .active_project_part_start .file_box .form-control {
   padding: 6px 16px;
@@ -17777,8 +17777,8 @@ background: transparent;
 }
 .status_part_download_part_start .active_project_part_start .file_box .custom-control-input:checked ~ .custom-control-label::before {
   color: #fff;
-  border-color: #F16334;
-  background-color: #F16334;
+  border-color: var(--main);
+  background-color: var(--main);
 }
 .status_part_download_part_start .active_project_part_start .file_box {
   width: 100%;
@@ -17819,7 +17819,7 @@ background: transparent;
   font-size: 16px;
   line-height: 20px;
   color: #363840;
-  color: #f16334;
+  color: var(--main);
 }
 .status_part_download_part_start .active_project_part_start .file_box .order_part .order_head a i {
   font-size: 14px;
@@ -18281,7 +18281,7 @@ background: transparent;
   color: #363840;
 }
 .order_management_modify_detailed .active_project_part_start .modify-form .modify_content_form_start_here .md_nem_form .file_box label p a {
-  color: #f16334;
+  color: var(--main);
 }
 .order_management_modify_detailed .active_project_part_start .modify-form .modify_content_form_start_here .md_nem_form .file_box .form-control {
   padding: 6px 16px;
@@ -18311,8 +18311,8 @@ background: transparent;
 }
 .order_management_modify_detailed .active_project_part_start .modify-form .modify_content_form_start_here .md_nem_form .file_box .custom-control-input:checked ~ .custom-control-label::before {
   color: #fff;
-  border-color: #F16334;
-  background-color: #F16334;
+  border-color: var(--main);
+  background-color: var(--main);
 }
 .order_management_modify_detailed .active_project_part_start .modify-form .modify_content_form_start_here .md_nem_form .file_box .error {
   /* CSS for errors in form*/
@@ -18456,8 +18456,8 @@ background: transparent;
 }
 .order_management_modify_detailed .active_project_part_start .modify_part_start_here .preview .form .addons .custom-control-input:checked ~ .custom-control-label::before {
   color: #fff;
-  border-color: #F16334;
-  background-color: #F16334;
+  border-color: var(--main);
+  background-color: var(--main);
 }
 .order_management_modify_detailed .active_project_part_start .modify_part_start_here .preview .form .addons .custom-control-input:checked ~ .custom-control-label::after {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
@@ -18531,7 +18531,7 @@ background: transparent;
   height: 11px;
 }
 .order_management_modify_detailed .active_project_part_start .modify_part_start_here .preview .form .reference .refer_btn .rbtn:hover {
-  color: #f16334;
+  color: var(--main);
   background: #f5f7fa;
 }
 .order_management_modify_detailed .active_project_part_start .modify_part_start_here .preview .form .reference .refer_btn .rbtn:hover .img {
@@ -18580,7 +18580,7 @@ background: transparent;
   box-shadow: 0 32px 32px 0 rgba(0, 0, 0, 0.08);
 }
 .order_management_modify_detailed .active_project_part_start .modify_part_start_here .preview .form .reference .show .rbtn {
-  color: #f16334;
+  color: var(--main);
   background: #f5f7fa;
 }
 .order_management_modify_detailed .active_project_part_start .modify_part_start_here .preview .form .reference .show .rbtn .img {
@@ -18755,8 +18755,8 @@ background: transparent;
 }
 .reference_modal .modal_box .images .custom-control-input:checked ~ .custom-control-label::before {
   color: #fff;
-  border-color: #F16334;
-  background-color: #F16334;
+  border-color: var(--main);
+  background-color: var(--main);
 }
 .reference_modal .modal_box .images .custom-control-input:checked ~ .custom-control-label::after {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
@@ -18829,7 +18829,7 @@ background: transparent;
   color: #7b7d84;
 }
 .p_modal .modal_box .heading h5 i {
-  color: #f16334;
+  color: var(--main);
   margin-right: 12px;
 }
 .p_modal .modal_box .description {
@@ -18945,10 +18945,10 @@ background: transparent;
   object-fit: contain;
 }
 .p_modal .modal_box .more_images_box .more_images .img_box a:hover {
-  border: 1px solid #f16334;
+  border: 1px solid var(--main);
 }
 .p_modal .modal_box .more_images_box .more_images .img_box a:hover img {
-  border: 1px solid #f16334;
+  border: 1px solid var(--main);
 }
 /*tooltip start*/
 .tooltip .tooltip-inner {
@@ -18990,7 +18990,7 @@ background: transparent;
     font-weight: 700;
     font-size: 32px;
     text-align: center;
-    color: #f16334;
+    color: var(--main);
   }
   .h3 {
     font-family: 'Muli', sans-serif;
@@ -19067,7 +19067,7 @@ background: transparent;
   .mini_btn i {
     position: absolute;
     right: 0;
-    color: #f16334;
+    color: var(--main);
     bottom: 0;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
@@ -19080,8 +19080,8 @@ background: transparent;
     font-size: 12px;
     line-height: 18px;
     color: #7b7d84;
-    color: #f16334 !important;
-    border: 1px solid #f16334;
+    color: var(--main) !important;
+    border: 1px solid var(--main);
     padding: 12px 23px;
     border-radius: 0;
     font-weight: 700;
@@ -19094,8 +19094,8 @@ background: transparent;
   }
   .btn:hover {
     color: #ffffff !important;
-    background-color: #f16334;
-    border: 1px solid #f16334;
+    background-color: var(--main);
+    border: 1px solid var(--main);
   }
   .btn:focus {
     -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
@@ -19218,7 +19218,7 @@ background: transparent;
     content: "";
     bottom: -8px;
     left: 0;
-    background: #f16334;
+    background: var(--main);
     width: 78px;
     height: 4px;
     -webkit-transition: all linear 0.25s;
@@ -19444,7 +19444,7 @@ background: transparent;
     left: 0;
     width: 32px;
     height: 4px;
-    background: #f16334;
+    background: var(--main);
   }
   .mobile_design .container .banner_content .text_area {
     font-family: 'Muli', sans-serif;
@@ -19468,7 +19468,7 @@ background: transparent;
     color: #363840;
     float: left;
     display: inline-block;
-    color: #f16334;
+    color: var(--main);
     padding-right: 8px;
   }
   .mobile_design .container .banner_content .price_tag p {
@@ -19489,8 +19489,8 @@ background: transparent;
     font-size: 12px;
     line-height: 18px;
     color: #7b7d84;
-    color: #f16334 !important;
-    border: 1px solid #f16334;
+    color: var(--main) !important;
+    border: 1px solid var(--main);
     padding: 12px 23px;
     border-radius: 0;
     font-weight: 700;
@@ -19503,8 +19503,8 @@ background: transparent;
   }
   .mobile_design .container .banner_content a.place_btn:hover {
     color: #ffffff !important;
-    background-color: #f16334;
-    border: 1px solid #f16334;
+    background-color: var(--main);
+    border: 1px solid var(--main);
   }
   .mobile_design .container .banner_content a.place_btn:focus {
     -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
@@ -19611,7 +19611,7 @@ background: transparent;
     color: #363840;
     padding-left: 12px;
     padding-right: 12px;
-    color: #f16334;
+    color: var(--main);
   }
   .faq .hiw .accordion .card .card-header::after,
   .service_page .hiw .accordion .card .card-header::after {
@@ -19726,7 +19726,7 @@ background: transparent;
     width: 8px;
     position: absolute;
     content: "";
-    background: #f16334;
+    background: var(--main);
     -webkit-transition: all linear 0.25s;
     -moz-transition: all linear 0.25s;
     -ms-transition: all linear 0.25s;
@@ -19884,7 +19884,7 @@ background: transparent;
     right: 0;
     height: 6px;
     width: 0;
-    background: #f16334;
+    background: var(--main);
     -webkit-transition: all linear 0.25s;
     -moz-transition: all linear 0.25s;
     -ms-transition: all linear 0.25s;
@@ -20108,7 +20108,7 @@ background: transparent;
     font-weight: 700;
     font-size: 32px;
     text-align: center;
-    color: #f16334;
+    color: var(--main);
     text-align: left;
     color: #ffffff;
   }
@@ -20287,7 +20287,7 @@ background: transparent;
     color: #363840;
     padding-left: 12px;
     padding-right: 12px;
-    color: #f16334;
+    color: var(--main);
   }
   .our_location .hiw .accordion .card .card-header::after {
     position: absolute;
@@ -20387,7 +20387,7 @@ background: transparent;
     width: 8px;
     position: absolute;
     content: "";
-    background: #f16334;
+    background: var(--main);
     -webkit-transition: all linear 0.25s;
     -moz-transition: all linear 0.25s;
     -ms-transition: all linear 0.25s;
@@ -20521,7 +20521,7 @@ background: transparent;
     color: #363840;
     padding-left: 12px;
     padding-right: 12px;
-    color: #f16334;
+    color: var(--main);
   }
   .reseller .hiw .accordion .card .card-header::after {
     position: absolute;
@@ -20621,7 +20621,7 @@ background: transparent;
     width: 8px;
     position: absolute;
     content: "";
-    background: #f16334;
+    background: var(--main);
     -webkit-transition: all linear 0.25s;
     -moz-transition: all linear 0.25s;
     -ms-transition: all linear 0.25s;
@@ -20766,7 +20766,7 @@ background: transparent;
     color: #363840;
     padding-left: 12px;
     padding-right: 12px;
-    color: #f16334;
+    color: var(--main);
   }
   .affliate .hiw .accordion .card .card-header::after {
     position: absolute;
@@ -20866,7 +20866,7 @@ background: transparent;
     width: 8px;
     position: absolute;
     content: "";
-    background: #f16334;
+    background: var(--main);
     -webkit-transition: all linear 0.25s;
     -moz-transition: all linear 0.25s;
     -ms-transition: all linear 0.25s;
@@ -21014,7 +21014,7 @@ background: transparent;
     color: #363840;
     padding-left: 12px;
     padding-right: 12px;
-    color: #f16334;
+    color: var(--main);
   }
   .referral .hiw .accordion .card .card-header::after {
     position: absolute;
@@ -21114,7 +21114,7 @@ background: transparent;
     width: 8px;
     position: absolute;
     content: "";
-    background: #f16334;
+    background: var(--main);
     -webkit-transition: all linear 0.25s;
     -moz-transition: all linear 0.25s;
     -ms-transition: all linear 0.25s;
@@ -21234,7 +21234,7 @@ background: transparent;
   .referral .mobile_design .container .banner_content .mini_btn i {
     position: absolute;
     right: 0;
-    color: #f16334;
+    color: var(--main);
     bottom: 3px;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
@@ -21326,7 +21326,7 @@ background: transparent;
     font-family: 'Muli', sans-serif;
     font-style: normal;
     font-weight: 700;
-    color: #f16334;
+    color: var(--main);
     font-size: 32px;
     line-height: 40px;
     text-align: center;
@@ -21370,7 +21370,7 @@ background: transparent;
     background: transparent;
   }
   .step-1 .p_5_1 .documents .file_box button:hover {
-    background: #f16334;
+    background: var(--main);
   }
   .step-1 .p_5_1 .documents .note_box {
     padding-top: 30px !important;
@@ -21498,7 +21498,7 @@ background: transparent;
   }
   .step-1 .p_5_1 .confirm_button .next {
     margin-left: 4%;
-    border-color: #f16334;
+    border-color: var(--main);
   }
   .step-1 .p_5_1 .confirm_button .cross {
     cursor: not-allowed;
@@ -21582,7 +21582,7 @@ background: transparent;
     content: "";
     width: 10px;
     height: 10px;
-    background: #f16334;
+    background: var(--main);
     right: 15px;
     top: 15px;
     -webkit-border-radius: 100%;
@@ -21616,7 +21616,7 @@ background: transparent;
     transform: scale(0);
   }
   .Purchase-Step-2 .p_5_1 .documents .vibe [type="radio"]:checked + label::before {
-    border: 2px solid #f16334;
+    border: 2px solid var(--main);
   }
   .Purchase-Step-2 .p_5_1 .documents .vibe [type="radio"]:checked + label::after {
     opacity: 1;
@@ -21624,7 +21624,7 @@ background: transparent;
     transform: scale(1);
   }
   .Purchase-Step-2 .p_5_1 .documents .vibe [type="radio"]:checked + label {
-    border: 1px solid #f16334;
+    border: 1px solid var(--main);
   }
   .Purchase-Step-2 .p_5_1 .summery_box {
     margin-top: 16px;
@@ -21700,7 +21700,7 @@ background: transparent;
     content: "";
     width: 10px;
     height: 10px;
-    background: #f16334;
+    background: var(--main);
     right: 15px;
     top: 15px;
     -webkit-border-radius: 100%;
@@ -21734,7 +21734,7 @@ background: transparent;
     transform: scale(0);
   }
   .Purchase-Step-3 .p_5_1 .documents .vibe [type="radio"]:checked + label::before {
-    border: 2px solid #f16334;
+    border: 2px solid var(--main);
   }
   .Purchase-Step-3 .p_5_1 .documents .vibe [type="radio"]:checked + label::after {
     opacity: 1;
@@ -21742,7 +21742,7 @@ background: transparent;
     transform: scale(1);
   }
   .Purchase-Step-3 .p_5_1 .documents .vibe [type="radio"]:checked + label {
-    border: 1px solid #f16334;
+    border: 1px solid var(--main);
   }
   .Purchase-Step-3 .p_5_1 .summery_box {
     margin-top: 16px;
@@ -21858,7 +21858,7 @@ background: transparent;
     background-position: center center;
   }
   .Purchase-Step-3 .p_5_1 .documents .preview .form .reference .refer_btn .rbtn:hover {
-    color: #f16334;
+    color: var(--main);
     background: #f5f7fa;
   }
   .Purchase-Step-3 .p_5_1 .documents .preview .form .reference .refer_btn .rbtn:hover .img {
@@ -21888,7 +21888,7 @@ background: transparent;
     box-shadow: 0 32px 32px 0 rgba(0, 0, 0, 0.08);
   }
   .Purchase-Step-3 .p_5_1 .documents .preview .form .reference .show .rbtn {
-    color: #f16334;
+    color: var(--main);
     background: #f5f7fa;
   }
   .Purchase-Step-3 .p_5_1 .documents .preview .form .reference .show .rbtn .img {
@@ -21942,7 +21942,7 @@ background: transparent;
     font-family: 'Muli', sans-serif;
     font-style: normal;
     font-weight: 700;
-    color: #f16334;
+    color: var(--main);
     font-size: 32px;
     line-height: 40px;
     text-align: center;
@@ -21986,7 +21986,7 @@ background: transparent;
     background: transparent;
   }
   .step-4 .p_5_1 .documents .file_box button:hover {
-    background: #f16334;
+    background: var(--main);
   }
   .step-4 .p_5_1 .documents .note_box {
     padding-top: 30px !important;
@@ -22114,7 +22114,7 @@ background: transparent;
   }
   .step-4 .p_5_1 .confirm_button .next {
     margin-left: 4%;
-    border-color: #f16334;
+    border-color: var(--main);
   }
   .step-4 .p_5_1 .confirm_button .cross {
     cursor: not-allowed;
@@ -22206,7 +22206,7 @@ background: transparent;
     color: #363840;
   }
   .Purchase-Step-5 .p_5_1 .documents .file_box label p a {
-    color: #f16334;
+    color: var(--main);
   }
   .Purchase-Step-5 .p_5_1 .documents .file_box .form-control {
     padding: 6px 16px;
@@ -22237,8 +22237,8 @@ background: transparent;
   }
   .Purchase-Step-5 .p_5_1 .documents .file_box .custom-control-input:checked ~ .custom-control-label::before {
     color: #fff;
-    border-color: #F16334;
-    background-color: #F16334;
+    border-color: var(--main);
+    background-color: var(--main);
   }
   .Purchase-Step-6 {
     margin-top: 46px;
@@ -22278,7 +22278,7 @@ background: transparent;
     color: #363840;
   }
   .Purchase-Step-6 .p_5_1 .documents .file_box label p a {
-    color: #f16334;
+    color: var(--main);
   }
   .Purchase-Step-6 .p_5_1 .documents .file_box .form-control {
     padding: 6px 16px;
@@ -22309,8 +22309,8 @@ background: transparent;
   }
   .Purchase-Step-6 .p_5_1 .documents .file_box .custom-control-input:checked ~ .custom-control-label::before {
     color: #fff;
-    border-color: #F16334;
-    background-color: #F16334;
+    border-color: var(--main);
+    background-color: var(--main);
   }
   .Purchase-Step-6 .p_5_1 .documents {
     width: 100%;
@@ -22358,7 +22358,7 @@ background: transparent;
     font-size: 14px;
     line-height: 18px;
     color: #363840;
-    color: #f16334;
+    color: var(--main);
   }
   .Purchase-Step-6 .p_5_1 .documents .file_box .order_part .order_head a i {
     font-size: 14px;
@@ -22520,7 +22520,7 @@ background: transparent;
     color: #363840;
   }
   .Purchase-Step-7 .p_5_1 .documents .file_box label p a {
-    color: #f16334;
+    color: var(--main);
   }
   .Purchase-Step-7 .p_5_1 .documents .file_box .form-control {
     padding: 6px 16px;
@@ -22551,8 +22551,8 @@ background: transparent;
   }
   .Purchase-Step-7 .p_5_1 .documents .file_box .custom-control-input:checked ~ .custom-control-label::before {
     color: #fff;
-    border-color: #F16334;
-    background-color: #F16334;
+    border-color: var(--main);
+    background-color: var(--main);
   }
   .Purchase-Step-7 .p_5_1 .documents {
     width: 100%;
@@ -22600,7 +22600,7 @@ background: transparent;
     font-size: 14px;
     line-height: 18px;
     color: #363840;
-    color: #f16334;
+    color: var(--main);
   }
   .Purchase-Step-7 .p_5_1 .documents .file_box .order_part .order_head a i {
     font-size: 14px;
@@ -22811,7 +22811,7 @@ background: transparent;
     font-size: 14px;
     line-height: 18px;
     color: #363840;
-    color: #f16334;
+    color: var(--main);
   }
   .Purchase-Step-7 .p_5_1 .documents .file_box .payment_head {
     padding: 24px 9px;
@@ -22856,7 +22856,7 @@ background: transparent;
     color: #363840;
     padding-left: 30px;
     padding-right: 12px;
-    color: #f16334;
+    color: var(--main);
   }
   .Purchase-Step-7 .p_5_1 .documents .file_box .card .card-header::after {
     top: 26px;
@@ -22893,7 +22893,7 @@ background: transparent;
     text-align: center;
   }
   .Purchase-Step-7 .p_5_1 .confirm_button h5 a {
-    color: #f16334;
+    color: var(--main);
     font-weight: 700;
   }
   .Purchase-Step-7 .p_5_1 .confirm_button h6 {
@@ -22909,7 +22909,7 @@ background: transparent;
   }
   .Purchase-Step-7 .p_5_1 .confirm_button a {
     text-align: right;
-    color: #f16334;
+    color: var(--main);
     font-weight: 700;
   }
   .Purchase-Step-7 .p_5_1 .confirm_button form .promo {
@@ -22935,7 +22935,7 @@ background: transparent;
     line-height: 18px;
     color: #7b7d84;
     font-weight: 700;
-    color: #f16334;
+    color: var(--main);
   }
   .Purchase-Step-7 .panel-footer {
     padding: 40px 15px 10px;
@@ -22981,7 +22981,7 @@ background: transparent;
     color: #363840;
   }
   .Placed .p_5_1 .documents .file_box label p a {
-    color: #f16334;
+    color: var(--main);
   }
   .Placed .p_5_1 .documents .file_box .form-control {
     padding: 6px 16px;
@@ -23012,8 +23012,8 @@ background: transparent;
   }
   .Placed .p_5_1 .documents .file_box .custom-control-input:checked ~ .custom-control-label::before {
     color: #fff;
-    border-color: #F16334;
-    background-color: #F16334;
+    border-color: var(--main);
+    background-color: var(--main);
   }
   .Placed .p_5_1 .documents {
     width: 100%;
@@ -23061,7 +23061,7 @@ background: transparent;
     font-size: 14px;
     line-height: 18px;
     color: #363840;
-    color: #f16334;
+    color: var(--main);
   }
   .Placed .p_5_1 .documents .file_box .order_part .order_head a i {
     font-size: 14px;
@@ -23197,7 +23197,7 @@ background: transparent;
     display: block;
     float: none;
     text-align: center;
-    color: #f16334;
+    color: var(--main);
     font-size: 30px;
   }
   .Placed .p_5_1 .documents .file_box h2 {
@@ -23205,7 +23205,7 @@ background: transparent;
     font-style: normal;
     font-weight: 700;
     text-align: center;
-    color: #f16334;
+    color: var(--main);
     font-size: 32px;
     line-height: 40px;
     color: #363840;
@@ -23230,7 +23230,7 @@ background: transparent;
     text-transform: none;
   }
   .Placed .p_5_1 .documents .file_box .btn:hover {
-    border-color: #f16334;
+    border-color: var(--main);
     color: #ffffff !important;
   }
   /*===============================CSS for Modals==============================*/
@@ -23418,7 +23418,7 @@ background: transparent;
     font-size: 12px;
     line-height: 170%;
     line-height: 18px;
-    color: #f16334;
+    color: var(--main);
     padding-bottom: 20px;
   }
   .responsive_edit_profile .profile_edit .projects {
@@ -23448,10 +23448,10 @@ background: transparent;
     transition: all linear 0.4s;
   }
   .responsive_edit_profile .profile_edit .projects .pro_content h5:hover {
-    color: #f16334;
+    color: var(--main);
   }
   .responsive_edit_profile .profile_edit .projects .pro_active h5 {
-    color: #f16334;
+    color: var(--main);
   }
   .responsive_edit_profile .profile_edit .projects .pb_35 {
     padding-bottom: 35px;
@@ -24161,7 +24161,7 @@ background: transparent;
     padding-bottom: 50px;
   }
   .header li:last-child a {
-    color: #f16334 !important;
+    color: var(--main) !important;
   }
   .header li a {
     display: block;
@@ -24277,7 +24277,7 @@ background: transparent;
     line-height: 18px;
     padding-left: 12px;
     padding-right: 12px;
-    color: #f16334;
+    color: var(--main);
   }
   .header .menu .accordion .card .card-header::after,
   .header .menu .f_one .main_collapse::after {
@@ -24528,7 +24528,7 @@ background: transparent;
     font-weight: 700;
     font-size: 15px;
     text-align: center;
-    color: #f16334;
+    color: var(--main);
   }
   .h3 {
     font-family: 'Muli', sans-serif;
@@ -24624,7 +24624,7 @@ background: transparent;
   .mini_btn i {
     position: absolute;
     right: 0;
-    color: #f16334;
+    color: var(--main);
     bottom: 0;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
@@ -24637,8 +24637,8 @@ background: transparent;
     line-height: 9px;
     color: #7b7d84;
     background: transparent;
-    color: #f16334 !important;
-    border: 1px solid #f16334;
+    color: var(--main) !important;
+    border: 1px solid var(--main);
     padding: 6px 12px;
     border-radius: 0;
   }
@@ -24706,7 +24706,7 @@ background: transparent;
     left: 0;
     width: 32px;
     height: 4px;
-    background: #f16334;
+    background: var(--main);
   }
   .mobile_design .container .banner_content .text_area {
     font-family: 'Muli', sans-serif;
@@ -24731,7 +24731,7 @@ background: transparent;
     color: #363840;
     float: left;
     display: inline-block;
-    color: #f16334;
+    color: var(--main);
     padding-right: 8px;
   }
   .mobile_design .container .banner_content .price_tag p {
@@ -24752,8 +24752,8 @@ background: transparent;
     line-height: 9px;
     color: #7b7d84;
     background: transparent;
-    color: #f16334 !important;
-    border: 1px solid #f16334;
+    color: var(--main) !important;
+    border: 1px solid var(--main);
     padding: 6px 12px;
     border-radius: 0;
     text-transform: capitalize;
@@ -24871,8 +24871,8 @@ background: transparent;
     line-height: 9px;
     color: #7b7d84;
     background: transparent;
-    color: #f16334 !important;
-    border: 1px solid #f16334;
+    color: var(--main) !important;
+    border: 1px solid var(--main);
     padding: 6px 12px;
     border-radius: 0;
   }
@@ -24948,7 +24948,7 @@ background: transparent;
     right: 0;
     height: 6px;
     width: 0;
-    background: #f16334;
+    background: var(--main);
     -webkit-transition: all linear 0.25s;
     -moz-transition: all linear 0.25s;
     -ms-transition: all linear 0.25s;
@@ -25049,7 +25049,7 @@ background: transparent;
     bottom: -8px;
     left: 6px;
     right: 6px;
-    background: #f16334;
+    background: var(--main);
     width: 78px;
     height: 4px;
     -webkit-transition: all linear 0.25s;
@@ -25228,7 +25228,7 @@ background: transparent;
     color: #363840;
     float: left;
     display: inline-block;
-    color: #f16334;
+    color: var(--main);
     padding-right: 8px;
   }
   .service_page .banner .container .banner_content a.place_btn {
@@ -25239,8 +25239,8 @@ background: transparent;
     line-height: 9px;
     color: #7b7d84;
     background: transparent;
-    color: #f16334 !important;
-    border: 1px solid #f16334;
+    color: var(--main) !important;
+    border: 1px solid var(--main);
     padding: 6px 12px;
     border-radius: 0;
   }
@@ -25650,7 +25650,7 @@ background: transparent;
     font-size: 12px;
     line-height: 170%;
     color: #7b7d84;
-    color: #f16334;
+    color: var(--main);
   }
   .blog_open .banner .container .banner_content {
     width: 100%;
@@ -25664,7 +25664,7 @@ background: transparent;
     font-weight: 700;
     font-size: 15px;
     text-align: center;
-    color: #f16334;
+    color: var(--main);
     font-size: 26px;
     text-align: left;
     color: #ffffff;
@@ -25850,8 +25850,8 @@ background: transparent;
     line-height: 9px;
     color: #7b7d84;
     background: transparent;
-    color: #f16334 !important;
-    border: 1px solid #f16334;
+    color: var(--main) !important;
+    border: 1px solid var(--main);
     padding: 12px;
     border-radius: 0;
   }
@@ -25944,7 +25944,7 @@ background: transparent;
     line-height: 9px;
     color: #7b7d84;
     line-height: 26px;
-    color: #f16334;
+    color: var(--main);
   }
   .Purchase-Step-1a .add.files .dz-default.dz-message {
     opacity: 0;
@@ -26060,7 +26060,7 @@ background: transparent;
     line-height: 9px;
     color: #7b7d84;
     line-height: 26px;
-    color: #f16334;
+    color: var(--main);
   }
   .Purchase-Step-2 .add.files .dz-default.dz-message {
     opacity: 0;
@@ -26094,7 +26094,7 @@ background: transparent;
     font-family: 'Muli', sans-serif;
     font-style: normal;
     font-weight: 700;
-    color: #f16334;
+    color: var(--main);
     font-size: 26px;
     line-height: 40px;
     text-align: left;
@@ -26167,7 +26167,7 @@ background: transparent;
     content: "";
     width: 10px;
     height: 10px;
-    background: #f16334;
+    background: var(--main);
     right: 15px;
     top: 15px;
     -webkit-border-radius: 100%;
@@ -26206,7 +26206,7 @@ background: transparent;
     box-shadow: 0px 0px 40px -25px rgba(0, 0, 0, 0.75);
   }
   .Purchase-Step-2 .p_5_1 .documents .vibe [type="radio"]:checked + label::before {
-    border: 2px solid #f16334;
+    border: 2px solid var(--main);
     background: transparent;
   }
   .Purchase-Step-2 .p_5_1 .documents .vibe [type="radio"]:checked + label::after {
@@ -26215,7 +26215,7 @@ background: transparent;
     transform: scale(1);
   }
   .Purchase-Step-2 .p_5_1 .documents .vibe [type="radio"]:checked + label {
-    border: 1px solid #f16334;
+    border: 1px solid var(--main);
   }
   .Purchase-Step-2 .p_5_1 .summery_box {
     margin-top: 16px;
@@ -26309,7 +26309,7 @@ background: transparent;
     line-height: 9px;
     color: #7b7d84;
     line-height: 26px;
-    color: #f16334;
+    color: var(--main);
   }
   .Purchase-Step-3 .add.files .dz-default.dz-message {
     opacity: 0;
@@ -26343,7 +26343,7 @@ background: transparent;
     font-family: 'Muli', sans-serif;
     font-style: normal;
     font-weight: 700;
-    color: #f16334;
+    color: var(--main);
     font-size: 26px;
     line-height: 40px;
     text-align: left;
@@ -26416,7 +26416,7 @@ background: transparent;
     content: "";
     width: 10px;
     height: 10px;
-    background: #f16334;
+    background: var(--main);
     right: 15px;
     top: 15px;
     -webkit-border-radius: 100%;
@@ -26455,7 +26455,7 @@ background: transparent;
     box-shadow: 0px 0px 40px -25px rgba(0, 0, 0, 0.75);
   }
   .Purchase-Step-3 .p_5_1 .documents .vibe [type="radio"]:checked + label::before {
-    border: 2px solid #f16334;
+    border: 2px solid var(--main);
     background: transparent;
   }
   .Purchase-Step-3 .p_5_1 .documents .vibe [type="radio"]:checked + label::after {
@@ -26464,7 +26464,7 @@ background: transparent;
     transform: scale(1);
   }
   .Purchase-Step-3 .p_5_1 .documents .vibe [type="radio"]:checked + label {
-    border: 1px solid #f16334;
+    border: 1px solid var(--main);
   }
   .Purchase-Step-3 .p_5_1 .summery_box {
     margin-top: 16px;
@@ -26594,8 +26594,8 @@ background: transparent;
   }
   .Purchase-Step-3 .p_5_1 .documents .preview .form .addons .custom-control-input:checked ~ .custom-control-label::before {
     color: #fff;
-    border-color: #F16334;
-    background-color: #F16334;
+    border-color: var(--main);
+    background-color: var(--main);
   }
   .Purchase-Step-3 .p_5_1 .documents .preview .form .addons .custom-control-input:checked ~ .custom-control-label::after {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
@@ -26631,7 +26631,7 @@ background: transparent;
     background-position: center center;
   }
   .Purchase-Step-3 .p_5_1 .documents .preview .form .reference .refer_btn .rbtn:hover {
-    color: #f16334;
+    color: var(--main);
     background: #f5f7fa;
   }
   .Purchase-Step-3 .p_5_1 .documents .preview .form .reference .refer_btn .rbtn:hover .img {
@@ -26661,7 +26661,7 @@ background: transparent;
     box-shadow: 0 32px 32px 0 rgba(0, 0, 0, 0.08);
   }
   .Purchase-Step-3 .p_5_1 .documents .preview .form .reference .show .rbtn {
-    color: #f16334;
+    color: var(--main);
     background: #f5f7fa;
   }
   .Purchase-Step-3 .p_5_1 .documents .preview .form .reference .show .rbtn .img {
@@ -26906,7 +26906,7 @@ background: transparent;
     line-height: 9px;
     color: #7b7d84;
     line-height: 26px;
-    color: #f16334;
+    color: var(--main);
   }
   .Purchase-Step-4a .add.files .dz-default.dz-message {
     opacity: 0;
@@ -27108,8 +27108,8 @@ background: transparent;
   }
   .Purchase-Step-4a .p_5_1 .documents .files .img_part .form .custom-control-input:checked ~ .custom-control-label::before {
     color: #fff;
-    border-color: #F16334;
-    background-color: #F16334;
+    border-color: var(--main);
+    background-color: var(--main);
   }
   .Purchase-Step-4a .p_5_1 .documents .files .img_part .form .custom-control-input:checked ~ .custom-control-label::after {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
@@ -27144,7 +27144,7 @@ background: transparent;
     background-position: center center;
   }
   .Purchase-Step-4a .p_5_1 .documents .files .img_part .reference .refer_btn .rbtn:hover {
-    color: #f16334;
+    color: var(--main);
     background: #f5f7fa;
   }
   .Purchase-Step-4a .p_5_1 .documents .files .img_part .reference .refer_btn .rbtn:hover .img {
@@ -27206,8 +27206,8 @@ background: transparent;
   }
   .Purchase-Step-4a .p_5_1 .documents .files .img_part .reference .refer_btn .addons .custom-control-input:checked ~ .custom-control-label::before {
     color: #fff;
-    border-color: #F16334;
-    background-color: #F16334;
+    border-color: var(--main);
+    background-color: var(--main);
   }
   .Purchase-Step-4a .p_5_1 .documents .files .img_part .reference .refer_btn .addons .custom-control-input:checked ~ .custom-control-label::after {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
@@ -27243,7 +27243,7 @@ background: transparent;
     background-position: center center;
   }
   .Purchase-Step-4a .p_5_1 .documents .files .img_part .reference .refer_btn .reference .refer_btn .rbtn:hover {
-    color: #f16334;
+    color: var(--main);
     background: #f5f7fa;
   }
   .Purchase-Step-4a .p_5_1 .documents .files .img_part .reference .refer_btn .reference .refer_btn .rbtn:hover .img {
@@ -27273,7 +27273,7 @@ background: transparent;
     box-shadow: 0 32px 32px 0 rgba(0, 0, 0, 0.08);
   }
   .Purchase-Step-4a .p_5_1 .documents .files .img_part .reference .refer_btn .reference .show .rbtn {
-    color: #f16334;
+    color: var(--main);
     background: #f5f7fa;
   }
   .Purchase-Step-4a .p_5_1 .documents .files .img_part .reference .refer_btn .reference .show .rbtn .img {
@@ -27392,7 +27392,7 @@ background: transparent;
     line-height: 9px;
     color: #7b7d84;
     line-height: 26px;
-    color: #f16334;
+    color: var(--main);
   }
   .Purchase-Step-5 .add.files .dz-default.dz-message {
     opacity: 0;
@@ -27580,7 +27580,7 @@ background: transparent;
     color: #363840;
   }
   .Purchase-Step-5 .p_5_1 .documents .file_box label p a {
-    color: #f16334;
+    color: var(--main);
   }
   .Purchase-Step-5 .p_5_1 .documents .file_box .form-control {
     padding: 6px 16px;
@@ -27616,8 +27616,8 @@ background: transparent;
   }
   .Purchase-Step-5 .p_5_1 .documents .file_box .custom-control-input:checked ~ .custom-control-label::before {
     color: #fff;
-    border-color: #F16334;
-    background-color: #F16334;
+    border-color: var(--main);
+    background-color: var(--main);
   }
   .Purchase-Step-6 {
     /* change Here */
@@ -27708,7 +27708,7 @@ background: transparent;
     line-height: 9px;
     color: #7b7d84;
     line-height: 26px;
-    color: #f16334;
+    color: var(--main);
   }
   .Purchase-Step-6 .add.files .dz-default.dz-message {
     opacity: 0;
@@ -27896,7 +27896,7 @@ background: transparent;
     color: #363840;
   }
   .Purchase-Step-6 .p_5_1 .documents .file_box label p a {
-    color: #f16334;
+    color: var(--main);
   }
   .Purchase-Step-6 .p_5_1 .documents .file_box .form-control {
     padding: 6px 16px;
@@ -27932,8 +27932,8 @@ background: transparent;
   }
   .Purchase-Step-6 .p_5_1 .documents .file_box .custom-control-input:checked ~ .custom-control-label::before {
     color: #fff;
-    border-color: #F16334;
-    background-color: #F16334;
+    border-color: var(--main);
+    background-color: var(--main);
   }
   .Purchase-Step-6 .p_5_1 .documents .file_box {
     width: 100%;
@@ -27974,7 +27974,7 @@ background: transparent;
     font-size: 12px;
     line-height: 100%;
     color: #363840;
-    color: #f16334;
+    color: var(--main);
   }
   .Purchase-Step-6 .p_5_1 .documents .file_box .order_part .order_head a i {
     font-size: 14px;
@@ -28187,7 +28187,7 @@ background: transparent;
     line-height: 9px;
     color: #7b7d84;
     line-height: 26px;
-    color: #f16334;
+    color: var(--main);
   }
   .Purchase-Step-7 .add.files .dz-default.dz-message {
     opacity: 0;
@@ -28375,7 +28375,7 @@ background: transparent;
     color: #363840;
   }
   .Purchase-Step-7 .p_5_1 .documents .file_box label p a {
-    color: #f16334;
+    color: var(--main);
   }
   .Purchase-Step-7 .p_5_1 .documents .file_box .form-control {
     padding: 6px 16px;
@@ -28411,8 +28411,8 @@ background: transparent;
   }
   .Purchase-Step-7 .p_5_1 .documents .file_box .custom-control-input:checked ~ .custom-control-label::before {
     color: #fff;
-    border-color: #F16334;
-    background-color: #F16334;
+    border-color: var(--main);
+    background-color: var(--main);
   }
   .Purchase-Step-7 .p_5_1 .documents .file_box {
     width: 100%;
@@ -28453,7 +28453,7 @@ background: transparent;
     font-size: 12px;
     line-height: 100%;
     color: #363840;
-    color: #f16334;
+    color: var(--main);
   }
   .Purchase-Step-7 .p_5_1 .documents .file_box .order_part .order_head a i {
     font-size: 14px;
@@ -28660,7 +28660,7 @@ background: transparent;
     font-size: 12px;
     line-height: 100%;
     color: #363840;
-    color: #f16334;
+    color: var(--main);
   }
   .Purchase-Step-7 .p_5_1 .documents .file_box .payment_head {
     padding: 24px;
@@ -28697,7 +28697,7 @@ background: transparent;
     font-size: 12px;
     line-height: 100%;
     color: #363840;
-    color: #f16334;
+    color: var(--main);
   }
   .Purchase-Step-7 .p_5_1 .documents .file_box .card .card-header::after {
     top: 21.5px;
@@ -28732,7 +28732,7 @@ background: transparent;
     text-align: center;
   }
   .Purchase-Step-7 .p_5_1 .confirm_button h5 a {
-    color: #f16334;
+    color: var(--main);
     font-weight: 700;
   }
   .Purchase-Step-7 .p_5_1 .confirm_button h6 {
@@ -28748,7 +28748,7 @@ background: transparent;
   }
   .Purchase-Step-7 .p_5_1 .confirm_button a {
     text-align: right;
-    color: #f16334;
+    color: var(--main);
     font-weight: 700;
   }
   .Purchase-Step-7 .p_5_1 .confirm_button form .promo {
@@ -28775,7 +28775,7 @@ background: transparent;
     line-height: 9px;
     color: #7b7d84;
     font-weight: 700;
-    color: #f16334;
+    color: var(--main);
   }
   .Placed {
     /* change Here */
@@ -28866,7 +28866,7 @@ background: transparent;
     line-height: 9px;
     color: #7b7d84;
     line-height: 26px;
-    color: #f16334;
+    color: var(--main);
   }
   .Placed .add.files .dz-default.dz-message {
     opacity: 0;
@@ -29054,7 +29054,7 @@ background: transparent;
     color: #363840;
   }
   .Placed .p_5_1 .documents .file_box label p a {
-    color: #f16334;
+    color: var(--main);
   }
   .Placed .p_5_1 .documents .file_box .form-control {
     padding: 6px 16px;
@@ -29090,8 +29090,8 @@ background: transparent;
   }
   .Placed .p_5_1 .documents .file_box .custom-control-input:checked ~ .custom-control-label::before {
     color: #fff;
-    border-color: #F16334;
-    background-color: #F16334;
+    border-color: var(--main);
+    background-color: var(--main);
   }
   .Placed .p_5_1 .documents .file_box {
     width: 100%;
@@ -29132,7 +29132,7 @@ background: transparent;
     font-size: 12px;
     line-height: 100%;
     color: #363840;
-    color: #f16334;
+    color: var(--main);
   }
   .Placed .p_5_1 .documents .file_box .order_part .order_head a i {
     font-size: 14px;
@@ -29265,7 +29265,7 @@ background: transparent;
     display: block;
     float: none;
     text-align: center;
-    color: #f16334;
+    color: var(--main);
     font-size: 30px;
   }
   .Placed .p_5_1 .documents .file_box h2 {
@@ -29274,7 +29274,7 @@ background: transparent;
     font-weight: 700;
     font-size: 15px;
     text-align: center;
-    color: #f16334;
+    color: var(--main);
     font-size: 32px;
     line-height: 40px;
     color: #363840;
@@ -29299,7 +29299,7 @@ background: transparent;
     text-transform: none;
   }
   .Placed .p_5_1 .documents .file_box .btn:hover {
-    border-color: #f16334;
+    border-color: var(--main);
     color: #ffffff !important;
   }
   /* Order Management sign part start*/
@@ -30650,7 +30650,7 @@ background: transparent;
   .mini_btn i {
     position: absolute;
     right: 0;
-    color: #f16334;
+    color: var(--main);
     bottom: 0;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
@@ -30658,8 +30658,8 @@ background: transparent;
   .btn {
     background: transparent;
     font-size: 12px;
-    color: #f16334 !important;
-    border: 1px solid #f16334;
+    color: var(--main) !important;
+    border: 1px solid var(--main);
     padding: 12px 23px;
     border-radius: 0;
     font-weight: 700;
@@ -30672,8 +30672,8 @@ background: transparent;
   }
   .btn:hover {
     color: #ffffff !important;
-    background-color: #f16334;
-    border: 1px solid #f16334;
+    background-color: var(--main);
+    border: 1px solid var(--main);
   }
   .btn:focus {
     -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
@@ -32822,7 +32822,7 @@ background: transparent;
   .mini_btn i {
     position: absolute;
     right: 0;
-    color: #f16334;
+    color: var(--main);
     bottom: 0;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
@@ -32830,8 +32830,8 @@ background: transparent;
   .btn {
     background: transparent;
     font-size: 12px;
-    color: #f16334 !important;
-    border: 1px solid #f16334;
+    color: var(--main) !important;
+    border: 1px solid var(--main);
     padding: 12px 23px;
     border-radius: 0;
     font-weight: 700;
@@ -32844,8 +32844,8 @@ background: transparent;
   }
   .btn:hover {
     color: #ffffff !important;
-    background-color: #f16334;
-    border: 1px solid #f16334;
+    background-color: var(--main);
+    border: 1px solid var(--main);
   }
   .btn:focus {
     -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
@@ -33732,7 +33732,7 @@ background: transparent;
   .active_project_ratting_submit_part .active_project_part_start .active_project_content .active_pro_iteam .mini_btn i {
     position: absolute;
     right: 0;
-    color: #f16334;
+    color: var(--main);
     bottom: 4px;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
@@ -33793,7 +33793,7 @@ background: transparent;
   .active_project_ratting_part .active_project_part_start .active_project_content .active_pro_iteam .mini_btn i {
     position: absolute;
     right: 0;
-    color: #f16334;
+    color: var(--main);
     bottom: 3px;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
