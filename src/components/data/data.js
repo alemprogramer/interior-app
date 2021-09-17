@@ -4,17 +4,17 @@ const imgUrl = `${url}/vendor/images`;
 const take = [
     {
         title: 'Vacant Photos',
-        img: `${imgUrl}/vacant.png`,
+        img: `fas fa-user`,
         text: `We specialize in transforming photos of vacant properties into beautiful, virtually staged homes that sells faster and for top dollar.`,
         importance: 2
     }, {
         title: 'Floor Plans',
-        img: `${imgUrl}/vacant.png`,
+        img: `fas fa-user`,
         text: `We specialize in transforming photos of vacant properties into beautiful, virtually staged homes that sells faster and for top dollar.`,
         importance: 2
     }, {
         title: 'Dimensions',
-        img: `${imgUrl}/vacant.png`,
+        img: `fas fa-user`,
         text: `We specialize in transforming photos of vacant properties into beautiful, virtually staged homes that sells faster and for top dollar.`,
         importance: 1
     }
@@ -23,15 +23,15 @@ const give = [
     {
         title: 'Digitally Staged Photos',
         text: `We specialize in transforming photos of vacant properties into beautiful, virtually staged homes that sells faster and for top dollar.`,
-        img: `${imgUrl}/vacant.png`
+        img: `fas fa-user`
     }, {
         title: 'Same Size',
         text: `We specialize in transforming photos of vacant properties into beautiful, virtually staged homes that sells faster and for top dollar.`,
-        img: `${imgUrl}/vacant.png`
+        img: `fas fa-user`
     }, {
         title: 'Top Notch Support',
         text: `We specialize in transforming photos of vacant properties into beautiful, virtually staged homes that sells faster and for top dollar.`,
-        img: `${imgUrl}/vacant.png`
+        img: `fas fa-user`
     }
 ]
 const faq = [
@@ -253,7 +253,7 @@ const blog = [
         ],
         date: `2018-07-06T09:55:38.254Z`,
         title: `'Tech', 'Design', 'Virtual Staging', '3D Modelling`,
-        img: `${imgUrl}/partner.jpg`,
+        img: `${imgUrl}/img-12.jpg`,
         avatar: `${imgUrl}/blogger.png`,
         writer: `Jhon Doe1`,
         slogan: `We specialize in transforming photos of vacant properties into beautiful, virtually staged homes that sells faster and for top dollar.`,
@@ -271,7 +271,7 @@ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo tempore culp
         ],
         date: `2018-08-06T09:55:38.254Z`,
         title: `'Design', 'Virtual Staging', '3D Modelling'`,
-        img: `${imgUrl}/partner.jpg`,
+        img: `${imgUrl}/img-12.jpg`,
         avatar: `${imgUrl}/blogger.png`,
         writer: `Jhon Doe12`,
         slogan: `We specialize in transforming photos of vacant properties into beautiful, virtually staged homes that sells faster and for top dollar.`,
@@ -288,7 +288,7 @@ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo tempore culp
         ],
         date: `2018-09-06T09:55:38.254Z`,
         title: `'Design', 'Agent Outreach', '3D Modelling'`,
-        img: `${imgUrl}/partner.jpg`,
+        img: `${imgUrl}/img-12.jpg`,
         avatar: `${imgUrl}/blogger.png`,
         writer: `Jhon Doe123`,
         slogan: `We specialize in transforming photos of vacant properties into beautiful, virtually staged homes that sells faster and for top dollar.`,
@@ -305,7 +305,7 @@ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo tempore culp
         ],
         date: `2018-10-06T09:55:38.254Z`,
         title: `'Design', 'Agent Outreach', 'Virtual Staging', 'Tech'`,
-        img: `${imgUrl}/partner.jpg`,
+        img: `${imgUrl}/img-12.jpg`,
         avatar: `${imgUrl}/blogger.png`,
         writer: `Jhon Doe1234`,
         slogan: `We specialize in transforming photos of vacant properties into beautiful, virtually staged homes that sells faster and for top dollar.`,
@@ -322,7 +322,7 @@ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo tempore culp
         ],
         date: `2018-07-16T09:55:38.254Z`,
         title: `'Tech', 'Virtual Staging', '3D Modelling'`,
-        img: `${imgUrl}/partner.jpg`,
+        img: `${imgUrl}/img-12.jpg`,
         avatar: `${imgUrl}/blogger.png`,
         writer: `Jhon Doe12345`,
         slogan: `We specialize in transforming photos of vacant properties into beautiful, virtually staged homes that sells faster and for top dollar.`,
@@ -339,7 +339,7 @@ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo tempore culp
         ],
         date: `2018-08-16T09:55:38.254Z`,
         title: `'Tech', 'Virtual Staging', '3D Modelling'`,
-        img: `${imgUrl}/partner.jpg`,
+        img: `${imgUrl}/img-12.jpg`,
         avatar: `${imgUrl}/blogger.png`,
         writer: `Jhon Doe123456`,
         slogan: `We specialize in transforming photos of vacant properties into beautiful, virtually staged homes that sells faster and for top dollar.`,
@@ -356,7 +356,7 @@ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo tempore culp
         ],
         date: `2018-07-26T09:55:38.254Z`,
         title: `'Design', 'Tech'`,
-        img: `${imgUrl}/partner.jpg`,
+        img: `${imgUrl}/img-12.jpg`,
         avatar: `${imgUrl}/blogger.png`,
         writer: `Jhon Doe1234567`,
         slogan: `We specialize in transforming photos of vacant properties into beautiful, virtually staged homes that sells faster and for top dollar.`,
@@ -373,7 +373,7 @@ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo tempore culp
         ],
         date: `2018-08-06T09:55:38.254Z`,
         title: `'Design', 'Virtual Staging', 'Tech'`,
-        img: `${imgUrl}/partner.jpg`,
+        img: `${imgUrl}/img-12.jpg`,
         avatar: `${imgUrl}/blogger.png`,
         writer: `Jhon Doe12345678`,
         slogan: `We specialize in transforming photos of vacant properties into beautiful, virtually staged homes that sells faster and for top dollar.`,
@@ -390,7 +390,7 @@ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo tempore culp
         ],
         date: `2018-08-26T09:55:38.254Z`,
         title: `'Design', 'Agent Outreach', '3D Modelling'`,
-        img: `${imgUrl}/partner.jpg`,
+        img: `${imgUrl}/img-12.jpg`,
         avatar: `${imgUrl}/blogger.png`,
         writer: `Jhon Doe123456789`,
         slogan: `We specialize in transforming photos of vacant properties into beautiful, virtually staged homes that sells faster and for top dollar.`,
@@ -407,7 +407,7 @@ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo tempore culp
         ],
         date: `2018-07-05T09:55:38.254Z`,
         title: `'Design','3D Modelling'`,
-        img: `${imgUrl}/partner.jpg`,
+        img: `${imgUrl}/img-12.jpg`,
         avatar: `${imgUrl}/blogger.png`,
         writer: `Jhon Doe2`,
         slogan: `We specialize in transforming photos of vacant properties into beautiful, virtually staged homes that sells faster and for top dollar.`,
@@ -424,7 +424,7 @@ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo tempore culp
         ],
         date: `2018-08-05T09:55:38.254Z`,
         title: `'Agent Outreach', '3D Modelling'`,
-        img: `${imgUrl}/partner.jpg`,
+        img: `${imgUrl}/img-12.jpg`,
         avatar: `${imgUrl}/blogger.png`,
         writer: `Jhon Doe24`,
         slogan: `We specialize in transforming photos of vacant properties into beautiful, virtually staged homes that sells faster and for top dollar.`,
@@ -441,7 +441,7 @@ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo tempore culp
         ],
         date: `2018-06-06T09:55:38.254Z`,
         title: `'Virtual Staging'`,
-        img: `${imgUrl}/partner.jpg`,
+        img: `${imgUrl}/img-12.jpg`,
         avatar: `${imgUrl}/blogger.png`,
         writer: `Jhon Doe246`,
         slogan: `We specialize in transforming photos of vacant properties into beautiful, virtually staged homes that sells faster and for top dollar.`,
@@ -458,7 +458,7 @@ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo tempore culp
         ],
         date: `2018-06-16T09:55:38.254Z`,
         title: `'Agent Outreach'`,
-        img: `${imgUrl}/partner.jpg`,
+        img: `${imgUrl}/img-12.jpg`,
         avatar: `${imgUrl}/blogger.png`,
         writer: `Jhon Doe2468`,
         slogan: `We specialize in transforming photos of vacant properties into beautiful, virtually staged homes that sells faster and for top dollar.`,
@@ -475,7 +475,7 @@ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo tempore culp
         ],
         date: `2018-09-16T09:55:38.254Z`,
         title: `'3D Modelling'`,
-        img: `${imgUrl}/partner.jpg`,
+        img: `${imgUrl}/img-12.jpg`,
         avatar: `${imgUrl}/blogger.png`,
         writer: `Jhon Doe1`,
         slogan: `We specialize in transforming photos of vacant properties into beautiful, virtually staged homes that sells faster and for top dollar.`,
@@ -492,7 +492,7 @@ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo tempore culp
         ],
         date: `2018-01-06T09:55:38.254Z`,
         title: `'Design'`,
-        img: `${imgUrl}/partner.jpg`,
+        img: `${imgUrl}/img-12.jpg`,
         avatar: `${imgUrl}/blogger.png`,
         writer: `Jhon Doe13`,
         slogan: `We specialize in transforming photos of vacant properties into beautiful, virtually staged homes that sells faster and for top dollar.`,
@@ -509,7 +509,7 @@ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo tempore culp
         ],
         date: `2018-01-08T09:55:38.254Z`,
         title: `'Design', 'Tech', 'Virtual Staging', '3D Modelling'`,
-        img: `${imgUrl}/partner.jpg`,
+        img: `${imgUrl}/img-12.jpg`,
         avatar: `${imgUrl}/blogger.png`,
         writer: `Jhon Doe135`,
         slogan: `We specialize in transforming photos of vacant properties into beautiful, virtually staged homes that sells faster and for top dollar.`,
@@ -526,7 +526,7 @@ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo tempore culp
         ],
         date: `2017-07-09T09:55:38.254Z`,
         title: `'Tech', 'Agent Outreach', 'Virtual Staging', '3D Modelling'`,
-        img: `${imgUrl}/partner.jpg`,
+        img: `${imgUrl}/img-12.jpg`,
         avatar: `${imgUrl}/blogger.png`,
         writer: `Jhon Doe1357`,
         slogan: `We specialize in transforming photos of vacant properties into beautiful, virtually staged homes that sells faster and for top dollar.`,
@@ -661,47 +661,47 @@ const select = [
 
 const item = [
     {
-        image: `${url}/vendor/images/portfolio.jpg`,
+        image: `${url}/vendor/images/img-09.jpg`,
         text: `Hill View Apartments`,
         url,
     },
     {
-        image: `${url}/vendor/images/portfolio9.jpg`,
+        image: `${url}/vendor/images/img-10.jpg`,
         text: `Hill View Apartments`,
         url,
     },
     {
-        image: `${url}/vendor/images/portfolio2.jpg`,
+        image: `${url}/vendor/images/img-11.jpg`,
         text: `Hill View Apartments`,
         url,
     },
     {
-        image: `${url}/vendor/images/portfolio3.jpg`,
+        image: `${url}/vendor/images/img-12.jpg`,
         text: `Hill View Apartments`,
         url,
     },
     {
-        image: `${url}/vendor/images/portfolio4.jpg`,
+        image: `${url}/vendor/images/img-10.jpg`,
         text: `Hill View Apartments`,
         url,
     },
     {
-        image: `${url}/vendor/images/portfolio5.jpg`,
+        image: `${url}/vendor/images/img-11.jpg`,
         text: `Hill View Apartments`,
         url,
     },
     {
-        image: `${url}/vendor/images/portfolio7.jpg`,
+        image: `${url}/vendor/images/img-12.jpg`,
         text: `Hill View Apartments`,
         url,
     },
     {
-        image: `${url}/vendor/images/portfolio8.jpg`,
+        image: `${url}/vendor/images/img-09.jpg`,
         text: `Hill View Apartments`,
         url,
     },
     {
-        image: `${url}/vendor/images/portfolio9.jpg`,
+        image: `${url}/vendor/images/img-10.jpg`,
         text: `Hill View Apartments`,
         url,
     },

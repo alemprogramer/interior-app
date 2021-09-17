@@ -39,7 +39,7 @@ function Services() {
             title='Virtual Home Staging'
             text='We specialize in transforming photos of vacant properties into beautiful, virtually staged homes that sells faster and for top dollar.'
             price='500'
-            img={`${imgUrl}/banner_banner_bg.jpg`}
+            img={`${imgUrl}/img-11.jpg`}
             url={url}
             buttonText='Place Order'/>
         <Difference title="What we need" need={accept}/>

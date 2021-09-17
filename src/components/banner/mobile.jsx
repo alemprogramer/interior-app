@@ -12,7 +12,7 @@ export class Mobile extends Component {
                                 <img
                                     className="img-fluid"
                                     src={image}
-                                    alt="banner_banner_bg.jpg"/>
+                                    alt="img-09.jpg"/>
                             </div>
                         </div>
                         <div className="col-12">

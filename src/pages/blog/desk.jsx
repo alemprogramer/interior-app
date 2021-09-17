@@ -107,7 +107,7 @@ function Desk({ data }) {
                 miniTitle='Featured Blog'
                 text="We specialize in transforming photos of vacant properties into  beautiful, virtually staged homes that sells faster and for top dollar."
                 urlText='Read More'
-                img={`${imgUrl}/banner_banner_bg.jpg`}
+                img={`${imgUrl}/img-05.jpg`}
                 url={link}
                 urlIcon='fa-long-arrow-alt-right'
                 blogger={person} />

@@ -29,7 +29,8 @@ function Faq() {
                 miniTitle="FAQ"
                 text="We specialize in transforming photos of vacant properties into  beautiful, virtually staged homes that sells faster and for top dollar."
                 urlText='Sign Up'
-                img={`${imgUrl}/banner_banner_bg.jpg`}
+                // Banner Image
+                img={`${imgUrl}/img-09.jpg`}
                 url={url}
                 urlIcon='fa-long-arrow-alt-right'/>
 

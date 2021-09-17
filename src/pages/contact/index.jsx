@@ -35,7 +35,8 @@ function Contact() {
                 miniTitle='Office Location'
                 text='112 E Pecan St. #1135, San Antonio, TX 78205'
                 urlText='Show on Google Maps'
-                img={`${imgUrl}/banner_banner_bg.jpg`}
+                // Banner Image
+                img={`${imgUrl}/img-09.jpg`}
                 url={link}
                 urlIcon='fa-long-arrow-alt-right'/>
             <section className="contact">

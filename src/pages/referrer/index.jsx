@@ -30,7 +30,8 @@ function Refer() {
             <Banner title='Bangalore, India'
                 text='112 E Pecan St. #1135, San Antonio, TX 78205'
                 urlText='Refer a friend'
-                img={`${imgUrl}/banner_banner_bg.jpg`}
+                // Banner Image
+                img={`${imgUrl}/img-09.jpg`}
                 url={url}
                 urlIcon='fa-long-arrow-alt-right' />
             <section class="contact">

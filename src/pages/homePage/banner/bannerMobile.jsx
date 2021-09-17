@@ -9,8 +9,9 @@ export class BannerMobile extends Component {
                         <div className="col-12">
                             <div className="banner_bg">
                                 <img
+                                // Banner Image
                                     className="img-fluid"
-                                    src="/vendor/images/banner_banner_bg.jpg"
+                                    src="/vendor/images/img-09.jpg"
                                     alt="banner_banner_bg.jpg"/>
                             </div>
                         </div>
