@@ -19,7 +19,7 @@ export class Item extends Component {
             <div className={name}>
                 <div className="heading">
                     <div className="image float-left">
-                        <img src={icon} className="img-fluid" alt="user.png"/>
+                        <i className={icon}></i>
                     </div>
 
                     <div className="title">

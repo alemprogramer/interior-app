@@ -57,32 +57,32 @@ const faq = [
 ]
 const different = [
     {
-        icon: `${imgUrl}/user.png`,
+        icon: `fas fa-user`,
         title: 'Professional Home Stagers',
         text: 'We specialize in transfcascasorming photos of vacant properties into beautiful, ' +
                 'virtually staged homes that sells faster and for top dollar.'
     }, {
-        icon: `${imgUrl}/user.png`,
+        icon: `fas fa-user`,
         title: 'Professasascional Home Stagers',
         text: 'We specialize in trascascansforming photos of vacant properties into beautiful, ' +
                 'virtually staged homes that sells faster and for top dollar.'
     }, {
-        icon: `${imgUrl}/user.png`,
+        icon: `fas fa-user`,
         title: 'Professional Hocasme Stagers',
         text: 'We specialize in transforming photos of vacant properties into beautiful, virtua' +
                 'lly staged homes that sells faster and for top dollar.'
     }, {
-        icon: `${imgUrl}/user.png`,
+        icon: `fas fa-user`,
         title: 'Professional Home Staascgers',
         text: 'We specialize in transforming photos of vacant properties into beautiful, virtua' +
                 'lly staged homes that sells faster and for top dollar.'
     }, {
-        icon: `${imgUrl}/user.png`,
+        icon: `fas fa-user`,
         title: 'Professional Home Stagers',
         text: 'We specialize in transforming photos of vacant properties into beautiful, virtua' +
                 'lly staged homescbf that sells faster and for top dollar.'
     }, {
-        icon: `${imgUrl}/user.png`,
+        icon: `fas fa-user`,
         title: 'Profesgfdsional Home Stagers',
         text: 'We specialnfgnfgize in transforming photos of vacant properties into beautiful, ' +
                 'virtually staged homes that sells faster and for top dollar.'
@@ -92,48 +92,48 @@ const howItWork = [
     {
         head: `Virtual Home Staging`,
         text: `Upload photos ( please use professional high resolution photos, not the ones you can take on your phone)`,
-        image: `${imgUrl}/how.jpg`
+        image: `${imgUrl}/img-04.jpg`
     }, {
         head: `Interior Design and Support`,
         text: `Upload photos (not the ones you can take on your phone)`,
-        image: `${imgUrl}/how_2.jpg`
+        image: `${imgUrl}/img-02.jpg`
     }, {
         head: `Virtual Home Staging`,
         text: `Upload photos ( please use professional high resolution photos, not the ones you can take on your phone)`,
-        image: `${imgUrl}/how_3.jpg`
+        image: `${imgUrl}/img-04.jpg`
     }, {
         head: `Interior Design`,
         text: `Upload photos (not the ones you can take on your phone)`,
-        image: `${imgUrl}/how_4.jpg`
+        image: `${imgUrl}/img-02.jpg`
     }
 ]
 
 const previousWork = [
     {
-        image: imgUrl + "/previous.jpg",
+        image: imgUrl + "/img-09.jpg",
         title: 'Hill View Apartments'
     },
     {
-        image: imgUrl + "/previous2.jpg",
+        image: imgUrl + "/img-10.jpg",
         title: 'Residential Apartments'
     }
 ]
 
 const partner = [
     {
-        img: `${imgUrl}/partner.jpg`,
+        img: `${imgUrl}/img-08.jpg`,
         title: `Reseller Program`,
         text: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, provident!`,
         link: url
     },
     {
-        img: `${imgUrl}/partner.jpg`,
+        img: `${imgUrl}/img-08.jpg`,
         title: `Reseller Program`,
         text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ut a officiis nulla eos ea.`,
         link: url
     },
     {
-        img: `${imgUrl}/partner.jpg`,
+        img: `${imgUrl}/img-08.jpg`,
         title: `Reseller Program`,
         text: `Lorem ipsum dolor sit, amet, consectetur adipisicing elit. Rem, nostrum, minima? Eveniet dolor corrupti beatae et quasi excepturi vitae. Voluptas perspiciatis ex soluta accusantium harum.`,
         link: url
@@ -158,7 +158,7 @@ const contact = [
 
 /* Services Start */
 
-const img = imgUrl + '/service.png';
+const img = imgUrl + '/img-11.jpg';
 const services = [
     {
         image: img,
@@ -222,22 +222,22 @@ const services = [
 
 const agency=[
     {
-        img: `${imgUrl}/logo.png`
+        img: `${imgUrl}/logo01.png`
     },
     {
-        img: `${imgUrl}/logo2.png`
+        img: `${imgUrl}/logo02.png`
     },
     {
-        img: `${imgUrl}/logo3.png`
+        img: `${imgUrl}/logo03.png`
     },
     {
-        img: `${imgUrl}/logo4.png`
+        img: `${imgUrl}/logo04.png`
     },
     {
-        img: `${imgUrl}/logo5.png`
+        img: `${imgUrl}/logo05.png`
     },
     {
-        img: `${imgUrl}/logo6.png`
+        img: `${imgUrl}/logo06.png`
     }
 ]
 

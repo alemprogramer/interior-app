@@ -12,7 +12,7 @@ function PreviousWork({data}) {
                     {data
                         .map((d,k) => <div key={k++} className="col-md-6 col-sm-6 col-12">
                             <div className="content position-relative">
-                                <img src={d.image} className="img-fluid" alt="previous.jpg"/>
+                                <img src={d.image} height='100%' className="img-fluid" alt="previous.jpg"/>
                                 <div className="slogan position-absolute text-center text-capitalize">
                                     <h6>{d.title}</h6>
                                 </div>

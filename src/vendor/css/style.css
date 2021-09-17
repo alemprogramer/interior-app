@@ -761,13 +761,15 @@ footer .container .row .reservation .links a {
 }
 .home_page .difference .context .item .heading .image {
   width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 30px;
   margin-right: 16px;
   background: #f5f7fa;
 }
-.home_page .difference .context .item .heading .image img {
-  margin-left: 50%;
-  transform: translateX(-50%);
+.home_page .difference .context .item .heading .image i {
+  color: #00C47D;
 }
 .home_page .difference .context .item .heading .title {
   width: 210px;
