@@ -4,9 +4,7 @@ import Mobile from "./mobile";
 import mediaObserver from "../breakPoints/breakpoint";
 
 
-function Banner(props) {
-    const { blogger,title, miniTitle, text, price, img, url, urlIcon, urlText, buttonText}=props;
-    //  { title, miniTitle, text, price, link, image, linkText, buttonText } 
+function Banner({ blogger,title, miniTitle, text, price, img, url, urlIcon, urlText, buttonText}) {
     const [media, setMedia] = useState();
    useEffect(() => {
        mediaObserver(setMedia);

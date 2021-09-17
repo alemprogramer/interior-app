@@ -623,7 +623,7 @@ footer .container .row .reservation .links a {
 }
 .home_page .banner .container .banner_content {
   background: #ffffff;
-  left: 0;
+  right: 0;
   top: 96px;
   padding-left: 114px;
   padding-right: 64px;

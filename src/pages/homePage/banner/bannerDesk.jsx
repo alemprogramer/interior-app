@@ -3,7 +3,7 @@ import {Carousel} from 'react-bootstrap';
 
 export class BannerDesk extends Component {
     render() {
-        const img = process.env.PUBLIC_URL + "/vendor/images/home_banner_bg1.png";
+        const img = process.env.PUBLIC_URL + "/vendor/images/img-10.jpg";
         return (
             <section
                 className="banner position-relative">
