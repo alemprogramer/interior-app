@@ -170,7 +170,9 @@ const Footer = () => {
                                 <div className="links float-md-right">
                                     <div className="row">
                                             <h6> &copy; 2021 | React App Developed By &nbsp;&nbsp;&nbsp; </h6>
-                                                                                        <a target='_blank' rel='noreferrer' href='mailto:alemhasib@fastcodertech.com'>&nbsp;Aleam</a>
+                                                <a target='_blank' rel='noreferrer' href='mailto:alemhasib@fastcodertech.com'>&nbsp;Aleam</a> &nbsp; &amp; 
+                                            <a target='_blank' rel='noreferrer' href='mailto:mnjr@fastcodertech.com'>&nbsp;Maruf</a> &nbsp; &amp;
+                                                {/* <a target='_blank' rel='noreferrer' href='mailto:alemhasib@fastcodertech.com'>&nbsp;Mujahid</a> &nbsp; &amp;  */}
                                         
                                     </div>
                                 </div>
