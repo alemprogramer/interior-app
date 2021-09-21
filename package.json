@@ -1,6 +1,6 @@
 {
-  "name": "synextic",
-  "version": "0.1.0",
+  "name": "interior_design_application",
+  "version": "0.10.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
