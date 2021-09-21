@@ -14,7 +14,7 @@ function Agencies({data}) {
                                 {data
                                     .map((s,k) => <div key={k++} className="col-md-2">
                                         <div className="sliding_parts">
-                                            <img src={s.img} alt="logo.png" className="img-fluid"/>
+                                            <img src={s.img} title="Logo Designed By Nusrat Jahan Rizu" alt="logo.png" className="img-fluid"/>
                                         </div>
                                     </div>)}
 

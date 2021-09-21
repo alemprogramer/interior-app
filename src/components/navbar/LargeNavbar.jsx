@@ -43,7 +43,7 @@ const LargeNavbar = ({data}) => {
                             <div className="row">
                                 <div className="col-lg-2 col-xl-2 col-sm-2 col-md-2 d-flex align-items-center">
                                 <div className="logo-area overflow-hidden">
-                                    {loader === true ? <Logo /> : <Link to='/'><img src={`${process.env.PUBLIC_URL}/vendor/images/logo05.png`} height='40' alt="logo05" /></Link>}
+                                    {loader === true ? <Logo /> : <Link to='/'><img title="Logo Designed By Nusrat Jahan Rizu" src={`${process.env.PUBLIC_URL}/vendor/images/logo05.png`} height='40' alt="logo05" /></Link>}
                                         
                                     </div>
                                 </div>

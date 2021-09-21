@@ -23,6 +23,7 @@ export class BannerDesk extends Component {
                         <div className="banner_bg"><img
                             className="img-fluid"
                             src={img}
+                            title="Art By Nusrat Jahan Rizu"
                             alt="home_banner_bg1.png"/>
                         </div>
                     </Carousel.Item>
@@ -30,6 +31,7 @@ export class BannerDesk extends Component {
                         <div className="banner_bg"><img
                             className="img-fluid"
                             src={img}
+                            title="Art By Nusrat Jahan Rizu"
                             alt="home_banner_bg1.png"/>
                         </div>
                     </Carousel.Item>
@@ -37,6 +39,7 @@ export class BannerDesk extends Component {
                         <div className="banner_bg"><img
                             className="img-fluid"
                             src={img}
+                            title="Art By Nusrat Jahan Rizu"
                             alt="home_banner_bg1.png"/>
                         </div>
                     </Carousel.Item>
@@ -44,6 +47,7 @@ export class BannerDesk extends Component {
                         <div className="banner_bg"><img
                             className="img-fluid"
                             src={img}
+                            title="Art By Nusrat Jahan Rizu"
                             alt="home_banner_bg1.png"/>
                         </div>
                     </Carousel.Item>
