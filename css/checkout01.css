@@ -412,3 +412,66 @@
   position: relative;
   z-index: 1;
 }
+.checkout .summery {
+  padding: 24px;
+  background: #ffffff;
+}
+.checkout .summery .titles {
+  font-family: 'Muli', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 170%;
+  color: #363840;
+  text-transform: capitalize;
+  padding-bottom: 24px;
+}
+.checkout .summery .items {
+  padding: 24px 0;
+}
+.checkout .summery .items .table,
+.checkout .summery .total .table {
+  margin: 0;
+}
+.checkout .summery .items .table .text,
+.checkout .summery .total .table .text {
+  text-align: left;
+  font-weight: 400;
+  font-family: 'Muli', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #363840;
+}
+.checkout .summery .items .table .amount,
+.checkout .summery .total .table .amount {
+  text-align: right;
+  font-family: 'Muli', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #363840;
+  font-weight: 400;
+  color: #999ba1;
+}
+.checkout .summery .items .table td,
+.checkout .summery .total .table td,
+.checkout .summery .items .table th,
+.checkout .summery .total .table th {
+  padding: 0.75rem 0;
+}
+.checkout .summery .lines {
+  position: relative;
+}
+.checkout .summery .lines::after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 1px;
+  background: #eeeeee;
+}
