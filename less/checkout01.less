@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:700|Muli:400,700,800&display=swap');
+
+@import url('./_varMix.less');
+@import url('./_webkits.less');
+
+.checkout {
+  margin: 136px 0;
+  .heading {
+    margin-bottom: 56px;
+    .steps {
+      .h6;
+      font-weight: 700;
+      color: #999ba1;
+      margin-bottom: 16px;
+    }
+    .titles {
+      .h3;
+      font-size: 32px;
+      margin-bottom: 16px;
+    }
+    .terms {
+      .h6;
+      color: #999ba1;
+    }
+  }
+  .dropbox {
+    position: relative;
+    border: 2px dotted #dfe3eb;
+    padding: 38px 20px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f7fa;
+    input#primary {
+      cursor: pointer;
+      font-size: 18px;
+      display: block;
+      width: 100%;
+      border: none;
+      text-transform: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 0;
+
+      &:focus {
+        outline: none;
+      }
+    }
+    h4 {
+      .h4;
+      font-size: 20px;
+      color: #7b7d84;
+    }
+    h6 {
+      .h6;
+      color: #999ba1;
+    }
+    .btn {
+      position: relative;
+      z-index: 1;
+    }
+  }
+}
