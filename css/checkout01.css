@@ -489,6 +489,16 @@
   flex-direction: row;
   justify-content: center;
   padding: 26px 20px;
+  color: #f16334;
+}
+.checkout .uploads .title {
+  font-family: 'Muli', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 170%;
+  color: #7b7d84;
+  color: #f16334;
 }
 .checkout .singles {
   position: relative;
