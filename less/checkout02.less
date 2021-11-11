@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:700|Muli:400,700,800&display=swap');
+
+@import url('./_varMix.less');
+@import url('./_webkits.less');
+
+.checkout {
+  .options {
+    margin: 16px 0;
+    .single {
+      position: relative;
+      cursor: pointer;
+      border: 1px solid transparent;
+      overflow: hidden;
+      .tran(0.2s);
+      .img-area {
+        .tran(0.2s);
+        height: 233px;
+        background: #ffffff;
+        display: block;
+        width: 100%;
+        img {
+          .img_css;
+        }
+      }
+      .text-area {
+        .tran(0.2s);
+        padding: 16px;
+        text-align: center;
+        background: #ffffff;
+        display: block;
+        border-top: 1px solid rgba(112, 112, 112, 0.3);
+        h6 {
+          .tran(0.2s);
+          .h6;
+          font-weight: 700;
+          text-transform: capitalize;
+        }
+      }
+      &:hover {
+        .shadow(2px, 2px, 10px, 0px ,0.75);
+      }
+    }
+    .default {
+      display: none;
+      &:checked,
+      &:not(checked) {
+        & + .single {
+          &::after {
+            .after;
+            width: 12px;
+            height: 12px;
+            background: @col3;
+            top: 15px;
+            right: 17px;
+            border-radius: 100%;
+            -webkit-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+            z-index: 2;
+          }
+          &::before {
+            .after;
+            right: 14px;
+            top: 12px;
+            width: 18px;
+            height: 18px;
+            border: 1px solid #ddd;
+            border-radius: 100%;
+            background: #f1f1f1;
+            z-index: 2;
+          }
+        }
+      }
+      &:not(checked) {
+        & + .single {
+          &::after {
+            opacity: 0;
+            -webkit-transform: scale(0);
+            transform: scale(0);
+          }
+        }
+      }
+      &:checked {
+        & + .single {
+          border: 1px solid @col3;
+          &::after {
+            opacity: 1;
+            -webkit-transform: scale(1);
+            transform: scale(1);
+          }
+        }
+      }
+    }
+  }
+}
