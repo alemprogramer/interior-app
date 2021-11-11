@@ -329,7 +329,7 @@
 .checkout .uploads,
 .checkout .dropbox {
   position: relative;
-  border: 2px dotted #dfe3eb;
+  border: 2px dotted #f5f7fa;
   padding: 38px 20px;
   border-radius: 6px;
   display: flex;
@@ -375,7 +375,6 @@
   font-size: 14px;
   line-height: 170%;
   color: #7b7d84;
-  color: #999ba1;
 }
 .checkout .uploads .btn,
 .checkout .dropbox .btn {
@@ -412,7 +411,7 @@
 }
 .checkout .singles .imgs {
   width: 133px;
-  background: #cccccc;
+  background: #7b7d84;
   height: 100%;
 }
 .checkout .singles .imgs img {

@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:700|Muli:400,700,800&display=swap');
+
+@import url('./_varMix.less');
+@import url('./_webkits.less');
+
+.checkout {
+  .mr-53 {
+    margin-right: 53px;
+  }
+  .set {
+    padding: 32px;
+    background: @col1;
+    .img-box {
+      width: 100%;
+      background: @col5;
+      .img-area {
+        width: 100%;
+        display: block;
+        height: 109px;
+        img {
+          .img_css;
+        }
+      }
+      .text-area {
+        padding: 4px;
+        display: block;
+        h6 {
+          .p;
+          color: @col2;
+          text-align: center;
+        }
+      }
+    }
+    .addons {
+      flex-direction: column;
+    }
+  }
+}
