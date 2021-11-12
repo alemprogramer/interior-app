@@ -329,6 +329,9 @@
 .checkout .mr-53 {
   margin-right: 53px;
 }
+.checkout .mb-32 {
+  margin-bottom: 32px;
+}
 .checkout .set {
   padding: 32px;
   background: #ffffff;
@@ -361,6 +364,92 @@
   color: #363840;
   text-align: center;
 }
-.checkout .set .addons {
-  flex-direction: column;
+.checkout .set .form-box {
+  position: relative;
+}
+.checkout .set .form-box .titles {
+  font-family: 'Muli', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 170%;
+  color: #7b7d84;
+  text-transform: capitalize;
+  text-align: left;
+}
+.checkout .set .form-box .alerts {
+  font-family: 'Muli', sans-serif;
+  color: #7b7d84;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 170%;
+  text-align: left;
+  margin-top: 8px;
+}
+.checkout .set .form-box .choose {
+  font-family: 'Muli', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #363840;
+  color: #f16334;
+  background: transparent;
+  border-color: transparent;
+  padding: 2px 4px;
+  outline: 0;
+}
+.checkout .set .form-box .choose:focus,
+.checkout .set .form-box .choose:active {
+  background: #f5f7fa;
+}
+.checkout .set .form-box .description {
+  border: 0.5px solid #dfe3eb;
+  height: 105px;
+  padding: 8px 16px;
+  border-radius: 5px;
+  background: #fcfdfe;
+}
+.checkout .set .form-box .addons {
+  position: relative;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+.checkout .set .form-box .addons::before {
+  position: absolute;
+  content: '';
+  left: -30px;
+  top: 4px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #dfe3eb;
+  background: #ffffff;
+}
+.checkout .set .form-box .addons::after {
+  position: absolute;
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: #f16334;
+  top: 9px;
+  left: -25px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.checkout .set .form-box .checks {
+  display: none;
+  position: absolute;
+  left: -16%;
+  z-index: -9999;
+}
+.checkout .set .form-box .checks:checked + .addons::after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.checkout .set .form-box .checks:not(:checked) + .addons::after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
 }

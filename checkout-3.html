@@ -901,115 +901,97 @@
                   </div>
                   <div class="col-lg-8">
                     <div class="form-box">
-                      <div class="row">
-                        <div class="col-lg-12">
-                          <ul class="d-flex justify-content-between">
-                            <li><p>Room Type*</p></li>
-                            <li>
-                              <select name="rooms" id="room">
-                                <option selected>Select</option>
-                                <option value="kitchen">kitchen</option>
-                                <option value="bed-room">bed room</option>
-                                <option value="dining-room">dining room</option>
-                                <option value="drawing-room">
-                                  drawing room
-                                </option>
-                              </select>
-                            </li>
-                          </ul>
+                      <div class="row mb-32">
+                        <div class="col-lg-4">
+                          <p class="titles">Room Type*</p>
+                        </div>
+                        <div class="col-lg-7 offset-lg-1">
+                          <select name="rooms" id="room">
+                            <option selected>Select</option>
+                            <option value="kitchen">kitchen</option>
+                            <option value="bed-room">bed room</option>
+                            <option value="dining-room">dining room</option>
+                            <option value="drawing-room">drawing room</option>
+                          </select>
                         </div>
                       </div>
-                      <div class="row">
-                        <div class="col-lg-12">
-                          <ul class="d-flex justify-content-between">
-                            <li><p>Addons</p></li>
-                            <li>
-                              <ul class="addons d-flex">
-                                <li>
-                                  <input
-                                    type="checkbox"
-                                    name="walls"
-                                    id="walls"
-                                  />
-                                  <label for="walls">
-                                    Change Wall color - $50</label
-                                  >
-                                </li>
-                                <li>
-                                  <input
-                                    type="checkbox"
-                                    name="floors"
-                                    id="floors"
-                                  />
-                                  <label for="floors">
-                                    Change flooring - $50</label
-                                  >
-                                </li>
-                                <li>
-                                  <input
-                                    type="checkbox"
-                                    name="replacement"
-                                    id="replacement"
-                                  />
-                                  <label for="replacement">
-                                    Furniture Replacement - $50</label
-                                  >
-                                </li>
-                              </ul>
-                            </li>
-                          </ul>
+                      <div class="row mb-32">
+                        <div class="col-lg-4">
+                          <p class="titles">Add ons</p>
+                        </div>
+                        <div class="col-lg-7">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <input
+                                type="checkbox"
+                                class="checks"
+                                name="furniture"
+                                id="furniture"
+                              />
+                              <label for="furniture" class="addons">
+                                furniture replacement - $50
+                              </label>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <input
+                                type="checkbox"
+                                class="checks"
+                                name="wall"
+                                id="wall"
+                              />
+                              <label for="wall" class="addons">
+                                change wall color - $50
+                              </label>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <input
+                                type="checkbox"
+                                class="checks"
+                                name="flooring"
+                                id="flooring"
+                              />
+                              <label for="flooring" class="addons mb-0">
+                                change flooring - $50
+                              </label>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                      <!-- Reference Initials -->
-                      <!-- <div class="row">
-                        <div class="col-lg-12">
-                          <ul class="d-flex justify-content-between">
-                            <li><p>references</p></li>
-                            <li>
-                              <div class="dropdown">
-                                <button
-                                  class="btn btn-secondary dropdown-toggle"
-                                  type="button"
-                                  id="dropdownMenuButton1"
-                                  data-bs-toggle="dropdown"
-                                  aria-expanded="false"
-                                >
-                                  Dropdown button
-                                </button>
-                                <ul
-                                  class="dropdown-menu"
-                                  aria-labelledby="dropdownMenuButton1"
-                                >
-                                  <li>
-                                    <a class="dropdown-item" href="#">Action</a>
-                                  </li>
-                                  <li>
-                                    <a class="dropdown-item" href="#"
-                                      >Another action</a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a class="dropdown-item" href="#"
-                                      >Something else here</a
-                                    >
-                                  </li>
-                                </ul>
-                              </div>
-                            </li>
-                          </ul>
+                      <div class="row mb-32">
+                        <div class="col-lg-4">
+                          <p class="titles">reference</p>
                         </div>
-                      </div> -->
-                      <div class="row">
-                        <div class="col-lg-12">
-                          <ul class="d-flex justify-content-between">
-                            <li><p>references</p></li>
-                            <li>
-                              <div class="items"></div>
-                              <button type="button" class="more">
-                                <i class="far fa-images"></i> Choose
+                        <div class="col-lg-7">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <button type="button" class="choose">
+                                <i class="far fa-images"></i> choose
                               </button>
-                            </li>
-                          </ul>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <p class="alerts">
+                                You can add upto 3 references
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mb-32">
+                        <div class="col-lg-4">
+                          <p class="titles">description</p>
+                        </div>
+                        <div class="col-lg-7">
+                          <textarea
+                            name="description"
+                            id="description"
+                            class="description"
+                          ></textarea>
                         </div>
                       </div>
                     </div>

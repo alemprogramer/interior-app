@@ -43,7 +43,7 @@
     .default {
       display: none;
       &:checked,
-      &:not(checked) {
+      &:not(:checked) {
         & + .single {
           &::after {
             .after;
@@ -70,7 +70,7 @@
           }
         }
       }
-      &:not(checked) {
+      &:not(:checked) {
         & + .single {
           &::after {
             opacity: 0;

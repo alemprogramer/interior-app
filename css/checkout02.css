@@ -392,7 +392,7 @@
   display: none;
 }
 .checkout .options .default:checked + .single::after,
-.checkout .options .default:not(checked) + .single::after {
+.checkout .options .default:not(:checked) + .single::after {
   position: absolute;
   content: '';
   width: 12px;
@@ -406,7 +406,7 @@
   z-index: 2;
 }
 .checkout .options .default:checked + .single::before,
-.checkout .options .default:not(checked) + .single::before {
+.checkout .options .default:not(:checked) + .single::before {
   position: absolute;
   content: '';
   right: 14px;
@@ -418,7 +418,7 @@
   background: #f5f7fa;
   z-index: 2;
 }
-.checkout .options .default:not(checked) + .single::after {
+.checkout .options .default:not(:checked) + .single::after {
   opacity: 0;
   -webkit-transform: scale(0);
   transform: scale(0);
