@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:700|Muli:400,700,800&display=swap');
+
+@import url('./_varMix.less');
+@import url('./_webkits.less');
+
+.checkout {
+  .tabs {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+
+    .tab {
+      width: 100%;
+      color: #000000;
+      overflow: hidden;
+      border-bottom: 1px solid #2c3e50;
+
+      .tab-label {
+        display: flex;
+        justify-content: space-between;
+        padding: 1em;
+        background: #ffffff;
+        font-weight: bold;
+        cursor: pointer;
+        position: relative;
+        /* Icon */
+
+        &::before,
+        &::after {
+          position: absolute;
+          content: '';
+          width: 2px;
+          height: 10px;
+          transition: all linear 0.35s;
+          top: 20px;
+          background: #000000;
+        }
+
+        &::after {
+          right: 98px;
+          transform: rotate(30deg);
+        }
+
+        &::before {
+          right: 93px;
+          transform: rotate(-30deg);
+        }
+      }
+    }
+
+    .tab-content {
+      max-height: 0;
+      padding: 0 1em;
+      color: #2c3e50;
+      background: white;
+      transition: all linear 0.35s;
+    }
+    .payment {
+      position: absolute;
+      opacity: 0;
+      z-index: -1;
+
+      &:checked {
+        & + .tab-label {
+          color: @col3;
+
+          &::after {
+            right: 93px;
+          }
+
+          &::before {
+            right: 98px;
+          }
+        }
+        & ~ .tab-content {
+          max-height: 100vh;
+          padding: 1em;
+        }
+      }
+    }
+    .tab-close {
+      display: flex;
+      justify-content: flex-end;
+      padding: 1em;
+      font-size: 0.75em;
+      background: #fff;
+      cursor: pointer;
+
+      &:hover {
+        background: #fff;
+      }
+    }
+  }
+  .promo {
+    margin-top: 30px;
+    padding: 24px;
+    background: #ffffff;
+    .codes {
+      .h6;
+      text-transform: capitalize;
+      .btns {
+        background: transparent;
+        border: 0;
+        color: @col3;
+        outline: 0;
+      }
+      .promocode {
+        width: 60%;
+        margin-right: 10%;
+        padding: 2px 5px;
+        border-radius: 5px;
+        border-color: @col5;
+      }
+    }
+    .done {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
