@@ -1,4 +1,31 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:700|Muli:400,700,800&display=swap');
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lato/v20/S6u9w4BMUTPHh6UVSwiPHA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/muli/v22/7Aulp_0qiz-aVz7u3PJLcUMYOFnOkEk30e0.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/muli/v22/7Aulp_0qiz-aVz7u3PJLcUMYOFkpl0k30e0.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/muli/v22/7Aulp_0qiz-aVz7u3PJLcUMYOFlOl0k30e0.ttf) format('truetype');
+}
 /*color start*/
 /*color end*/
 /*font start*/
@@ -101,7 +128,7 @@
   padding: 37px 0;
 }
 .bg {
-  background: #ffffff;
+  background: #fff;
 }
 .mlmt {
   padding-left: 122px;
@@ -219,7 +246,7 @@
   transition: all linear 0.25s;
 }
 .btn:hover {
-  color: #ffffff !important;
+  color: #fff !important;
   background-color: #f16334;
   border: 1px solid #f16334;
 }
@@ -333,8 +360,10 @@
   margin-bottom: 32px;
 }
 .checkout .set {
+  margin: 16px 0;
+  display: inline-block;
   padding: 32px;
-  background: #ffffff;
+  background: #fff;
 }
 .checkout .set .img-box {
   width: 100%;
@@ -424,7 +453,7 @@
   width: 18px;
   height: 18px;
   border: 1px solid #dfe3eb;
-  background: #ffffff;
+  background: #fff;
 }
 .checkout .set .form-box .addons::after {
   position: absolute;
@@ -452,4 +481,32 @@
   opacity: 0;
   -webkit-transform: scale(0);
   transform: scale(0);
+}
+.checkout .set .form-box .refer_img {
+  position: relative;
+  padding-bottom: 8px;
+}
+.checkout .set .form-box .refer_img .dlt {
+  position: absolute;
+  top: -10px;
+  right: -6px;
+  z-index: 2;
+  color: #fff;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #363840;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  transform: scale(0);
+  -webkit-transition: all linear 0.2s;
+  -moz-transition: all linear 0.2s;
+  -ms-transition: all linear 0.2s;
+  -o-transition: all linear 0.2s;
+  transition: all linear 0.2s;
+}
+.checkout .set .form-box .refer_img:hover .dlt {
+  transform: scale(1);
 }

@@ -884,6 +884,182 @@
         <form action="" method="post">
           <div class="row">
             <div class="col-lg-8">
+              <div class="set mt-0">
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="img-box">
+                      <span class="img-area"
+                        ><img
+                          src="./images/ch-img.png"
+                          alt="ch-img.png"
+                          class="img-fluid"
+                      /></span>
+                      <span class="text-area">
+                        <h6>ch-img.jpg</h6>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="col-lg-8">
+                    <div class="form-box">
+                      <div class="row mb-32">
+                        <div class="col-lg-4">
+                          <p class="titles">Room Type*</p>
+                        </div>
+                        <div class="col-lg-7 offset-lg-1">
+                          <select name="rooms" id="room">
+                            <option selected>Select</option>
+                            <option value="kitchen">kitchen</option>
+                            <option value="bed-room">bed room</option>
+                            <option value="dining-room">dining room</option>
+                            <option value="drawing-room">drawing room</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="row mb-32">
+                        <div class="col-lg-4">
+                          <p class="titles">Add ons</p>
+                        </div>
+                        <div class="col-lg-7">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <input
+                                type="checkbox"
+                                class="checks"
+                                name="furniture"
+                                id="furniture"
+                              />
+                              <label for="furniture" class="addons">
+                                furniture replacement - $50
+                              </label>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <input
+                                type="checkbox"
+                                class="checks"
+                                name="wall"
+                                id="wall"
+                              />
+                              <label for="wall" class="addons">
+                                change wall color - $50
+                              </label>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <input
+                                type="checkbox"
+                                class="checks"
+                                name="flooring"
+                                id="flooring"
+                              />
+                              <label for="flooring" class="addons mb-0">
+                                change flooring - $50
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mb-32">
+                        <div class="col-lg-4">
+                          <p class="titles">reference</p>
+                        </div>
+                        <div class="col-lg-7">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <button type="button" class="choose">
+                                <i class="far fa-images"></i> choose
+                              </button>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <p class="alerts">
+                                You can add upto 3 references
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mb-32">
+                        <div class="col-lg-4">
+                          <p class="titles">reference</p>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="row">
+                            <div class="col-lg-4 px-1">
+                              <div class="refer_img">
+                                <button class="dlt" type="button">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                                <img
+                                  src="./images/previous2.jpg"
+                                  alt="previous2"
+                                  class="img-fluid"
+                                />
+                              </div>
+                            </div>
+                            <div class="col-lg-4 px-1">
+                              <div class="refer_img">
+                                <button class="dlt" type="button">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                                <img
+                                  src="./images/previous2.jpg"
+                                  alt="previous2"
+                                  class="img-fluid"
+                                />
+                              </div>
+                            </div>
+                            <div class="col-lg-4 px-1">
+                              <div class="refer_img">
+                                <button class="dlt" type="button">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                                <img
+                                  src="./images/previous2.jpg"
+                                  alt="previous2"
+                                  class="img-fluid"
+                                />
+                              </div>
+                            </div>
+                            <div class="col-lg-4 px-1">
+                              <div class="refer_img">
+                                <button class="dlt" type="button">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                                <img
+                                  src="./images/previous2.jpg"
+                                  alt="previous2"
+                                  class="img-fluid"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-2 px-0">
+                          <button type="button" class="choose">
+                            <i class="far fa-images"></i> choose
+                          </button>
+                        </div>
+                      </div>
+                      <div class="row mb-32">
+                        <div class="col-lg-4">
+                          <p class="titles">description</p>
+                        </div>
+                        <div class="col-lg-7">
+                          <textarea
+                            name="description"
+                            id="description"
+                            class="description"
+                          ></textarea>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div class="set">
                 <div class="row">
                   <div class="col-lg-4">
@@ -986,21 +1162,62 @@
                         <div class="col-lg-4">
                           <p class="titles">reference</p>
                         </div>
-                        <div class="col-lg-7">
+                        <div class="col-lg-6">
                           <div class="row">
-                            <div class="col-lg-12">
-                              <button type="button" class="choose">
-                                <i class="far fa-images"></i> choose
-                              </button>
+                            <div class="col-lg-4 px-1">
+                              <div class="refer_img">
+                                <button class="dlt" type="button">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                                <img
+                                  src="./images/previous2.jpg"
+                                  alt="previous2"
+                                  class="img-fluid"
+                                />
+                              </div>
+                            </div>
+                            <div class="col-lg-4 px-1">
+                              <div class="refer_img">
+                                <button class="dlt" type="button">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                                <img
+                                  src="./images/previous2.jpg"
+                                  alt="previous2"
+                                  class="img-fluid"
+                                />
+                              </div>
+                            </div>
+                            <div class="col-lg-4 px-1">
+                              <div class="refer_img">
+                                <button class="dlt" type="button">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                                <img
+                                  src="./images/previous2.jpg"
+                                  alt="previous2"
+                                  class="img-fluid"
+                                />
+                              </div>
+                            </div>
+                            <div class="col-lg-4 px-1">
+                              <div class="refer_img">
+                                <button class="dlt" type="button">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                                <img
+                                  src="./images/previous2.jpg"
+                                  alt="previous2"
+                                  class="img-fluid"
+                                />
+                              </div>
                             </div>
                           </div>
-                          <div class="row">
-                            <div class="col-lg-12">
-                              <p class="alerts">
-                                You can add upto 3 references
-                              </p>
-                            </div>
-                          </div>
+                        </div>
+                        <div class="col-lg-2 px-0">
+                          <button type="button" class="choose">
+                            <i class="far fa-images"></i> choose
+                          </button>
                         </div>
                       </div>
                       <div class="row mb-32">
@@ -1060,9 +1277,7 @@
                         <button type="button" class="btn cancel">Cancel</button>
                       </div>
                       <div class="col-lg-6">
-                        <button type="button" class="btn next" disabled>
-                          Next
-                        </button>
+                        <button type="button" class="btn next">Next</button>
                       </div>
                     </div>
                   </div>

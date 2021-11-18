@@ -11,6 +11,8 @@
     margin-bottom: 32px;
   }
   .set {
+    margin: 16px 0;
+    display: inline-block;
     padding: 32px;
     background: @col1;
     .img-box {
@@ -111,6 +113,32 @@
               -webkit-transform: scale(0);
               transform: scale(0);
             }
+          }
+        }
+      }
+      .refer_img{
+        position: relative;
+        padding-bottom: 8px;
+        .dlt {
+          position: absolute;
+          top: -10px;
+          right: -6px;
+          z-index: 2;
+          color: @col1;
+          width: 18px;
+          height: 18px;
+          border-radius: 50%;
+          background: @col2;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border: 0;
+          transform: scale(0);
+          .tran(0.2s);
+        }
+        &:hover{
+          .dlt{
+            transform: scale(1);
           }
         }
       }
