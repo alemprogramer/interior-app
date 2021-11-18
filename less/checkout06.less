@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:700|Muli:400,700,800&display=swap');
+
+@import url('./_varMix.less');
+@import url('./_webkits.less');
+
+.checkout {
+  .mr-53 {
+    margin-right: 53px;
+  }
+  .mb-32 {
+    margin-bottom: 32px;
+  }
+  .set {
+    margin: 16px 0;
+    display: inline-block;
+    padding: 24px;
+    background: @col1;
+    .heading{
+      padding-bottom: 24px;
+      margin-bottom: 32px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .edit{
+      .h5;
+      color: @col3;
+      background: transparent;
+      border-color: transparent;
+      padding: 2px 4px;
+      outline: 0;
+      text-transform: capitalize;
+
+      &:focus,
+      &:active {
+        background: @col5;
+      }
+    }
+    h5{
+      .h5;
+      text-transform: capitalize;
+    }
+    }
+    .img-box {
+      width: 100%;
+      background: @col5;
+
+      .img-area {
+        width: 100%;
+        display: block;
+        height: 109px;
+
+        img {
+          .img_css;
+        }
+      }
+
+      .text-area {
+        padding: 4px;
+        display: block;
+
+        h6 {
+          .p;
+          color: @col2;
+          text-align: center;
+        }
+      }
+    }
+    .titles {
+      .h6;
+      text-transform: capitalize;
+      text-align: left;
+    }
+    .description,
+    h6{
+      .h6;
+      text-align: left;
+    }
+    
+  }
+}
