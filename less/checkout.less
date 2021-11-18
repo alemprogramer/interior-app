@@ -18,6 +18,7 @@
       font-size: 32px;
       margin-bottom: 16px;
       line-height: 40px;
+      text-transform: capitalize;
     }
     .terms {
       .h6;
@@ -87,5 +88,61 @@
     .cancel {
       .cancel;
     }
+  }
+  .addons {
+    position: relative;
+    margin-bottom: 16px;
+    cursor: pointer;
+
+    &::before {
+      .after;
+      left: -30px;
+      top: 4px;
+      width: 18px;
+      height: 18px;
+      border: 1px solid @col6;
+      background: @col1;
+    }
+
+    &::after {
+      .after;
+      width: 8px;
+      height: 8px;
+      background: @col3;
+      top: 9px;
+      left: -25px;
+      -webkit-transition: all 0.2s ease;
+      transition: all 0.2s ease;
+    }
+  }
+
+  .checks {
+    display: none;
+    position: absolute;
+    left: -16%;
+    z-index: -9999;
+
+    &:checked {
+      &+.addons {
+        &::after {
+          opacity: 1;
+          -webkit-transform: scale(1);
+          transform: scale(1);
+        }
+      }
+    }
+
+    &:not(:checked) {
+      &+.addons {
+        &::after {
+          opacity: 0;
+          -webkit-transform: scale(0);
+          transform: scale(0);
+        }
+      }
+    }
+  }
+  label {
+    text-transform: capitalize;
   }
 }
