@@ -359,21 +359,28 @@
 .checkout .mb-32 {
   margin-bottom: 32px;
 }
+.checkout .m-16 {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
 .checkout .set {
   margin: 16px 0;
   display: inline-block;
   padding: 24px;
   background: #fff;
 }
-.checkout .set .heading {
+.checkout .set .personal {
+  margin-top: 16px;
+  display: inline-block;
+}
+.checkout .set .intros {
   padding-bottom: 24px;
-  margin-bottom: 32px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.checkout .set .heading .edit {
+.checkout .set .intros .edit {
   font-family: 'Muli', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -387,11 +394,11 @@
   outline: 0;
   text-transform: capitalize;
 }
-.checkout .set .heading .edit:focus,
-.checkout .set .heading .edit:active {
+.checkout .set .intros .edit:focus,
+.checkout .set .intros .edit:active {
   background: #f5f7fa;
 }
-.checkout .set .heading h5 {
+.checkout .set .intros h5 {
   font-family: 'Muli', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -399,6 +406,14 @@
   line-height: 20px;
   color: #363840;
   text-transform: capitalize;
+}
+.checkout .set .item {
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.checkout .set .item:last-child {
+  border: 0;
+  padding-bottom: 0;
 }
 .checkout .set .img-box {
   width: 100%;

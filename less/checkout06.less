@@ -10,14 +10,21 @@
   .mb-32 {
     margin-bottom: 32px;
   }
+  .m-16 {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
   .set {
     margin: 16px 0;
     display: inline-block;
     padding: 24px;
     background: @col1;
-    .heading{
+    .personal {
+      margin-top: 16px;
+      display: inline-block;
+    }
+    .intros {
       padding-bottom: 24px;
-      margin-bottom: 32px;
       border-bottom: 1px solid rgba(0, 0, 0, 0.2);
       display: flex;
       justify-content: space-between;
@@ -40,7 +47,16 @@
       .h5;
       text-transform: capitalize;
     }
+  }
+  
+  .item{
+    padding: 16px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    &:last-child{
+      border: 0;
+      padding-bottom: 0;
     }
+  }
     .img-box {
       width: 100%;
       background: @col5;
@@ -70,6 +86,9 @@
       .h6;
       text-transform: capitalize;
       text-align: left;
+    }
+    .form-box{
+
     }
     .description,
     h6{
